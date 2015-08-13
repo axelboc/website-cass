@@ -1,2 +1,3 @@
 # website-cass
-Portfolio website of writer Cassandra Frances
+
+Portfolio website of writer **Cassandra Frances**.
