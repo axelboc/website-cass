@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>{{{page-title}}} - {{{site-title}}}</title>
+	<title>{{{site-title}}} - {{{site-subtitle}}}</title>
 	{{> head }}
 </head>
 <body>
 	<header class="Header">
-		<p class="Header__title">{{{site-title}}}</p>
+		<h1 class="Header__title">{{site-title}}</h1>
 		<ul class="Nav">
 		{{#nav}}
 			<li><a href="{{{href}}}">{{label}}</a>
 		{{/nav}}
 		</ul>
 	</header>
-    <div role="main">
-    	<h1>{{{page-title}}}</h1>
-    </div>
+	<div role="main">
+		<img src="images/banner.jpg">
+	</div>
 	{{> footer }}
 </body>
 </html>

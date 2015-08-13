@@ -2,16 +2,20 @@
 	"template_dir": "templates", 
 	"content_dir": "contents",
 	"output_dir": "output",
-
 	"server": { 
 		"port": 9009
 	},
-
 	"bundles": {
 		"/css/all.css": [
-			"/css/normalize.css",	
-			"/css/main.css",
+			"/css/lib/normalize.css",	
+			"/css/lib/boilerplate.css",
 			"/css/site.less"
 		]	
-	}
+	},
+    "generator": {
+        "blank": true
+    },
+    "asset_bundling": {
+        "fingerprint": false
+    }
 }

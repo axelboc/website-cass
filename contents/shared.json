@@ -1,6 +1,10 @@
 {
-	"site-title": "Welcome!",
-	"footer-text": "Built with <a href=\"http://laktek.github.com/punch\">Punch</a>",
-	"navbar": [
+	"site-title": "Cassandra Frances",
+	"site-subtitle": "YA fiction writer",
+	"nav": [
+        { "label": "Home", "href": "/" },
+        { "label": "Work", "href": "/work.html" },
+        { "label": "Nyctophilia", "href": "/nyctophilia.html" },
+        { "label": "Contact", "href": "/contact.html" }
 	]
 }
