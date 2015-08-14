@@ -11,11 +11,5 @@
 			"/css/lib/boilerplate.css",
 			"/css/site.less"
 		]	
-	},
-    "generator": {
-        "blank": true
-    },
-    "asset_bundling": {
-        "fingerprint": false
-    }
+	}
 }

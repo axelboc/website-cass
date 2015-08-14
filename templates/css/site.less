@@ -1,49 +1,64 @@
 
-/* === VARIABLES === */
-
-@page-background: #F1F1F;
+@col-bg: #F1F1F1;
 @title-color: rgba(225, 55, 56, 0.9);
 
 
-/* === HTML/BODY === */
-
 html {
-	background: @page-background;
+	background-color: @col-bg;
+}
+
+.max {
+	max-width: 65em;
+	margin: 0 auto;
 }
 
 
 /* === HEADER === */
 
-.Header__title {
-	margin: 0.5em 0 0 0;
-	padding: 0;
-	color: @title-color;
-	font-size: 3em;
-	font-weight: normal;
-	text-align: center;
+.Header {
+	display: flex;
+
+	&__title {
+		flex-grow: 1;
+		color: @title-color;
+		font-size: 180%;
+		font-weight: normal;
+		text-align: left;
+	}
 }
 
 .Nav {
-	display: block;
-	list-style-type: none;
-	margin: 0.5em 0 0.67em 0;
+	display: flex;
+	align-items: center;
 	padding: 0;
-	text-align: center;
-	
-	li {
-		display: inline-block;
-		margin: 0 0.5em;
-		
-		a {
-			color: #737373;
-			font-size: 1.5em;
-			text-decoration: none;
-		}
+	list-style: none;
+	font-size: 120%;
+
+	&__item {
+	}
+
+	&__link {
+		padding: 0 .5em;
+		color: #737373;
+		text-decoration: none;
 	}
 }
 
 
+/* === INDEX PAGE === */
 
+.Works {
+	background: url(../images/banner.jpg) bottom / cover;
+	min-height: 50em;
+
+	&__list {
+		list-style: none;
+	}
+	
+	&__item {
+		text-align: center;
+	}
+}
 
 
 

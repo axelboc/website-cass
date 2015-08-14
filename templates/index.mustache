@@ -5,17 +5,19 @@
 	{{> head }}
 </head>
 <body>
-	<header class="Header">
+	<header class="Header max">
 		<h1 class="Header__title">{{site-title}}</h1>
-		<ul class="Nav">
-		{{#nav}}
-			<li><a href="{{{href}}}">{{label}}</a>
-		{{/nav}}
-		</ul>
+		{{> nav }}
 	</header>
-	<div role="main">
-		<img src="images/banner.jpg">
-	</div>
+	<main>
+		<div class="Works">
+			<ul class="Works__list">
+			{{#works}}
+				<li class="Works__item"><a class="Works__link" href="{{{href}}}">{{{label}}}</a></li>
+			{{/works}}
+			</ul>
+		</div>
+	</main>
 	{{> footer }}
 </body>
 </html>
