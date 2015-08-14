@@ -6,17 +6,27 @@
 </head>
 <body>
 	<header class="Header max">
-		<h1 class="Header__title">{{site-title}}</h1>
+		<h1 class="Header__title">{{{site-title}}}</h1>
 		{{> nav }}
 	</header>
 	<main>
-		<div class="Works">
-			<ul class="Works__list">
-			{{#works}}
-				<li class="Works__item"><a class="Works__link" href="{{{href}}}">{{{label}}}</a></li>
-			{{/works}}
-			</ul>
-		</div>
+		<section class="Glance">
+			<div class="Intro max">
+				<p class="Intro__text">{{{intro}}}</p>
+				<a class="Intro__link btn btn--inverted" href="#about">more</a>
+			</div>
+			<div class="Works max">
+				<ul class="Works__list">
+				{{#works}}
+					<li class="Works__item"><a class="Works__link btn btn--inverted" href="{{{href}}}">{{{label}}}</a></li>
+				{{/works}}
+				</ul>
+			</div>
+		</section>
+		<section id="about" class="About max">
+			<h2>About me</h2>
+			{{{about}}}
+		</section>
 	</main>
 	{{> footer }}
 </body>

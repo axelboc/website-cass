@@ -10,6 +10,16 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
 html,
 button,
 input,
