@@ -24,8 +24,22 @@
 			</div>
 		</section>
 		<section id="about" class="About max">
-			<h2>About me</h2>
-			{{{about}}}
+			<p class="About__foreword">{{{foreword}}}</p>
+			<div class="About__body">
+				{{{about}}}
+			</div>
+			<div class="About__academia Academia">
+				<dl class="Academia__list">
+				{{#academia}}
+					<dt class="Academia__label">{{{label}}}</dt>
+					<dd class="Academia__info">
+						<span class="Academia__uni">{{{university}}}</span>
+						<span class="Academia__date">{{{date}}}</span>
+						<span class="Academia__desc">{{{description}}}</span>
+					</dd>
+				{{/academia}}
+				</dl>
+			</div>
 		</section>
 	</main>
 	{{> footer }}
