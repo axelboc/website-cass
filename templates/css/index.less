@@ -1,0 +1,134 @@
+
+
+/* === AT A GLANCE (INTRO & WORKS) === */
+
+.Glance {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 52rem;
+	padding: 3rem 0;
+	background: url(../images/banner.jpg) bottom / cover;
+}
+
+.Intro {
+	max-width: 35rem;
+	color: #fff;
+	text-align: center;
+	
+	&__text {
+		font-size: 160%;
+	}
+}
+
+.Works {
+	width: 100%;
+	
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0 -.5rem;
+		padding: 0;
+		list-style: none;
+		font-size: 130%;
+		
+		@media (min-width: 45em) {
+			flex-wrap: nowrap;
+			margin-bottom: 1rem;
+		}
+	}
+	
+	&__item {
+		flex: 1 1 0;
+		margin: 0 .5rem;
+		min-height: 5rem;
+		
+		@media (min-width: 45em) {
+			min-height: 7rem;
+		}
+		
+		&:last-child {
+			flex-basis: 100%;
+			margin-top: 1rem;
+			min-height: 0;
+			
+			@media (min-width: 45em) {
+				flex-basis: 0;
+				min-height: 7rem;
+				margin-top: 0;
+			}
+		}
+	}
+	
+	&__link {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+		padding: .5rem 1rem;
+		text-align: center;
+	}
+}
+
+
+/* === ABOUT & ACADEMIA === */
+
+.About {
+	display: flex;
+	flex-wrap: wrap;
+	
+	&__foreword {
+		flex: 1 1 100%;
+		margin: 2em 0;
+		font-size: 130%;
+	}
+	
+	&__body {
+		margin: 0 0 2em;
+		padding: 0 0 1.5em;
+		border-bottom: 1px solid #bbb;
+		
+		@media (min-width: 45em) {
+			flex: 2 1 0;
+			margin: 0 2em 0 0;
+			padding: 0 2em 0 0;
+			border-right: 1px solid #bbb;
+			border-bottom: 0;
+		}
+	}
+
+	&__academia {
+		flex: 1 1 0;
+	}
+
+	&__body > p:first-child {
+		margin-top: .5em;
+	}
+}
+
+.Academia {
+	&__list {
+		margin-top: .5em;
+	}
+	
+	&__label {
+		font-weight: bold;
+	}
+	
+	&__info {
+		margin: 0 0 2em;
+	}
+	
+	&__uni {
+		margin: .3em 0;
+		font-style: italic;
+	}
+	
+	&__desc {
+		margin: .3em 0;
+		font-size: 90%;
+	}
+}
+

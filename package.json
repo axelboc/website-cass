@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "punch s",
-    "build": "punch g",
+    "build": "punch g --blank",
     "watch": "watch \"npm run build\" ./contents ./templates"
   },
   "devDependencies": {

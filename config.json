@@ -9,7 +9,7 @@
 		"/css/all.css": [
 			"/css/lib/normalize.css",	
 			"/css/lib/boilerplate.css",
-			"/css/site.less"
+			"/css/_main.less"
 		]	
 	}
 }
