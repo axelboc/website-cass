@@ -12,14 +12,14 @@
 		{
 			"label": "Masters of Creative Writing, Publishing and Editing",
 			"university": "Melbourne University",
-			"date": "2014 - 2015",
-			"description": "This is a short description"
+			"date": "2014&ndash;2015",
+			"description": "This is a short description."
 		},
 		{
 			"label": "Bachelor of Psychology",
 			"university": "Swinburne University",
-			"date": "2011 - 2013",
-			"description": "This is a short description"
+			"date": "2011&ndash;2013",
+			"description": "This is a short description spanning multiple lines."
 		}
 	]
 }
