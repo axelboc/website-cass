@@ -1,7 +1,7 @@
 {
     "page-title": "Home",
     "description": "Website of Cassandra Frances, Young Adult fiction writer.",
-	"intro": "Lorem ipsum dolor sit amet, consectetur adipis elit. Quam consequatur nesciunt voluptatibus possimus, doloribus, quia illum harum esse.",
+	"intro": "Lorem ipsum dolor sit amet, consectetur adipis elit. Quam consequatur nesciunt voluptatibus possimus, doloribus, quia.",
 	"works": [
         { "label": "Cloud Collectors", "href": "/work.html#cc" },
         { "label": "House of Skin and Ash", "href": "/work.html#hosaa" },
@@ -10,7 +10,7 @@
 	"foreword": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam consequatur nesciunt voluptatibus possimus, doloribus, quia illum harum esse, voluptatem ad omnis perspiciatis. Quam consequatur nesciunt voluptatibus possimus, doloribus, quia illum harum esse.",
 	"academia": [
 		{
-			"label": "Masters of Creative Writing, Publishin and Editing",
+			"label": "Masters of Creative Writing, Publishing and Editing",
 			"university": "Melbourne University",
 			"date": "2014 - 2015",
 			"description": "This is a short description"

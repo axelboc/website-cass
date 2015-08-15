@@ -6,5 +6,9 @@
         { "label": "Work", "href": "/work.html" },
         { "label": "Nyctophilia", "href": "/nyctophilia.html" },
         { "label": "Contact", "href": "/contact.html" }
+	],
+	"social-links": [
+        { "label": "Tumblr", "href": "http://storm-the-form-of-a-girl.tumblr.com/" },
+        { "label": "Twitter", "href": "https://twitter.com/cassandrafrance" }
 	]
 }
