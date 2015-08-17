@@ -1,13 +1,19 @@
 
-@col-primary: rgb(30, 29, 32);
-@col-primary-transp: rgba(30, 29, 32, 0.8);
+@col-bg: #f1f1f1;
 
-@col-secondary: rgba(225, 55, 56, 0.9);
-@col-secondary-transp: rgba(225, 55, 56, 0.7);
+@col-primary: rgb(225, 69, 69);
+@col-primary-80: rgba(225, 69, 69, 0.8);
+
+@col-secondary: rgb(97, 95, 106);
+@col-secondary-80: rgba(97, 95, 106, 0.8);
+@col-secondary-20: rgba(97, 95, 106, 0.2);
+
+@col-tertiary: rgb(32, 32, 48);
+@col-tertiary-80: rgba(32, 32, 48, 0.8);
 
 
 html {
-	background-color: #f1f1f1;
+	background-color: @col-bg;
 	overflow-y: scroll;
 	height: 100%;
 }
@@ -32,7 +38,7 @@ button:focus {
 
 .btn {
 	padding: .5rem 2rem;
-	background: @col-secondary-transp;
+	background: @col-primary-80;
 	border: none;
 	border-radius: .5rem;
 	color: #fff;
@@ -62,6 +68,11 @@ button:focus {
 	
 	&__main {
 		flex-grow: 1;
+		padding-bottom: 2rem;
+		
+		&:not(&--index) {
+			background-color: @col-secondary-20;
+		}
 	}
 }
 
@@ -80,7 +91,7 @@ button:focus {
 	&__title {
 		flex-grow: 1;
 		margin: .5em 0;
-		color: @col-secondary;
+		color: @col-primary;
 		font-size: 180%;
 		font-weight: normal;
 		text-align: left;
@@ -97,7 +108,7 @@ button:focus {
 
 	&__link {
 		padding: .5em;
-		color: @col-primary-transp;
+		color: @col-tertiary-80;
 		text-decoration: none;
 	}
 }
@@ -106,21 +117,31 @@ button:focus {
 /* === MAIN === */
 
 .Heading {
-	margin-top: 0;
+	margin: 0 0 2rem;
 	padding: 2rem;
-	background-color: @col-secondary;
+	background-color: @col-primary;
 	color: #fff;
 	font-size: 200%;
 	text-align: center;
+}
+
+.Section {
+	&__heading {
+		margin: 0 0 2rem;
+		line-height: 1;
+		color: @col-tertiary;
+		font-size: 130%;
+		font-weight: normal;
+		text-transform: uppercase;
+	}
 }
 
 
 /* === FOOTER === */
 
 .Footer {
-	margin-top: 2rem;
 	padding: 1rem;
-	background-color: @col-primary;
+	background-color: @col-tertiary;
 	color: #fff;
 	text-align: center;
 }
