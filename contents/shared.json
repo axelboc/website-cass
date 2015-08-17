@@ -1,6 +1,8 @@
 {
 	"site-title": "Cassandra Frances",
 	"site-subtitle": "YA fiction writer",
+	"full-name": "Cassandra Frances White",
+	"portrait": "http://placehold.it/200",
 	"nav": [
         { "label": "Home", "href": "/" },
         { "label": "Work", "href": "/work.html" },

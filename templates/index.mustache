@@ -9,17 +9,17 @@
 		<h1 class="Header__title">{{{site-title}}}</h1>
 		{{> nav }}
 	</header>
-	<main class="Layout__main">
+	<main class="Layout__main Layout__main--index">
 		<section class="Glance">
 			<div class="Intro max">
 				<p class="Intro__text">{{{intro}}}</p>
 				<a class="Intro__link btn btn--inverted" href="#about">more</a>
 			</div>
-			<div class="Works max">
-				<ul class="Works__list">
-				{{#works}}
-					<li class="Works__item"><a class="Works__link btn btn--inverted" href="{{{href}}}">{{{label}}}</a></li>
-				{{/works}}
+			<div class="Highlights max">
+				<ul class="Highlights__list">
+				{{#highlights}}
+					<li class="Highlights__item"><a class="Highlights__link btn btn--inverted" href="{{{href}}}">{{{label}}}</a></li>
+				{{/highlights}}
 				</ul>
 			</div>
 		</section>
@@ -29,6 +29,7 @@
 				{{{about}}}
 			</div>
 			<div class="About__academia Academia">
+				<img class="About__portrait" src="{{{portrait}}}" alt="{{{full-name}}}">
 				<dl class="Academia__list">
 				{{#academia}}
 					<dt class="Academia__label">{{{label}}}</dt>
