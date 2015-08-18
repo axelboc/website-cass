@@ -1,30 +1,45 @@
 
-@col-bg: #f1f1f1;
+:root {
+	--col-bg: #f1f1f1;
 
-@col-primary: rgb(225, 69, 69);
-@col-primary-80: rgba(225, 69, 69, 0.8);
+	--col-primary: rgb(225, 69, 69);
+	--col-primary-80: rgba(225, 69, 69, 0.8);
 
-@col-secondary: rgb(97, 95, 106);
-@col-secondary-80: rgba(97, 95, 106, 0.8);
-@col-secondary-20: rgba(97, 95, 106, 0.2);
+	--col-secondary: rgb(97, 95, 106);
+	--col-secondary-80: rgba(97, 95, 106, 0.8);
+	--col-secondary-20: rgba(97, 95, 106, 0.2);
 
-@col-tertiary: rgb(32, 32, 48);
-@col-tertiary-80: rgba(32, 32, 48, 0.8);
+	--col-tertiary: rgb(32, 32, 48);
+	--col-tertiary-80: rgba(32, 32, 48, 0.8);
+}
 
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
 
 html {
-	background-color: @col-bg;
+	box-sizing: border-box;
 	overflow-y: scroll;
 	height: 100%;
 }
 
 body {
 	min-height: 100%;
+	background-color: var(--col-bg);
+    line-height: 1.4;
 }
 
 a:focus,
 button:focus {
 	outline: 1px dashed #333;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 
@@ -38,7 +53,7 @@ button:focus {
 
 .btn {
 	padding: .5rem 2rem;
-	background: @col-primary-80;
+	background: var(--col-primary-80);
 	border: none;
 	border-radius: .5rem;
 	color: #fff;
@@ -53,6 +68,16 @@ button:focus {
 	outline-color: #fff;
 }
 
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
 
 /* === LAYOUT === */
 
@@ -60,18 +85,18 @@ button:focus {
 	display: flex;
 	flex-direction: column;
 	
-	&__header,
-	&__main,
-	&__footer {
+	&_header,
+	&_main,
+	&_footer {
 		width: 100%;
 	}
 	
-	&__main {
+	&_main {
 		flex-grow: 1;
 		padding-bottom: 2rem;
 		
 		&:not(&--index) {
-			background-color: @col-secondary-20;
+			background-color: var(--col-secondary-20);
 		}
 	}
 }
@@ -88,10 +113,10 @@ button:focus {
 		flex-direction: row;
 	}
 
-	&__title {
+	&_title {
 		flex-grow: 1;
 		margin: .5em 0;
-		color: @col-primary;
+		color: var(--col-primary);
 		font-size: 180%;
 		font-weight: normal;
 		text-align: left;
@@ -106,9 +131,9 @@ button:focus {
 	list-style: none;
 	font-size: 120%;
 
-	&__link {
+	&_link {
 		padding: .5em;
-		color: @col-tertiary-80;
+		color: var(--col-tertiary-80);
 		text-decoration: none;
 	}
 }
@@ -119,17 +144,17 @@ button:focus {
 .Heading {
 	margin: 0 0 2rem;
 	padding: 2rem;
-	background-color: @col-primary;
+	background-color: var(--col-primary);
 	color: #fff;
 	font-size: 200%;
 	text-align: center;
 }
 
 .Section {
-	&__heading {
+	&_heading {
 		margin: 0 0 2rem;
 		line-height: 1;
-		color: @col-tertiary;
+		color: var(--col-tertiary);
 		font-size: 130%;
 		font-weight: normal;
 		text-transform: uppercase;
@@ -141,7 +166,7 @@ button:focus {
 
 .Footer {
 	padding: 1rem;
-	background-color: @col-tertiary;
+	background-color: var(--col-tertiary);
 	color: #fff;
 	text-align: center;
 }
@@ -151,12 +176,12 @@ button:focus {
 	padding: 0;
 	list-style: none;
 	
-	&__site {
+	&_site {
 		display: inline-block;
 		margin: 0 1em;
 	}
 	
-	&__link {
+	&_link {
 		color: inherit;
 		text-decoration: none;
 		text-transform: uppercase;

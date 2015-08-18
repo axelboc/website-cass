@@ -1,0 +1,42 @@
+
+/* === WORKS === */
+
+.Work {
+	margin-bottom: 2rem;
+	padding: 1rem;
+	background-color: var(--col-bg);
+	
+	&_heading {
+		margin: .5rem 0 1.5rem;
+		color: var(--col-tertiary);
+		text-align: center;
+		font-style: italic;
+	}
+}
+
+/*
+#cloud-collectors {
+	border-left: 0rem solid var(--col-secondary-20);
+	border-right: 6rem solid var(--col-secondary-20);
+}
+
+#house-skin {
+	border-left: 2rem solid var(--col-secondary-20);
+	border-right: 4rem solid var(--col-secondary-20);
+}
+
+#northern-ligths {
+	border-left: 4rem solid var(--col-secondary-20);
+	border-right: 2rem solid var(--col-secondary-20);
+}
+
+#morrigan {
+	border-left: 1rem solid var(--col-secondary-20);
+	border-right: 5rem solid var(--col-secondary-20);
+}
+
+#thin-places {
+	border-left: 3rem solid var(--col-secondary-20);
+	border-right: 3rem solid var(--col-secondary-20);
+}
+*/
