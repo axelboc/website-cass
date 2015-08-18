@@ -16,7 +16,7 @@
 	color: #fff;
 	text-align: center;
 	
-	&__text {
+	&_text {
 		font-size: 160%;
 	}
 }
@@ -24,7 +24,7 @@
 .Highlights {
 	width: 100%;
 	
-	&__list {
+	&_list {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -39,7 +39,7 @@
 		}
 	}
 	
-	&__item {
+	&_item {
 		flex: 1 1 0;
 		margin: 0 .5rem;
 		min-height: 5rem;
@@ -61,7 +61,7 @@
 		}
 	}
 	
-	&__link {
+	&_link {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -78,13 +78,13 @@
 	display: flex;
 	flex-wrap: wrap;
 	
-	&__foreword {
+	&_foreword {
 		flex: 1 1 100%;
 		margin: 2rem 0;
 		font-size: 130%;
 	}
 	
-	&__body {
+	&_body {
 		margin: 0 0 2rem;
 		padding: 0 0 1.5rem;
 		border-bottom: 1px solid #bbb;
@@ -98,36 +98,36 @@
 		}
 	}
 
-	&__academia {
+	&_academia {
 		flex: 1 1 0;
 	}
 
-	&__body > p:first-child,
-	&__portrait {
+	&_body > p:first-child,
+	&_portrait {
 		margin-top: .3rem;
 	}
 }
 
 .Academia {
-	&__list {
+	&_list {
 		margin: 0;
 	}
 	
-	&__label {
+	&_label {
 		font-weight: bold;
 		margin-top: 2rem;
 	}
 	
-	&__info {
+	&_info {
 		margin: 0;
 	}
 	
-	&__uni {
+	&_uni {
 		margin: .3rem 0;
 		font-style: italic;
 	}
 	
-	&__desc {
+	&_desc {
 		margin: .3rem 0;
 		font-size: 90%;
 	}
