@@ -1,0 +1,65 @@
+
+/* === BOOKS === */
+
+.Books {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 2rem -.5rem;
+	padding: 0;
+	list-style: none;
+	font-size: 80%;
+	
+	@media (min-width: 30em) {
+		font-size: 90%;
+	}
+	
+	@media (min-width: 48em) {
+		font-size: 80%;
+	}
+	
+	@media (min-width: 53em) {
+		font-size: 90%;
+	}
+}
+
+.Book {
+	flex-grow: 0;
+	padding: 0 .5rem;
+	margin-bottom: 1rem;
+	
+	@media (min-width: 48em) {
+		flex-basis: 50%;
+	}
+	
+	&_inner {
+		display: flex;
+		background-color: #fff;
+	}
+}
+
+.Cover {
+	margin-right: .5rem;
+	
+	&_img {
+		display: block;
+		max-width: 140px;
+		height: auto;
+		
+		@media (min-width: 40em) {
+			max-width: 120px;
+		}
+		
+		@media (min-width: 48em) {
+			max-width: 150px;
+		}
+		
+		@media (min-width: 53em) {
+			max-width: 180px;
+		}
+	}
+}
+	
+.Review {
+	flex-grow: 1;
+	padding: .5rem;
+}
