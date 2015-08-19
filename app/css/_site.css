@@ -2,8 +2,8 @@
 :root {
 	--col-bg: #f1f1f1;
 
-	--col-primary: rgb(225, 69, 69);
-	--col-primary-80: rgba(225, 69, 69, 0.8);
+	--col-primary: rgb(206, 63, 63);
+	--col-primary-80: rgba(206, 63, 63, 0.8);
 
 	--col-secondary: rgb(97, 95, 106);
 	--col-secondary-80: rgba(97, 95, 106, 0.8);
@@ -30,6 +30,14 @@ body {
 	min-height: 100%;
 	background-color: var(--col-bg);
     line-height: 1.4;
+}
+
+a {
+	color: var(--col-primary);
+}
+
+a:hover {
+	text-decoration: none;
 }
 
 a:focus,
@@ -136,6 +144,10 @@ button:focus {
 		color: var(--col-tertiary-80);
 		text-decoration: none;
 	}
+	
+	&_link:hover {
+		text-decoration: underline;
+	}
 }
 
 
@@ -158,6 +170,12 @@ button:focus {
 		font-size: 130%;
 		font-weight: normal;
 		text-transform: uppercase;
+	}
+	
+	&_intro {
+		margin: 0 0 2rem;
+		color: var(--col-tertiary);
+		font-size: 130%;
 	}
 }
 
