@@ -34,6 +34,7 @@ body {
 	background-color: var(--col-bg);
     line-height: 1.4;
 	font-family: var(--font-text);
+	color: var(--col-tertiary);
 }
 
 a {
@@ -174,7 +175,6 @@ button:focus {
 	&_heading {
 		margin: 0 0 2rem;
 		line-height: 1;
-		color: var(--col-tertiary);
 		font-size: 130%;
 		font-weight: normal;
 		text-transform: uppercase;
@@ -182,7 +182,6 @@ button:focus {
 	
 	&_intro {
 		margin: 0 0 2rem;
-		color: var(--col-tertiary);
 		font-size: 130%;
 	}
 }
