@@ -1,5 +1,8 @@
 
 :root {
+	--font-text: Verdana,Geneva,sans-serif;
+	--font-heading: Georgia,Times,Times New Roman,serif;
+	
 	--col-bg: #f1f1f1;
 
 	--col-primary: rgb(206, 63, 63);
@@ -30,6 +33,7 @@ body {
 	min-height: 100%;
 	background-color: var(--col-bg);
     line-height: 1.4;
+	font-family: var(--font-text);
 }
 
 a {
@@ -120,15 +124,18 @@ button:focus {
 	@media (min-width: 45em) {
 		flex-direction: row;
 	}
+}
 
-	&_title {
-		flex-grow: 1;
-		margin: .5em 0;
-		color: var(--col-primary);
-		font-size: 180%;
-		font-weight: normal;
-		text-align: left;
-	}
+.Title {
+	flex-grow: 1;
+	margin: .5em 0;
+	color: var(--col-primary);
+	line-height: 1.2;
+	font-family: var(--font-heading);
+	font-size: 250%;
+	font-style: italic;
+	font-weight: normal;
+	text-align: left;
 }
 
 .Nav {
@@ -159,6 +166,7 @@ button:focus {
 	background-color: var(--col-primary);
 	color: #fff;
 	font-size: 200%;
+	font-weight: normal;
 	text-align: center;
 }
 
@@ -196,13 +204,13 @@ button:focus {
 	
 	&_site {
 		display: inline-block;
-		margin: 0 1em;
+		margin: 0 1rem;
+		width: 5rem;
 	}
 	
 	&_link {
 		color: inherit;
 		text-decoration: none;
-		text-transform: uppercase;
 		
 		&:hover {
 			text-decoration: underline;

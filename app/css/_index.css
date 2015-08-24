@@ -17,12 +17,15 @@
 	text-align: center;
 	
 	&_text {
-		font-size: 160%;
+		font-size: 150%;
 	}
 }
 
 .Highlights {
 	width: 100%;
+	font-family: var(--font-heading);
+	font-size: 140%;
+	font-style: italic;
 	
 	&_list {
 		display: flex;
@@ -31,7 +34,6 @@
 		margin: 0 -.5rem;
 		padding: 0;
 		list-style: none;
-		font-size: 130%;
 		
 		@media (min-width: 45em) {
 			flex-wrap: nowrap;
@@ -81,7 +83,7 @@
 	&_foreword {
 		flex: 1 1 100%;
 		margin: 2rem 0;
-		font-size: 130%;
+		font-size: 120%;
 	}
 	
 	&_body {
@@ -114,6 +116,8 @@
 	}
 	
 	&_label {
+		font-family: var(--font-heading);
+		font-style: italic;
 		font-weight: bold;
 		margin-top: 2rem;
 	}
@@ -122,13 +126,9 @@
 		margin: 0;
 	}
 	
-	&_uni {
-		margin: .3rem 0;
-		font-style: italic;
-	}
-	
+	&_uni,
 	&_desc {
-		margin: .3rem 0;
+		margin: .5rem 0;
 		font-size: 90%;
 	}
 }
