@@ -5,15 +5,12 @@
 	
 	--col-bg: #f1f1f1;
 
-	--col-primary: rgb(206, 63, 63);
-	--col-primary-80: rgba(206, 63, 63, 0.8);
+	--col-primary: rgb(175, 54, 54);
+	--col-primary-80: rgba(175, 54, 54, 0.8);
 
-	--col-secondary: rgb(97, 95, 106);
-	--col-secondary-80: rgba(97, 95, 106, 0.8);
-	--col-secondary-20: rgba(97, 95, 106, 0.2);
-
-	--col-tertiary: rgb(32, 32, 48);
-	--col-tertiary-80: rgba(32, 32, 48, 0.8);
+	--col-secondary: rgb(32, 32, 48);
+	--col-secondary-80: rgba(32, 32, 48, 0.8);
+	--col-secondary-20: rgba(32, 32, 48, 0.2);
 }
 
 
@@ -34,7 +31,7 @@ body {
 	background-color: var(--col-bg);
     line-height: 1.4;
 	font-family: var(--font-text);
-	color: var(--col-tertiary);
+	color: var(--col-secondary);
 }
 
 a {
@@ -149,7 +146,7 @@ button:focus {
 
 	&_link {
 		padding: .5em;
-		color: var(--col-tertiary-80);
+		color: var(--col-secondary-80);
 		text-decoration: none;
 	}
 	
@@ -169,6 +166,15 @@ button:focus {
 	font-size: 200%;
 	font-weight: normal;
 	text-align: center;
+	
+	&--with-sub {
+		padding: 1.31rem 2rem
+	}
+	
+	&_sub {
+		display: block;
+		font-size: 50%;
+	}
 }
 
 .Section {
@@ -191,7 +197,7 @@ button:focus {
 
 .Footer {
 	padding: 1rem;
-	background-color: var(--col-tertiary);
+	background-color: var(--col-secondary);
 	color: #fff;
 	text-align: center;
 }
