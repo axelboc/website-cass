@@ -3,6 +3,7 @@ node_js:
   - "0.12"
 script:
   - npm run prod
+  - bash ./deploy.sh
 env:
   global:
     - GH_REF: github.com/axelboc/website-cass.git
