@@ -52,6 +52,10 @@ button:focus {
     text-shadow: none;
 }
 
+abbr {
+	text-decoration: none;
+}
+
 
 /* === HELPERS === */
 
@@ -180,7 +184,6 @@ button:focus {
 .Section {
 	&_heading {
 		margin: 0 0 2rem;
-		line-height: 1;
 		font-size: 130%;
 		font-weight: normal;
 		text-transform: uppercase;

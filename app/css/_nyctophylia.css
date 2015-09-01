@@ -4,7 +4,7 @@
 .Books {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 2rem -.5rem 1rem;
+	margin: 2rem -1rem 1rem;
 	padding: 0;
 	list-style: none;
 	font-size: 80%;
@@ -24,42 +24,65 @@
 
 .Book {
 	flex-grow: 0;
-	padding: 0 .5rem;
-	margin-bottom: 1rem;
+	padding: 0 1rem;
+	margin-bottom: 2rem;
 	
 	@media (min-width: 48em) {
 		flex-basis: 50%;
 	}
 	
+	&--full {
+		flex-basis: 100%;
+	}
+	
 	&_inner {
-		display: flex;
 		background-color: #fff;
 	}
 }
 
 .Cover {
-	margin-right: .5rem;
+	float: left;
+	display: block;
+	width: 140px;
+	
+	@media (min-width: 40em) {
+		width: 120px;
+	}
+
+	@media (min-width: 48em) {
+		width: 150px;
+	}
+
+	@media (min-width: 53em) {
+		width: 180px;
+	}
 	
 	&_img {
 		display: block;
-		max-width: 140px;
+		max-width: 100%;
 		height: auto;
-		
-		@media (min-width: 40em) {
-			max-width: 120px;
-		}
-		
-		@media (min-width: 48em) {
-			max-width: 150px;
-		}
-		
-		@media (min-width: 53em) {
-			max-width: 180px;
-		}
 	}
 }
 	
 .Review {
-	flex-grow: 1;
-	padding: .5rem;
+	padding: 0 1rem;
+	overflow: hidden;
+	
+	&_heading {
+		font-family: var(--font-heading);
+		font-size: 130%;
+		font-style: italic;
+		font-weight: normal;
+		margin-bottom: 0;
+	}
+	
+	&_author {
+		margin-top: 0;
+		font-size: 90%;
+		font-weight: bold;
+	}
+	
+	&_text--smaller {
+		font-size: 90%;
+	}
 }
