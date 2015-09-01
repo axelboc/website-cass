@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "0.12"
+script:
+  - npm run prod
+env:
+  global:
+    - GH_REF: github.com/axelboc/website-cass.git
+	- secure: W3aPVC5eDTAGo1PKvX9hSbqpNKd2GtQSZqdqwv3keez/s+EvWKadBYCbj32BDOGG1GIAb89nAnJP1LTDPw0ojnyUJReefC/XEqL/gZZ2iKtGfFxugBgFp33kBAzhI3vTcN7kcw/y/m7mZ1HCqX8VBWNciUk4zUt4YWQ1r2flUKky1AkTW66mQQWVOsqnG7ZKj3S0ETqESX8w2Qv1+1yQbHkVQ9L1o1MLFcrbsTQMgTKyniHUt50NT/RD/TJ+dKgw0wDj7c25NjL8mI0lGLPeI6OIUZ4HpVWycPsn4qhv8o4L0by1iqrJvSoGfuuSzueJQ2vdo1TKuzRAL7n70Z6S4BHUp8lA0mCDIOKer8pmgzRVVthnfeX7ndON///7oBitwk6Wb+ino75HIQzLV/skUXc2xGMlYdeJ6fP2LyTpSGqvQY4ytwaxJa2qFL5DIkofx/7tw4f2hpRTARwZxvVeYSfuwyvTqjJYaJsqaRRaHzQD1kRIo7zGdKJKPlH4glOEHyGCxY03LVGDq2YABCHdWAHzOSSY4CACq99Xt3kNmSMPBWptNE8WSdpmNpkjIsWAcAbR4I1vwUelvD+jEysdCzOgatNy1mlKVtAIPdhbIAn0YO9eUUu3+23TInvqJJIUOI8wcPz5ykCYYoFqrmBqxIn/Nt35hhPzEdG1tI+8A5Q=
