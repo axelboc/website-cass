@@ -1,6 +1,5 @@
 module.exports = config:
 	files:
-		javascripts: joinTo: 'main.js'
 		stylesheets: joinTo: 'main.css'
 	plugins:
 		postcss:

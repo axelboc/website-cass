@@ -9,9 +9,8 @@
 - The book covers come straight from [Goodreads](https://www.goodreads.com/).
 
 ## Remaining work
-- Write missing content (foreword, qualifications, works, LinkedIn URL, portrait, missing book cover
+- Write missing content and improve existing content (foreword, qualifications, descriptions and images of works, LinkedIn URL, portrait, missing book cover, book reviews, etc.)
 - Edit and proofread content
-- Implement smooth scroll for *more* button on homepage
 - Deal with book covers of different heights on *Nictophylia* page
 - Add a design touch to the highlight buttons on the homepage (e.g. a subtle background image and animation matching the genre of the work)
 - Use URL rewriting to remove the `html` extension
