@@ -18,8 +18,8 @@
     "normalize.css": "^3.0.3"
   },
   "devDependencies": {
-    "autoprefixer": "^5.2.0",
     "brunch": "^1.8.5",
+    "cssnano": "^2.6.1",
     "postcss-brunch": "^0.4.2",
     "postcss-custom-properties": "^4.2.0",
     "postcss-import": "^6.2.0",

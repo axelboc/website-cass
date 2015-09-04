@@ -12,6 +12,6 @@
 - Write missing content and improve existing content (foreword, qualifications, descriptions and images of works, LinkedIn URL, portrait, missing book cover, book reviews, etc.)
 - Edit and proofread content
 - Add a design touch to the highlight buttons on the homepage (e.g. a subtle background image and animation matching the genre of the work)
-- Deal with performance (hero image sizes, minification, caching)
+- Deal with performance (hero image sizes)
 - Cross-browser/device testing
 - Analytics and SEO (meta descriptions, Google Webmaster Tools, etc.)
