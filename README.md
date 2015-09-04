@@ -13,7 +13,6 @@
 - Edit and proofread content
 - Deal with book covers of different heights on *Nictophylia* page
 - Add a design touch to the highlight buttons on the homepage (e.g. a subtle background image and animation matching the genre of the work)
-- Use URL rewriting to remove the `html` extension
 - Deal with performance (hero image sizes, minification, caching)
 - Cross-browser/device testing
 - Analytics and SEO (meta descriptions, Google Webmaster Tools, etc.)
