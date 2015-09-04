@@ -195,6 +195,30 @@ abbr {
 	}
 }
 
+.Card {
+	&_heading {
+		font-family: var(--font-heading);
+		font-size: 130%;
+		font-style: italic;
+		font-weight: normal;
+		margin: 1rem 0 0;
+	}
+	
+	&_sub {
+		margin-top: .1rem;
+		font-weight: bold;
+		font-size: 90%;
+	}
+	
+	&_text {
+		font-size: 90%;
+	
+		@media (min-width: 35em) {
+			font-size: 100%;
+		}
+	}
+}
+
 
 /* === FOOTER === */
 

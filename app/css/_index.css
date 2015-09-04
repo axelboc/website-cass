@@ -101,8 +101,13 @@
 		}
 	}
 
-	&_academia {
+	&_resume {
 		flex: 1 1 0;
+		font-size: 90%;
+	}
+	
+	&_degree {
+		margin-top: 2rem;
 	}
 
 	&_body > p:first-child,
@@ -110,31 +115,9 @@
 		margin-top: .5rem;
 	}
 
-	&_body > p:last-child {
+	&_body > p:last-child,
+	&_degree:last-child > p:last-child {
 		margin-bottom: .5rem;
-	}
-}
-
-.Academia {
-	&_list {
-		margin: 0;
-	}
-	
-	&_label {
-		font-family: var(--font-heading);
-		font-style: italic;
-		font-weight: bold;
-		margin-top: 2rem;
-	}
-	
-	&_info {
-		margin: 0;
-	}
-	
-	&_uni,
-	&_desc {
-		margin: .5rem 0;
-		font-size: 90%;
 	}
 }
 
