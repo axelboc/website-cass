@@ -11,7 +11,6 @@
 ## Remaining work
 - Write missing content and improve existing content (foreword, qualifications, descriptions and images of works, LinkedIn URL, portrait, missing book cover, book reviews, etc.)
 - Edit and proofread content
-- Deal with book covers of different heights on *Nictophylia* page
 - Add a design touch to the highlight buttons on the homepage (e.g. a subtle background image and animation matching the genre of the work)
 - Deal with performance (hero image sizes, minification, caching)
 - Cross-browser/device testing
