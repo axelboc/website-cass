@@ -6,9 +6,18 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	min-height: 52rem;
+	min-height: 700px;
 	padding: 3rem 0;
-	background: url(images/banner.jpg) bottom / cover;
+	background: url(images/banner-720x700.jpg) no-repeat center bottom / auto 100% var(--col-secondary);
+	
+	@media (min-width: 45em) {
+		min-height: 830px;
+		background-image: url(images/banner-1245x830.jpg);
+	}
+	
+	@media (min-width: 77em) {
+		background-image: url(images/banner-1720x830.jpg);
+	}
 }
 
 .Intro {
@@ -17,7 +26,12 @@
 	text-align: center;
 	
 	&_text {
-		font-size: 150%;
+		margin-bottom: 2rem;
+		font-size: 130%;
+		
+		@media (min-width: 35em) {
+			font-size: 150%;
+		}
 	}
 }
 

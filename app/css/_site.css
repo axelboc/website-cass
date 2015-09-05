@@ -29,9 +29,14 @@ html {
 body {
 	min-height: 100%;
 	background-color: var(--col-bg);
-    line-height: 1.4;
-	font-family: var(--font-text);
 	color: var(--col-secondary);
+	font-family: var(--font-text);
+	font-size: 90%;
+    line-height: 1.4;
+	
+	@media (min-width: 35em) {
+		font-size: 100%;
+	}
 }
 
 a {
@@ -123,7 +128,7 @@ abbr {
 	flex-direction: column;
 	align-items: center;
 	
-	@media (min-width: 45em) {
+	@media (min-width: 50em) {
 		flex-direction: row;
 	}
 }
@@ -137,7 +142,11 @@ abbr {
 	font-size: 250%;
 	font-style: italic;
 	font-weight: normal;
-	text-align: left;
+	text-align: center;
+	
+	@media (min-width: 50em) {
+		text-align: left;
+	}
 }
 
 .Nav {
