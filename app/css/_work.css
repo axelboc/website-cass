@@ -15,29 +15,30 @@
 	}
 }
 
-/*
-#cloud-collectors {
-	border-left: 0rem solid var(--col-secondary-20);
-	border-right: 6rem solid var(--col-secondary-20);
-}
 
-#house-skin {
-	border-left: 2rem solid var(--col-secondary-20);
-	border-right: 4rem solid var(--col-secondary-20);
-}
+/* === IMMERSIVE READING VIEW === */
 
-#northern-ligths {
-	border-left: 4rem solid var(--col-secondary-20);
-	border-right: 2rem solid var(--col-secondary-20);
+.Immersive {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding: 1rem;
+	background-color: var(--col-bg);
+	
+	&_header {
+		margin: 3rem 0;
+	}
+	
+	&_heading {
+		margin: 0;
+		font-family: var(--font-heading);
+		font-size: 250%;
+		font-style: italic;
+		font-weight: normal;
+		text-align: center;
+	}
+	
+	&_author {
+		text-align: center;
+		font-size: 110%;
+	}
 }
-
-#morrigan {
-	border-left: 1rem solid var(--col-secondary-20);
-	border-right: 5rem solid var(--col-secondary-20);
-}
-
-#thin-places {
-	border-left: 3rem solid var(--col-secondary-20);
-	border-right: 3rem solid var(--col-secondary-20);
-}
-*/

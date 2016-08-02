@@ -1,4 +1,4 @@
 node_modules
 public
 resources
-app/assets/*.html
+app/assets/**/*.html
