@@ -9,20 +9,23 @@
     "url": "https://github.com/axelboc/website-cass"
   },
   "scripts": {
-    "start": "npm run clean && brunch watch --server -d",
-    "clean": "rm -Rf public",
     "build": "brunch build",
+    "clean": "rm -Rf public",
     "prod": "brunch build --production",
-    "test": "true"
+    "serve": "browser-sync start --server public --files public --extensions html",
+    "start": "npm run clean && concurrently \"npm run watch\" \"npm run serve\"",
+    "watch": "brunch watch"
   },
   "dependencies": {
     "normalize.css": "~4.2.0"
   },
   "devDependencies": {
-    "brunch": "^1.8.5",
-    "brunch-static": "^1.1.1",
+    "browser-sync": "^2.14.0",
+    "brunch": "~1.8.5",
+    "brunch-static": "~1.1.1",
+    "concurrently": "^2.2.0",
     "cssnano": "~3.7.3",
-    "html-brunch-static": "^1.3.1",
+    "html-brunch-static": "~1.3.1",
     "postcss-brunch": "~0.5.0",
     "postcss-custom-properties": "~5.0.1",
     "postcss-import": "~8.1.2",
