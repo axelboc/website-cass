@@ -2,43 +2,43 @@
 /* === WORKS === */
 
 .Work {
-	margin-bottom: 2rem;
-	padding: 1rem;
-	background-color: var(--col-bg);
-	
-	&_heading {
-		margin: 1rem 0 1.8rem;
-		text-align: center;
-		font-family: var(--font-heading);
-		font-size: 140%;
-		font-style: italic;
-	}
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: var(--col-bg);
+  
+  &_heading {
+    margin: 1rem 0 1.8rem;
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 140%;
+    font-style: italic;
+  }
 }
 
 
 /* === IMMERSIVE READING VIEW === */
 
 .Immersive {
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-	padding: 1rem;
-	background-color: var(--col-bg);
-	
-	&_header {
-		margin: 3rem 0;
-	}
-	
-	&_heading {
-		margin: 0;
-		font-family: var(--font-heading);
-		font-size: 250%;
-		font-style: italic;
-		font-weight: normal;
-		text-align: center;
-	}
-	
-	&_author {
-		text-align: center;
-		font-size: 110%;
-	}
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: var(--col-bg);
+  
+  &_header {
+    margin: 3rem 0;
+  }
+  
+  &_heading {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: 250%;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+  }
+  
+  &_author {
+    text-align: center;
+    font-size: 110%;
+  }
 }

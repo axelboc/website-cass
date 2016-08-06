@@ -2,49 +2,49 @@
 /* === BOOKS === */
 
 .Books {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 2rem -1rem 1rem;
-	padding: 0;
-	list-style: none;
-	font-size: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem -1rem 1rem;
+  padding: 0;
+  list-style: none;
+  font-size: 90%;
 }
 
 .Book {
-	flex-grow: 0;
-	flex-basis: 100%;
-	padding: 0 1rem;
-	margin-bottom: 2rem;
-	
-	&:not(&--full) {
-		@media (min-width: 58em) {
-			flex-basis: 50%;
-		}
-	}
-	
-	&_inner {
-		background-color: #fff;
-	}
-	
-	&_review {
-		padding: 0 1rem;
-		overflow: hidden;
-	}
+  flex-grow: 0;
+  flex-basis: 100%;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  
+  &:not(&--full) {
+    @media (min-width: 58em) {
+      flex-basis: 50%;
+    }
+  }
+  
+  &_inner {
+    background-color: #fff;
+  }
+  
+  &_review {
+    padding: 0 1rem;
+    overflow: hidden;
+  }
 }
 
 .Cover {
-	float: left;
-	display: block;
-	width: 140px;
+  float: left;
+  display: block;
+  width: 140px;
 
-	@media (min-width: 58em) {
-		width: 180px;
-	}
-	
-	&_img {
-		display: block;
-		max-width: 100%;
-		height: auto;
-	}
+  @media (min-width: 58em) {
+    width: 180px;
+  }
+  
+  &_img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
 }
-	
+  

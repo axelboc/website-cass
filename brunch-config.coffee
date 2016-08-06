@@ -15,6 +15,6 @@ module.exports = config:
           handlebars:
             enableProcessor:
               fileMatch: /\.hbs$/
-              fileTransform: (f) -> f.replace(/\.hbs$/, '.html')
+              fileTransform: ((f) -> f.replace(/\.hbs$/, '.html'))
         })
       ]
