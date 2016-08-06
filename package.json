@@ -10,9 +10,9 @@
   },
   "scripts": {
     "start": "npm run clean && brunch watch --server -d",
-    "build": "npm run clean && brunch build",
-    "prod": "npm run clean && brunch build --production",
     "clean": "rm -Rf public",
+    "build": "brunch build",
+    "prod": "brunch build --production",
     "test": "true"
   },
   "dependencies": {
