@@ -1,6 +1,6 @@
 # Cassandra Frances
 
-**Development in progress - http://cassfrances.netlify.com/**
+**Development in progress - https://cassfrances.netlify.com/**
 
 **Portfolio website** of Melbournian Young Adult fiction writer [Cassandra Frances](https://twitter.com/CassandraFrance).
 
