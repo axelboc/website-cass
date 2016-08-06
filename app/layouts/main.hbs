@@ -3,16 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width;inital-scale=1">
-  <title>Cassandra Frances - YA fiction writer</title>
-  <meta name="description" content="Website of Cassandra Frances, Young Adult fiction writer.">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
   <link rel="apple-touch-icon-precomposed" href="/favicon-196.png" />
   <link rel="stylesheet" href="/main.css">
 </head>
 <body class="Layout">
   <header class="Layout_header Header max">
-    <h1 class="Title">Cassandra Frances</h1>
+    {{#if isIndex}}
+      <h1 class="Title">Cassandra Frances</h1>
+    {{else}}
+      <p class="Title">Cassandra Frances</p>
+    {{/if}}
     <ul class="Nav">
-      <li class="Nav_item"><a class="Nav_link" href="/index.html">Home</a>
+      <li class="Nav_item"><a class="Nav_link" href="/">Home</a>
       <li class="Nav_item"><a class="Nav_link" href="/work.html">Work</a>
       <li class="Nav_item"><a class="Nav_link" href="/nyctophilia.html">Nyctophilia</a>
       <li class="Nav_item"><a class="Nav_link" href="/contact.html">Contact</a>
