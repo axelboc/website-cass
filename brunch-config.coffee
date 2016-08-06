@@ -9,3 +9,12 @@ module.exports = config:
         require('postcss-custom-properties'),
         require('cssnano')({ autoprefixer: ['> 2% in AU'] })
       ]
+    static:
+      processors: [
+        require('html-brunch-static')({
+          handlebars:
+            enableProcessor:
+              fileMatch: /\.hbs$/
+              fileTransform: (f) -> f.replace(/\.hbs$/, '.html')
+        })
+      ]
