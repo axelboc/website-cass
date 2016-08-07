@@ -140,6 +140,8 @@
   }
   
   &_portrait {
+    border: 5px solid #fff;
+    border-radius: 10px;
     max-width: 100px;
     margin-top: .5rem;
     
