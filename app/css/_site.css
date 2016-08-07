@@ -7,6 +7,7 @@
 
   --col-primary: rgb(175, 54, 54);
   --col-primary-80: rgba(175, 54, 54, 0.8);
+  --col-primary-60: rgba(175, 54, 54, 0.6);
 
   --col-secondary: rgb(32, 32, 48);
   --col-secondary-80: rgba(32, 32, 48, 0.8);
@@ -31,8 +32,8 @@ body {
   background-color: var(--col-bg);
   color: var(--col-secondary);
   font-family: var(--font-text);
-  font-size: 90%;
-    line-height: 1.4;
+  font-size: 85%;
+  line-height: 1.4;
   
   @media (min-width: 35em) {
     font-size: 100%;
@@ -72,7 +73,7 @@ abbr {
 
 .btn {
   padding: .5rem 2rem;
-  background: var(--col-primary-80);
+  background: var(--col-primary-60);
   border: none;
   border-radius: .5rem;
   color: #fff;
@@ -109,6 +110,14 @@ abbr {
   &_footer {
     width: 100%;
   }
+
+  &_header {
+    &--index {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+  }
   
   &_main {
     flex-grow: 1;
@@ -127,6 +136,7 @@ abbr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   
   @media (min-width: 50em) {
     flex-direction: row;
@@ -139,7 +149,7 @@ abbr {
   color: var(--col-primary);
   line-height: 1.2;
   font-family: var(--font-heading);
-  font-size: 250%;
+  font-size: 200%;
   font-style: italic;
   font-weight: normal;
   text-align: center;
@@ -158,9 +168,13 @@ abbr {
   font-size: 120%;
 
   &_link {
-    padding: .5em;
+    padding: .25em;
     color: var(--col-secondary-80);
     text-decoration: none;
+
+    @media (min-width: 25em) {
+      padding: .5em;
+    }
   }
   
   &_link:hover {
