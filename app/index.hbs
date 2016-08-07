@@ -3,10 +3,17 @@ title: Cassandra Frances - YA fiction writer
 description: Website of Cassandra Frances, Young Adult fiction writer.
 isIndex: true
 _options:
-  layout: app/layouts/main.hbs
+  layout: app/layouts/root.hbs
+  partials:
+    - app/partials/nav.hbs
+    - app/partials/footer.hbs
 ---
-<main class="Layout_main Layout_main--index">
-  <section class="Glance">
+<header class="Layout_header Layout_header--index">
+  <div class="Header max">
+    <h1 class="Title">Cassandra Frances</h1>
+    {{> nav}}
+  </div>
+  <div class="Glance">
     <div class="Intro max">
       <p class="Intro_text">Writer and professional pyjamas wearer. Weaving the gothic into fantasy in Young&nbsp;Adult and Children’s stories.</p>
       <a class="Intro_link btn btn--inverted" href="#about" data-scroll>about me</a>
@@ -18,7 +25,9 @@ _options:
         <li class="Highlights_item"><a class="Highlights_link btn btn--inverted" href="/work#published">Other work</a></li>
       </ul>
     </div>
-  </section>
+</header>
+<main class="Layout_main Layout_main--index">
+  </div>
   <section id="about" class="About max">
     <p class="About_foreword">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam consequatur nesciunt voluptatibus possimus, doloribus, quia illum harum esse, voluptatem ad omnis perspiciatis. Quam consequatur nesciunt voluptatibus possimus, doloribus, quia illum harum esse.</p>
     <div class="About_body">
@@ -44,3 +53,10 @@ _options:
     </div>
   </section>
 </main>
+{{> footer}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/7.0.2/js/smooth-scroll.min.js"></script>
+<script>
+  smoothScroll.init({
+    speed: 800
+  });
+</script>

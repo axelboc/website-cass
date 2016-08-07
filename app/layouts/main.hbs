@@ -1,39 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width;inital-scale=1">
-  <title>{{title}}</title>
-  <meta name="description" content="{{description}}">
-  <link rel="apple-touch-icon-precomposed" href="/favicon-196.png" />
-  <link rel="stylesheet" href="/main.css">
-</head>
-<body class="Layout">
-  <header class="Layout_header Header max">
-    {{#if isIndex}}
-      <h1 class="Title">Cassandra Frances</h1>
-    {{else}}
-      <p class="Title">Cassandra Frances</p>
-    {{/if}}
-    <ul class="Nav">
-      <li class="Nav_item"><a class="Nav_link" href="/">Home</a>
-      <li class="Nav_item"><a class="Nav_link" href="/work">Work</a>
-      <li class="Nav_item"><a class="Nav_link" href="/nyctophilia">Nyctophilia</a>
-      <li class="Nav_item"><a class="Nav_link" href="/contact">Contact</a>
-    </ul>
-  </header>
-  {{content}}
-  <footer class="Layout_footer Footer">
-    <ul class="Social">
-      <li class="Social_site"><a class="Social_link" href="https://storm-the-form-of-a-girl.tumblr.com/">Tumblr</a></li>
-      <li class="Social_site"><a class="Social_link" href="https://twitter.com/CassandraFrance">Twitter</a></li>
-    </ul>
-  </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/7.0.2/js/smooth-scroll.min.js"></script>
-  <script>
-    smoothScroll.init({
-      speed: 800
-    });
-  </script>
-</body>
-</html>
+---
+_options:
+  layout: app/layouts/root.hbs
+  partials:
+    - app/partials/nav.hbs
+    - app/partials/footer.hbs
+---
+<header class="Layout_header Header max">
+  <p class="Title">Cassandra Frances</p>
+  {{> nav}}
+</header>
+{{content}}
+{{> footer}}
