@@ -7,11 +7,17 @@
 
   --col-primary: rgb(175, 54, 54);
   --col-primary-80: rgba(175, 54, 54, 0.8);
-  --col-primary-60: rgba(175, 54, 54, 0.6);
 
   --col-secondary: rgb(32, 32, 48);
   --col-secondary-80: rgba(32, 32, 48, 0.8);
   --col-secondary-20: rgba(32, 32, 48, 0.2);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
 }
 
 
@@ -73,7 +79,7 @@ abbr {
 
 .btn {
   padding: .5rem 2rem;
-  background: var(--col-primary-60);
+  background: var(--col-primary-80);
   border: none;
   border-radius: .5rem;
   color: #fff;
@@ -113,9 +119,27 @@ abbr {
 
   &_header {
     &--index {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+      position: relative;
+      padding-bottom: 13rem;
+      background: url(images/banner-720x700.jpg) no-repeat center top -2rem / cover var(--col-secondary);
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 3rem;
+        background: linear-gradient(to top, #000, transparent);
+      }
+      
+      @media (min-width: 45em) {
+        background-image: url(images/banner-1245x830.jpg);
+      }
+      
+      @media (min-width: 77em) {
+        background-image: url(images/banner-1720x830.jpg);
+      }
     }
   }
   
