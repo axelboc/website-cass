@@ -1,3 +1,5 @@
+path = require 'path'
+
 module.exports = config:
   files:
     stylesheets: joinTo: 'main.css'
@@ -10,6 +12,7 @@ module.exports = config:
         require('cssnano')({ autoprefixer: ['> 2% in AU'] })
       ]
     static:
+      pathTransform: (f) -> path.relative 'pages', f
       processors: [
         require('html-brunch-static')({
           handlebars:
