@@ -57,7 +57,7 @@ a:hover {
 
 a:focus,
 button:focus {
-  outline: 1px dashed #333;
+  outline: 1px dashed currentColor;
 }
 
 ::selection {
@@ -89,10 +89,6 @@ abbr {
 
 .btn:hover {
   text-decoration: underline;
-}
-
-.btn--inverted:focus {
-  outline-color: #fff;
 }
 
 .clearfix:before,
