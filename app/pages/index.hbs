@@ -8,22 +8,19 @@ _options:
     - app/partials/nav.hbs
     - app/partials/footer.hbs
 ---
-<header class="Layout_header Layout_header--index">
-  <div class="Header max">
-    <h1 class="Title">Cassandra Frances</h1>
+<header class="Banner">
+  <div class="Header Header--index max">
+    <p class="Header_title">CF</p>
     {{> nav}}
   </div>
-  <p class="Intro max">Writer and professional pyjamas wearer. Weaving the gothic into fantasy in Young&nbsp;Adult and Children’s stories.</p>
+  <div class="Banner_inner">
+    <h1 class="Banner_title">Cassandra Frances</h1>
+    <p class="Banner_intro max">Writer and professional pyjamas wearer. Weaving the gothic into fantasy in Young&nbsp;Adult and Children’s stories.</p>
+  </div>
 </header>
 <main class="Layout_main Layout_main--index">
-  <div class="Highlights max">
-    <ul class="Highlights_list">
-      <li class="Highlights_item"><a class="Highlights_link btn btn--inverted" href="/work#cloud-collectors">Cloud Collectors</a></li>
-      <li class="Highlights_item"><a class="Highlights_link btn btn--inverted" href="/work#house-skin">The House of Skin and&nbsp;Ash</a></li>
-      <li class="Highlights_item"><a class="Highlights_link btn btn--inverted" href="/work#published">Other work</a></li>
-    </ul>
-  </div>
-  <section id="about" class="About max">
+  <h1 class="Heading">About me</h1>
+  <div class="About max">
     <div class="About_body">
       <p class="About_foreword">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam consequatur nesciunt voluptatibus possimus, doloribus, quia illum harum esse, voluptatem ad omnis perspiciatis. Quam consequatur nesciunt voluptatibus possimus, doloribus, quia illum harum esse.</p>
       <p>I am an emerging writer based in Melbourne, Australia. I’ve always been a storyteller of some sort; I started out in theatre as a kid (my greatest role was a weasel in Wind in the Willows), studied Film and Television at RMIT University and worked for a small animation company making some weird little movies.</p>
@@ -46,6 +43,7 @@ _options:
         </div>
       </div>
     </div>
+  </div>
   </section>
 </main>
 {{> footer}}

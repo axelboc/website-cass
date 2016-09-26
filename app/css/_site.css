@@ -1,12 +1,13 @@
 
 :root {
-  --font-text: Verdana,Geneva,sans-serif;
-  --font-heading: Georgia,Times,Times New Roman,serif;
+  --font-text: 'Verdana', 'Geneva', sans-serif;
+  --font-heading: 'Georgia', 'Times', 'Times New Roman', serif;
   
   --col-bg: #f1f1f1;
 
   --col-primary: rgb(175, 54, 54);
   --col-primary-80: rgba(175, 54, 54, 0.8);
+  --col-primary-20: rgba(175, 54, 54, 0.2);
 
   --col-secondary: rgb(32, 32, 48);
   --col-secondary-80: rgba(32, 32, 48, 0.8);
@@ -110,39 +111,8 @@ abbr {
 .Layout {
   display: flex;
   flex-direction: column;
-  
-  &_header,
-  &_main,
-  &_footer {
-    width: 100%;
-  }
+  align-items: stretch;
 
-  &_header {
-    &--index {
-      position: relative;
-      padding-bottom: 13rem;
-      background: url(images/banner-720x700.jpg) no-repeat center top -2rem / cover var(--col-secondary);
-
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 3rem;
-        background: linear-gradient(to top, #000, transparent);
-      }
-      
-      @media (min-width: 45em) {
-        background-image: url(images/banner-1245x830.jpg);
-      }
-      
-      @media (min-width: 77em) {
-        background-image: url(images/banner-1720x830.jpg);
-      }
-    }
-  }
-  
   &_main {
     flex-grow: 1;
     padding-bottom: 2rem;
@@ -161,48 +131,60 @@ abbr {
   flex-direction: column;
   align-items: center;
   width: 100%;
+
+  &_title {
+    margin: .5em 0;
+    color: var(--col-primary);
+    line-height: 1.2;
+    font-family: var(--font-heading);
+    font-size: 200%;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  &--index {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+  }
   
   @media (min-width: 50em) {
     flex-direction: row;
-  }
-}
+    justify-content: space-between;
 
-.Title {
-  flex-grow: 1;
-  margin: .5em 0;
-  color: var(--col-primary);
-  line-height: 1.2;
-  font-family: var(--font-heading);
-  font-size: 200%;
-  font-style: italic;
-  font-weight: normal;
-  text-align: center;
-  
-  @media (min-width: 50em) {
-    text-align: left;
+    &_title {
+      text-align: left;
+    }
   }
 }
 
 .Nav {
   display: flex;
   align-items: center;
-  margin: .5em 0;
+  margin: .5em -.25em;
   padding: 0;
   list-style: none;
   font-size: 120%;
 
   &_link {
     padding: .25em;
-    color: var(--col-secondary-80);
+    color: inherit;
     text-decoration: none;
-
-    @media (min-width: 25em) {
-      padding: .5em;
-    }
   }
   
   &_link:hover {
     text-decoration: underline;
+  }
+
+  @media (min-width: 25em) {
+    margin: .5em -.5em;
+
+    &_link {
+      padding: .5em;
+    }
   }
 }
 
