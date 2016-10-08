@@ -19,5 +19,12 @@ module.exports = config:
             enableProcessor:
               fileMatch: /\.hbs$/
               fileTransform: ((f) -> f.replace(/\.hbs$/, '.html'))
+            helpers:
+              debug: (val) ->
+                console.log("==== CONTEXT ====")
+                console.log(this)
+                if (val)
+                  console.log("===== VALUE =====")
+                  console.log(val)
         })
       ]
