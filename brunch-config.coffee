@@ -18,7 +18,7 @@ module.exports = config:
           defaultContext:
             navItems: [
               { page: 'index', path: '/', label: 'About' }
-              { page: 'works', path: '/works.html', label: 'Works' }
+              { page: 'work', path: '/work.html', label: 'Work' }
               { page: 'nyctophilia', path: '/nyctophilia.html', label: 'Nyctophilia' }
             ]
           handlebars:
