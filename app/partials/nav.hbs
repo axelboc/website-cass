@@ -1,5 +1,5 @@
-<ul class="Nav">
-  <li class="Nav_item"><a class="Nav_link" href="/">About</a>
-  <li class="Nav_item"><a class="Nav_link" href="/work.html">Work</a>
-  <li class="Nav_item"><a class="Nav_link" href="/nyctophilia.html">Nyctophilia</a>
+<ul class="Nav{{#if isIndex}} Nav--inverted{{/if}}">
+  {{#each navItems}}
+  <li class="Nav_item{{currentNavItem ../name page}}"><a class="Nav_link" href="{{path}}">{{label}}</a></li>
+  {{/each}}
 </ul>

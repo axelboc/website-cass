@@ -12,6 +12,8 @@
   --col-secondary: rgb(32, 32, 48);
   --col-secondary-80: rgba(32, 32, 48, 0.8);
   --col-secondary-20: rgba(32, 32, 48, 0.2);
+
+  --col-ternary: #e2c5bc;
 }
 
 @keyframes slideIn {
@@ -163,7 +165,12 @@ abbr {
   margin: .5em -.25em;
   padding: 0;
   list-style: none;
+  color: var(--col-secondary-80);
   font-size: 120%;
+
+  &_item--current {
+    color: var(--col-secondary);
+  }
 
   &_link {
     padding: .25em;
@@ -173,6 +180,14 @@ abbr {
   
   &_link:hover {
     text-decoration: underline;
+  }
+
+  &--inverted {
+    color: var(--col-ternary);
+
+    .Nav_item--current {
+      color: white;
+    }
   }
 
   @media (min-width: 25em) {

@@ -15,11 +15,19 @@ module.exports = config:
       pathTransform: (f) -> path.relative 'pages', f
       processors: [
         require('html-brunch-static')({
+          defaultContext:
+            navItems: [
+              { page: 'index', path: '/', label: 'About' }
+              { page: 'work', path: '/work.html', label: 'Work' }
+              { page: 'nyctophilia', path: '/nyctophilia.html', label: 'Nyctophilia' }
+            ]
           handlebars:
             enableProcessor:
               fileMatch: /\.hbs$/
               fileTransform: ((f) -> f.replace(/\.hbs$/, '.html'))
             helpers:
+              currentNavItem: (current, page) ->
+                if current == page then ' Nav_item--current' else ''
               debug: (val) ->
                 console.log("==== CONTEXT ====")
                 console.log(this)
