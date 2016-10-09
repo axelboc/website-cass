@@ -141,6 +141,17 @@ abbr {
     text-align: center;
   }
 
+  &_link {
+    color: inherit;
+    text-decoration: none;
+    transition: color .8s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: var(--col-secondary);
+    }
+  }
+
   &--index {
     position: absolute;
     top: 0;
