@@ -4,6 +4,7 @@
   --font-heading: 'Georgia', 'Times', 'Times New Roman', serif;
   
   --col-bg: #f1f1f1;
+  --col-shadow: #a6a6ab;
 
   --col-primary: rgb(175, 54, 54);
   --col-primary-80: rgba(175, 54, 54, 0.8);
@@ -42,7 +43,7 @@ body {
   color: var(--col-secondary);
   font-family: var(--font-text);
   font-size: 85%;
-  line-height: 1.4;
+  line-height: 1.6;
   
   @media (min-width: 35em) {
     font-size: 100%;
