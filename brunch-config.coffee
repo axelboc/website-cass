@@ -18,8 +18,8 @@ module.exports = config:
           defaultContext:
             navItems: [
               { page: 'index', path: '/', label: 'About' }
-              { page: 'work', path: '/work.html', label: 'Work' }
-              { page: 'nyctophilia', path: '/nyctophilia.html', label: 'Nyctophilia' }
+              { page: 'work', path: '/work', label: 'Work' }
+              { page: 'nyctophilia', path: '/nyctophilia', label: 'Nyctophilia' }
             ]
           handlebars:
             enableProcessor:
