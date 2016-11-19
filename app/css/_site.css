@@ -133,13 +133,11 @@ abbr {
   width: 100%;
 
   &_title {
-    margin: .5em 0;
+    margin: .5em 0 .25em;
     color: var(--col-primary);
     line-height: 1.2;
-    font-family: var(--font-heading);
-    font-size: 200%;
-    font-style: italic;
-    font-weight: normal;
+    font-family: var(--font-logo);
+    font-size: 250%;
     text-align: center;
   }
 
@@ -160,6 +158,10 @@ abbr {
     left: 0;
     right: 0;
     color: #fff;
+
+    .Header_title {
+      opacity: .6;
+    }
   }
   
   @media (min-width: 50em) {
