@@ -16,10 +16,13 @@
   &_title {
     margin: 3rem 0;
     color: var(--col-primary);
-    font-family: var(--font-heading);
-    font-size: 500%;
-    font-style: italic;
+    font-family: var(--font-logo);
+
+    font-size: 700%;
     font-weight: normal;
+
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
     text-align: center;
     animation: slideIn .8s .2s backwards;
   }
