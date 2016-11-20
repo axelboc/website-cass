@@ -5,9 +5,11 @@ _options:
     - app/partials/nav.hbs
     - app/partials/footer.hbs
 ---
-<header class="Layout_header Header max">
-  <p class="Title">Cassandra Frances</p>
-  {{> nav}}
+<header class="Layout_header">
+  <div class="Header max">
+    <p class="Header_title"><a class="Header_link" href="/">Cassandra Frances</a></p>
+    {{> nav}}
+  </div>
 </header>
 {{content}}
 {{> footer}}

@@ -4,10 +4,9 @@
 .Books {
   display: flex;
   flex-wrap: wrap;
-  margin: 2rem -1rem 1rem;
+  margin: 3rem -1rem 1rem;
   padding: 0;
   list-style: none;
-  font-size: 90%;
 }
 
 .Book {
@@ -16,19 +15,22 @@
   padding: 0 1rem;
   margin-bottom: 2rem;
   
+  &_inner {
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: .325rem .5rem 0 0 var(--col-shadow);
+  }
+  
+  &_review {
+    padding: 0 1.5rem 0 1.25rem;
+    overflow: hidden;
+  }
+  
   &:not(&--full) {
     @media (min-width: 58em) {
       flex-basis: 50%;
     }
-  }
-  
-  &_inner {
-    background-color: #fff;
-  }
-  
-  &_review {
-    padding: 0 1rem;
-    overflow: hidden;
   }
 }
 
@@ -36,15 +38,15 @@
   float: left;
   display: block;
   width: 140px;
-
-  @media (min-width: 58em) {
-    width: 180px;
-  }
   
   &_img {
     display: block;
     max-width: 100%;
     height: auto;
+  }
+
+  @media (min-width: 58em) {
+    width: 180px;
   }
 }
   

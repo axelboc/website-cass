@@ -1,17 +1,28 @@
 
 :root {
-  --font-text: Verdana,Geneva,sans-serif;
-  --font-heading: Georgia,Times,Times New Roman,serif;
+  --font-text: 'Roboto', 'Segoe UI', 'Optima', 'Arial', sans-serif;
+  --font-heading: 'Georgia', 'Times', 'Times New Roman', serif;
+  --font-logo: 'Princess Sofia', 'Garamond', serif;
   
   --col-bg: #f1f1f1;
+  --col-shadow: #929297;
 
   --col-primary: rgb(175, 54, 54);
   --col-primary-80: rgba(175, 54, 54, 0.8);
-  --col-primary-60: rgba(175, 54, 54, 0.6);
+  --col-primary-20: rgba(175, 54, 54, 0.2);
 
   --col-secondary: rgb(32, 32, 48);
   --col-secondary-80: rgba(32, 32, 48, 0.8);
   --col-secondary-20: rgba(32, 32, 48, 0.2);
+
+  --col-ternary: #e2c5bc;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
 }
 
 
@@ -33,7 +44,7 @@ body {
   color: var(--col-secondary);
   font-family: var(--font-text);
   font-size: 85%;
-  line-height: 1.4;
+  line-height: 1.6;
   
   @media (min-width: 35em) {
     font-size: 100%;
@@ -50,7 +61,7 @@ a:hover {
 
 a:focus,
 button:focus {
-  outline: 1px dashed #333;
+  outline: 1px dashed currentColor;
 }
 
 ::selection {
@@ -73,7 +84,7 @@ abbr {
 
 .btn {
   padding: .5rem 2rem;
-  background: var(--col-primary-60);
+  background: var(--col-primary-80);
   border: none;
   border-radius: .5rem;
   color: #fff;
@@ -82,10 +93,6 @@ abbr {
 
 .btn:hover {
   text-decoration: underline;
-}
-
-.btn--inverted:focus {
-  outline-color: #fff;
 }
 
 .clearfix:before,
@@ -104,21 +111,12 @@ abbr {
 .Layout {
   display: flex;
   flex-direction: column;
-  
-  &_header,
-  &_main,
-  &_footer {
-    width: 100%;
-  }
+  align-items: stretch;
 
   &_header {
-    &--index {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
+    border-bottom: 8px solid var(--col-secondary);
   }
-  
+
   &_main {
     flex-grow: 1;
     padding-bottom: 2rem;
@@ -137,48 +135,89 @@ abbr {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding: .5rem 1rem;
+
+  &_title {
+    margin: .5em 0;
+    color: var(--col-primary);
+    font-family: var(--font-logo);
+    font-size: 250%;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  &_link {
+    color: inherit;
+    text-decoration: none;
+    transition: color .8s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: var(--col-secondary);
+    }
+  }
+
+  &--index {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 1rem;
+    color: #fff;
+
+    .Header_title {
+      margin-bottom: .25em;
+      opacity: .6;
+    }
+  }
   
   @media (min-width: 50em) {
     flex-direction: row;
-  }
-}
+    justify-content: space-between;
 
-.Title {
-  flex-grow: 1;
-  margin: .5em 0;
-  color: var(--col-primary);
-  line-height: 1.2;
-  font-family: var(--font-heading);
-  font-size: 200%;
-  font-style: italic;
-  font-weight: normal;
-  text-align: center;
-  
-  @media (min-width: 50em) {
-    text-align: left;
+    &_title {
+      text-align: left;
+    }
   }
 }
 
 .Nav {
   display: flex;
   align-items: center;
-  margin: .5em 0;
+  margin: .5em -.25em;
   padding: 0;
   list-style: none;
+  color: var(--col-secondary-80);
   font-size: 120%;
+
+  &_item--current {
+    color: var(--col-secondary);
+  }
 
   &_link {
     padding: .25em;
-    color: var(--col-secondary-80);
+    color: inherit;
     text-decoration: none;
-
-    @media (min-width: 25em) {
-      padding: .5em;
-    }
   }
   
   &_link:hover {
     text-decoration: underline;
+  }
+
+  &--inverted {
+    color: var(--col-ternary);
+
+    .Nav_item--current {
+      color: white;
+    }
+  }
+
+  @media (min-width: 25em) {
+    margin: .5em -.5em;
+
+    &_link {
+      padding: .5em;
+    }
   }
 }
 
@@ -186,12 +225,14 @@ abbr {
 /* === MAIN === */
 
 .Heading {
-  margin: 0 0 2rem;
+  margin: 0 0 2.5rem;
   padding: 2rem;
   background-color: var(--col-primary);
+  box-shadow: 0 .5rem 0 0 var(--col-shadow);
   color: #fff;
+  font-family: var(--font-heading);
   font-size: 200%;
-  font-weight: normal;
+  font-weight: 100;
   text-align: center;
   
   &--with-sub {
@@ -200,7 +241,12 @@ abbr {
   
   &_sub {
     display: block;
+    margin-bottom: .4em;
     font-size: 50%;
+  }
+
+  @media (min-width: 45em) {
+    font-size: 275%;
   }
 }
 
@@ -219,12 +265,15 @@ abbr {
 }
 
 .Card {
+  font-size: 90%;
+  line-height: 1.4;
+
   &_heading {
     font-family: var(--font-heading);
-    font-size: 130%;
+    font-size: 140%;
     font-style: italic;
     font-weight: normal;
-    margin: 1rem 0 0;
+    margin: 1.25rem 0 .25rem;
   }
   
   &_sub {
@@ -233,11 +282,9 @@ abbr {
     font-size: 90%;
   }
   
-  &_text {
-    font-size: 90%;
-  
-    @media (min-width: 35em) {
-      font-size: 100%;
+  @media (max-width: 34.99em) {
+    &_text {
+      font-size: 90%;
     }
   }
 }

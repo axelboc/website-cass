@@ -1,93 +1,70 @@
 
-/* === AT A GLANCE (INTRO & HIGHLIGHTS) === */
+/* === BANNER === */
 
-.Glance {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  flex: 1;
-  background: url(images/banner-720x700.jpg) no-repeat center -3rem / cover var(--col-secondary);
-  
-  @media (min-width: 45em) {
-    background-image: url(images/banner-1245x830.jpg);
-  }
-  
-  @media (min-width: 77em) {
-    background-image: url(images/banner-1720x830.jpg);
-  }
-}
+.Banner {
+  height: 100vh;
+  min-height: 35rem;
+  background-color: var(--col-secondary);
 
-.Intro {
-  color: #fff;
-  text-align: center;
-  
-  &_text {
-    max-width: 25rem;
-    margin-bottom: 2rem;
-    font-size: 120%;
-    
-    @media (min-width: 35em) {
-      max-width: 29rem;
-    }
-    
-    @media (min-width: 45em) {
-      max-width: 36rem;
-      font-size: 150%;
-    }
-  }
-}
-
-.Highlights {
-  width: 100%;
-  font-family: var(--font-heading);
-  font-size: 140%;
-  font-style: italic;
-  
-  &_list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 -.5rem;
-    padding: 0;
-    list-style: none;
-    
-    @media (min-width: 45em) {
-      flex-wrap: nowrap;
-      padding-bottom: 1rem;
-    }
-  }
-  
-  &_item {
-    flex: 1 1 0;
-    margin: 0 .5rem;
-    
-    &:last-child {
-      flex-basis: 100%;
-      margin-top: 1rem;
-      
-      @media (min-width: 45em) {
-        flex-basis: 0;
-        margin-top: 0;
-      }
-    }
-  }
-  
-  &_link {
+  &_inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: .5rem 1rem;
+    height: 100%;
+    padding-top: 3rem;
+  }
+
+  &_title {
+    margin: 3.5rem .5rem 1.5rem;
+    color: var(--col-primary);
+    font-family: var(--font-logo);
+    font-size: 350%;
+    font-weight: normal;
+    line-height: 1.2;
     text-align: center;
+    animation: slideIn .8s .2s backwards;
   }
 
-  &_item:not(:last-child) .Highlights_link {
-    min-height: 5rem;
+  &_intro {
+    max-width: 25rem;
+    margin-bottom: 3rem;
+    color: rgba(255, 255, 255, .8);
+    font-size: 120%;
+    font-weight: 300;
+    text-align: center;
+    animation: slideIn .8s .3s backwards;
   }
+    
+  @media (min-width: 35em) {
+    &_title {
+      font-size: 400%;
+    }
 
-  @media (min-width: 45rem) {
-    &_item:last-child .Highlights_link {
-      min-height: 5rem;
+    &_intro {
+      max-width: 29rem;
+    }
+  }
+  
+  @media (min-width: 45em) {
+    &_title {
+      font-size: 500%;
+    }
+  }
+  
+  @media (min-width: 55em) {
+    &_title {
+      font-size: 600%;
+    }
+
+    &_intro {
+      max-width: 34rem;
+      font-size: 150%;
+    }
+  }
+  
+  @media (min-width: 65em) {
+    &_title {
+      font-size: 700%;
     }
   }
 }
@@ -98,13 +75,8 @@
 .About {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1.5rem;
-  
-  &_foreword {
-    flex: 1 1 100%;
-    margin: 1.5rem 0 2rem;
-    font-size: 120%;
-  }
+  margin-bottom: 1rem;
+  padding-top: 1.5rem;
   
   &_body {
     margin: 0 0 2rem;
@@ -115,62 +87,67 @@
       flex: 2 1 0;
       margin: 0 2rem 0 0;
       padding: 0 2rem 0 0;
-      border-right: 1px solid #bbb;
       border-bottom: 0;
-    }
-    
-    & > p:first-child {
-      margin-top: .5rem;
-    }
-    
-    & > p:last-child {
-      margin-bottom: .5rem;
     }
   }
   
   &_resume {
     flex: 1 1 0;
   }
+  
+  &_foreword {
+    flex: 1 1 100%;
+    margin-top: 0;
+    font-size: 130%;
+  }
 }
 
 .Resume {
-  font-size: 90%;
-  
-  &_degree {
-    margin-top: 2rem;
-    
-    &:last-child > p:last-child {
-      margin-bottom: .5rem;
-    }
-  }
-  
   &_portrait {
-    border: 5px solid #fff;
-    border-radius: 10px;
+    margin-top: .25rem;
     max-width: 100px;
     height: auto;
-    margin-top: .5rem;
+  }
+  
+  &_degree {
+    margin: 0 0 1.5rem;
     
-    @media (min-width: 32rem) {
-      max-width: none;
+    &_title {
+      margin-top: .5rem;
+    }
+
+    &_uni,
+    &_text {
+      margin-top: 0;
     }
   }
   
   @media (max-width: 54.99em) {
-
     &_portrait {
       float: left;
+      margin-top: .75rem;
       margin-right: 1rem;
     }
     
     &_academia {
       overflow: hidden;
     }
-
-    &_degree:first-child {
-      margin-top: -.5rem;
+  }
+    
+  @media (min-width: 32em) {
+    &_portrait {
+      max-width: none;
     }
-
+  }
+  
+  @media (min-width: 55em) {
+    &_portrait {
+      width: 100%;
+    }
+    
+    &_degree {
+      margin: 1rem 0 1.75rem;
+    }
   }
 }
 
