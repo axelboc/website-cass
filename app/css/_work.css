@@ -44,7 +44,7 @@
   }
 
   &::after {
-    box-shadow: .325rem .375rem 0px 0px var(--col-shadow);
+    box-shadow: .325rem .325rem 0 0 var(--col-shadow);
     z-index: -1;
   }
 
@@ -52,7 +52,7 @@
     padding: 2rem 6rem;
     background-color: var(--col-bg);
     border-radius: 5rem;
-    box-shadow: .5rem .625rem 0px 0px var(--col-shadow);
+    box-shadow: .325rem .5rem 0 0 var(--col-shadow);
   }
   
   &_heading {
