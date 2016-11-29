@@ -13,6 +13,7 @@
 
   --col-secondary: rgb(32, 32, 48);
   --col-secondary-80: rgba(32, 32, 48, 0.8);
+  --col-secondary-50: rgba(32, 32, 48, 0.5);
   --col-secondary-20: rgba(32, 32, 48, 0.2);
 
   --col-ternary: #e2c5bc;
@@ -112,10 +113,6 @@ abbr {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-
-  &_header {
-    border-bottom: 8px solid var(--col-secondary);
-  }
 
   &_main {
     flex-grow: 1;
@@ -227,8 +224,7 @@ abbr {
 .Heading {
   margin: 0 0 2.5rem;
   padding: 2rem;
-  background-color: var(--col-primary);
-  box-shadow: 0 .5rem 0 0 var(--col-shadow);
+  background-color: var(--col-secondary);
   color: #fff;
   font-family: var(--font-heading);
   font-size: 200%;
