@@ -167,7 +167,7 @@ abbr {
 
     .Header_title {
       margin-bottom: .25em;
-      opacity: .6;
+      text-shadow: 0 0 4px var(--col-secondary);
     }
   }
   
