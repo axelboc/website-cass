@@ -36,5 +36,5 @@ if (module.hot) {
     /*
     () => phenomicClient({ metadata, routes, store })
     */
-  )
+  );
 }
