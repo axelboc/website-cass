@@ -58,6 +58,7 @@
     "react-helmet": "^3.0.0",
     "react-hot-loader": "^3.0.0-beta",
     "react-redux": "^4.0.0",
+    "react-render-html": "^0.1.6",
     "react-router": "^2.3.0",
     "react-svg-inline": "^1.1.0",
     "react-topbar-progress-indicator": "^1.0.0",

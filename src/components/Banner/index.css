@@ -1,0 +1,88 @@
+.banner {
+  height: 100vh;
+  min-height: 35rem;
+  background-attachment: fixed;
+  background-color: var(--colSecondary);
+  background-image: url(/assets/images/banner-lake.jpg);
+  background-position: center 20%;
+  background-size: cover;
+
+  /* create stacking context for overlay */
+  position: relative;
+  z-index: 0;
+}
+
+/* dark overlay */
+.banner::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: -1;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-top: 3rem;
+}
+
+.title {
+  margin: 3.5rem .5rem 1.5rem;
+  color: var(--colPrimary);
+  font-family: var(--fontLogo);
+  font-size: 350%;
+  font-weight: normal;
+  line-height: 1.2;
+  text-align: center;
+  animation: slideIn .8s .2s backwards;
+}
+
+.intro {
+  max-width: 25rem;
+  margin-bottom: 3rem;
+  color: rgba(255, 255, 255, .8);
+  font-size: 120%;
+  font-weight: 300;
+  text-align: center;
+  animation: slideIn .8s .3s backwards;
+}
+  
+@media (min-width: 35em) {
+  .title {
+    font-size: 400%;
+  }
+
+  .intro {
+    max-width: 29rem;
+  }
+}
+
+@media (min-width: 45em) {
+  .title {
+    font-size: 500%;
+  }
+}
+
+@media (min-width: 55em) {
+  .title {
+    font-size: 600%;
+  }
+
+  .intro {
+    max-width: 34rem;
+    font-size: 150%;
+  }
+}
+
+@media (min-width: 65em) {
+  .title {
+    font-size: 700%;
+  }
+}
+

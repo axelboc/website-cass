@@ -1,6 +1,6 @@
 import React, { PropTypes } from "react";
 
-// import "./index.global.css";
+import "./index.global.css";
 
 import DefaultHeadMeta from "./components/DefaultHeadMeta";
 

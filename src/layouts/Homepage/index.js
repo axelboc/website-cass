@@ -2,18 +2,20 @@ import React, { PropTypes } from "react";
 import { BodyContainer } from "phenomic";
 
 import Root from "../../components/Root";
+import Banner from "../../components/Banner";
 
-const Page = (props) => {
+const Homepage = (props) => {
   const { isLoading, head, body } = props;
 
   return !isLoading && (
     <Root head={head}>
-      <BodyContainer>{ body }</BodyContainer>
+      <Banner intro={head.intro} />
+      <BodyContainer>{body}</BodyContainer>
     </Root>
   );
 };
 
-Page.propTypes = {
+Homepage.propTypes = {
   children: PropTypes.node,
   isLoading: PropTypes.bool,
   __filename: PropTypes.string,
@@ -24,8 +26,8 @@ Page.propTypes = {
   footer: PropTypes.element,
 };
 
-Page.contextTypes = {
+Homepage.contextTypes = {
   metadata: PropTypes.object.isRequired,
 };
 
-export default Page;
+export default Homepage;

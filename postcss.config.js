@@ -5,15 +5,19 @@ module.exports = (config) => [
     features: {
       customProperties: {
         variables: {
-          maxWidth: "60rem",
-          colorPrimaryDark: "#107491",
-          colorPrimary: "#007acc",
-          colorSecondaryDark: "#22846C",
-          colorSecondary: "#46BE77",
-          colorNeutralDark: "#111",
-          colorNeutral: "#8C8D91",
-          colorNeutralLight: "#FBFCFC",
-          colorText: "#555",
+          fontText: "'Roboto', 'Segoe UI', 'Optima', 'Arial', sans-serif",
+          fontHeading: "'Georgia', 'Times', 'Times New Roman', serif",
+          fontLogo: "'Princess Sofia', 'Garamond', serif",
+          colBg: "#f1f1f1",
+          colShadow: "#929297",
+          colPrimary: "rgb(175, 54, 54)",
+          colPrimary80: "rgba(175, 54, 54, 0.8)",
+          colPrimary20: "rgba(175, 54, 54, 0.2)",
+          colSecondary: "rgb(32, 32, 48)",
+          colSecondary80: "rgba(32, 32, 48, 0.8)",
+          colSecondary50: "rgba(32, 32, 48, 0.5)",
+          colSecondary20: "rgba(32, 32, 48, 0.2)",
+          colTernary: "#e2c5bc"
         },
       },
     },

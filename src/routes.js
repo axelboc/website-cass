@@ -4,12 +4,14 @@ import { PageContainer as PhenomicPageContainer } from "phenomic";
 
 import AppContainer from "./AppContainer";
 import Page from "./layouts/Page";
+import Homepage from "./layouts/Homepage";
 
 const PageContainer = (props) => (
   <PhenomicPageContainer
     { ...props }
     layouts={{
-      Page
+      Page,
+      Homepage
     }}
   />
 );
