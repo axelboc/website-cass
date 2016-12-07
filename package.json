@@ -65,6 +65,7 @@
     "redux": "^3.0.0",
     "style-loader": "^0.13.0",
     "stylelint": "^7.2.0",
+    "stylelint-config-css-modules": "^0.1.0",
     "warning": "^3.0.0",
     "webpack": "^1.11.0",
     "whatwg-fetch": "^0.11.0"
@@ -143,6 +144,9 @@
     }
   },
   "stylelint": {
-    "extends": "./node_modules/phenomic/lib/stylelint-config-recommended/index.js"
+    "extends": [
+      "./node_modules/phenomic/lib/stylelint-config-recommended/index.js",
+      "stylelint-config-css-modules"
+    ]
   }
 }

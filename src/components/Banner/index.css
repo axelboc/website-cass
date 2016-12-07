@@ -44,6 +44,7 @@
 }
 
 .intro {
+  composes: max from "../shared.css";
   max-width: 25rem;
   margin-bottom: 3rem;
   color: rgba(255, 255, 255, .8);

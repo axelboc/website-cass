@@ -1,0 +1,99 @@
+.navBar {
+  composes: max from "../shared.css";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: .5rem 1rem;
+}
+
+.title {
+  margin: .5em 0;
+  color: var(--colPrimary);
+  font-family: var(--fontLogo);
+  font-size: 250%;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.titleLink {
+  color: inherit;
+  text-decoration: none;
+  transition: color .8s ease-in-out;
+}
+
+.titleLink:hover,
+.titleLink:focus {
+  color: var(--colSecondary);
+}
+
+.navBarIndex {
+  composes: navBar;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 1rem;
+  color: #fff;
+}
+
+.navBarIndex .title {
+  margin-bottom: .25em;
+  text-shadow: 0 0 3px var(--colSecondary);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin: .5em -.25em;
+  padding: 0;
+  list-style: none;
+  color: var(--colSecondary80);
+  font-size: 120%;
+}
+
+.navItem {}
+.navItemCurrent {
+  composes: navItem;
+  color: var(--colSecondary);
+}
+
+.navLink {
+  padding: .25em;
+  color: inherit;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.navInverted {
+  composes: nav;
+  color: var(--colTernary);
+}
+
+.navInverted .navItemCurrent {
+  color: white;
+}
+
+@media (min-width: 25em) {
+  .nav {
+    margin: .5em -.5em;
+  }
+
+  .navLink {
+    padding: .5em;
+  }
+}
+  
+@media (min-width: 50em) {
+  .navBar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .title {
+    text-align: left;
+  }
+}

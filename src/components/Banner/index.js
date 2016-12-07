@@ -1,22 +1,20 @@
 import React, { PropTypes } from "react";
 import renderHTML from "react-render-html";
-
-import Max from "../Max";
+import NavBar from "../NavBar";
 import styles from "./index.css";
 
-const Banner = ({ intro }, { metadata: { site } }) => (
+const Banner = ({ __filename, intro }, { metadata: { site } }) => (
   <header className={styles.banner}>
-    {/* header */}
+    <NavBar __filename={__filename} isIndex />
     <div className={styles.inner}>
       <h1 className={styles.title}>{site.title}</h1>
-      <Max>
-        <p className={styles.intro}>{renderHTML(intro)}</p>
-      </Max>
+      <p className={styles.intro}>{renderHTML(intro)}</p>
     </div>
   </header>
 );
 
 Banner.propTypes = {
+  __filename: PropTypes.string,
   intro: PropTypes.string.isRequired
 };
 

@@ -1,13 +1,14 @@
 import React, { PropTypes } from "react";
 import { BodyContainer } from "phenomic";
-
 import Root from "../../components/Root";
+import NavBar from "../../components/NavBar";
 
 const Page = (props) => {
-  const { isLoading, head, body } = props;
-
+  const { isLoading, head, body, __filename } = props;
+  
   return !isLoading && (
     <Root head={head}>
+      <NavBar __filename={__filename} />
       <BodyContainer>{ body }</BodyContainer>
     </Root>
   );

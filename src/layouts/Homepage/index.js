@@ -1,15 +1,14 @@
 import React, { PropTypes } from "react";
 import { BodyContainer } from "phenomic";
-
 import Root from "../../components/Root";
 import Banner from "../../components/Banner";
 
 const Homepage = (props) => {
-  const { isLoading, head, body } = props;
-
+  const { isLoading, head, body, __filename } = props;
+  
   return !isLoading && (
     <Root head={head}>
-      <Banner intro={head.intro} />
+      <Banner __filename={__filename} intro={head.intro} />
       <BodyContainer>{body}</BodyContainer>
     </Root>
   );
