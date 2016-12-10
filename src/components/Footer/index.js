@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "phenomic";
 import styles from "./index.css";
 
 const Footer = () => (
@@ -11,7 +12,7 @@ const Footer = () => (
         <a className={styles.socialLink} href="https://twitter.com/CassandraFrance">Twitter</a>
       </li>
       <li className={styles.socialSite}>
-        <a className={styles.socialLink} href="/contact">Contact</a>
+        <Link className={styles.socialLink} to="/contact">Contact</Link>
       </li>
     </ul>
   </footer>

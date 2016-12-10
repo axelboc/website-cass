@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import { Link } from "phenomic";
 import styles from './index.css';
 
 const NavBar = ({ __filename, isIndex }, { metadata: { site } }) => (
@@ -6,13 +7,13 @@ const NavBar = ({ __filename, isIndex }, { metadata: { site } }) => (
     <p className={styles.title}>
       { isIndex
         ? site.initials
-        : (<a className={styles.titleLink} href="/">{site.title}</a>)
+        : (<Link className={styles.titleLink} to="/">{site.title}</Link>)
       }
     </p>
     <ul className={isIndex ? styles.navInverted : styles.nav}>
       {site.nav.map(item => (
         <li key={item.filename} className={item.filename === __filename ? styles.navItemCurrent : styles.navItem}>
-          <a className={styles.navLink} href={item.path}>{item.label}</a>
+          <Link className={styles.navLink} to={item.path}>{item.label}</Link>
         </li>
       ))}
     </ul>
