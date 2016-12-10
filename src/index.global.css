@@ -39,13 +39,6 @@ button:focus {
     text-shadow: none;
 }
 
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-}
-
 @media (min-width: 35em) {
   body {
     font-size: 100%;
