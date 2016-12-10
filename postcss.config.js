@@ -1,7 +1,6 @@
 module.exports = (config) => [
   require("stylelint")(),
   require("postcss-cssnext")({
-    browsers: "last 2 versions",
     features: {
       customProperties: {
         variables: {
@@ -18,12 +17,12 @@ module.exports = (config) => [
           colSecondary50: "rgba(32, 32, 48, 0.5)",
           colSecondary20: "rgba(32, 32, 48, 0.2)",
           colTernary: "#e2c5bc"
-        },
-      },
-    },
+        }
+      }
+    }
   }),
   require("postcss-reporter")(),
   ...(!config.production ? [
-    require("postcss-browser-reporter")(),
-  ] : []),
-]
+    require("postcss-browser-reporter")()
+  ] : [])
+];

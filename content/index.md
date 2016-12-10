@@ -6,6 +6,19 @@ intro: >
   Writer and professional pyjamas wearer.<br>
   Weaving the gothic into fantasy in Young&nbsp;Adult and Children’s stories.
 heading: About me
+about:
+  portrait:
+    src: /assets/images/cassandra-frances-portrait.jpg
+    alt: Portrait of writer Cassandra Frances
+    width: 200
+    height: 200
+  degrees:
+    - title: Master of Creative Writing, Publishing and Editing
+      uni: The University of Melbourne, 2014–2015
+      text: I graduated with First Class Honours. My thesis was on sisterhood in gothic fiction.
+    - title: Bachelor of Psychology
+      uni: Swinburne University, 2011–2013
+      text: I went on exchange to Aalborg University in Denmark, where I studied Metafiction and Twentieth-Century Literature.
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam consequatur nesciunt voluptatibus possimus, doloribus, quia illum harum esse, voluptatem ad omnis perspiciatis. Quam consequatur nesciunt voluptatibus possimus, doloribus, quia illum harum esse.

@@ -39,27 +39,3 @@
   }
 }
 
-.Card {
-  font-size: 90%;
-  line-height: 1.4;
-
-  &_heading {
-    font-family: var(--font-heading);
-    font-size: 140%;
-    font-style: italic;
-    font-weight: normal;
-    margin: 1.25rem 0 .25rem;
-  }
-  
-  &_sub {
-    margin-top: .1rem;
-    font-weight: bold;
-    font-size: 90%;
-  }
-  
-  @media (max-width: 34.99em) {
-    &_text {
-      font-size: 90%;
-    }
-  }
-}

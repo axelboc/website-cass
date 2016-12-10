@@ -3,3 +3,27 @@
   margin: 0 auto;
   padding: 1rem;
 }
+
+.card {
+  font-size: 90%;
+  line-height: 1.4;
+}
+
+.cardHeading {
+  font-size: 140%;
+  font-style: italic;
+  font-weight: normal;
+  margin: 1.25rem 0 .25rem;
+}
+
+.cardSub {
+  margin-top: .1rem;
+  font-weight: bold;
+  font-size: 90%;
+}
+
+@media (max-width: 34.99em) {
+  .cardText {
+    font-size: 90%;
+  }
+}

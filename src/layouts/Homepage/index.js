@@ -1,10 +1,12 @@
 import React, { PropTypes } from "react";
 import { BodyContainer } from "phenomic";
 import Helmet from "react-helmet";
+
 import Root from "../../components/Root";
 import Banner from "../../components/Banner";
 import Main from "../../components/Main";
 import Heading from "../../components/Heading";
+import About from "../../components/About";
 import Footer from "../../components/Footer";
 
 const Homepage = (props) => {
@@ -16,7 +18,9 @@ const Homepage = (props) => {
       <Banner __filename={__filename} intro={head.intro} />
       <Main>
         <Heading title={head.heading} />
-        <BodyContainer>{body}</BodyContainer>
+        <About {...head.about}>
+          <BodyContainer>{body}</BodyContainer>
+        </About>
       </Main>
       <Footer />
     </Root>
