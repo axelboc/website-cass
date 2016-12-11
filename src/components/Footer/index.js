@@ -1,8 +1,7 @@
-import React from "react";
-import { Link } from "phenomic";
+import React, { PropTypes } from "react";
 import styles from "./index.css";
 
-const Footer = () => (
+const Footer = (props, { metadata: { site } }) => (
   <footer className={styles.footer}>
     <ul className={styles.social}>
       <li className={styles.socialSite}>
@@ -12,10 +11,14 @@ const Footer = () => (
         <a className={styles.socialLink} href="https://twitter.com/CassandraFrance">Twitter</a>
       </li>
       <li className={styles.socialSite}>
-        <Link className={styles.socialLink} to="/contact">Contact</Link>
+        <a className={styles.socialLink} href={site.contactFormURL}>Contact</a>
       </li>
     </ul>
   </footer>
 );
+
+Footer.contextTypes = {
+  metadata: PropTypes.object.isRequired,
+};
 
 export default Footer;
