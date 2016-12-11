@@ -8,7 +8,7 @@ intro: >
 heading: About me
 about:
   portrait:
-    src: /assets/images/cassandra-frances-portrait.jpg
+    src: /assets/cassandra-frances-portrait.jpg
     alt: Portrait of writer Cassandra Frances
     width: 200
     height: 200
