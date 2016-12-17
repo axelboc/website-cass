@@ -1,0 +1,19 @@
+.books {
+  composes: max from "../shared.css";
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book {
+  flex: 1 0 100%;
+}
+
+.intro {
+  composes: book;
+}
+
+@media (min-width: 55em) {
+  .book {
+    flex-basis: 50%;
+  }
+}

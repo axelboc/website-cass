@@ -1,5 +1,6 @@
 import React, { PropTypes } from "react";
 import { BodyContainer } from "phenomic";
+
 import Root from "../../components/Root";
 import NavBar from "../../components/NavBar";
 import Main from "../../components/Main";
@@ -7,14 +8,14 @@ import Heading from "../../components/Heading";
 import Footer from "../../components/Footer";
 
 const Page = (props) => {
-  const { isLoading, head, body, __filename } = props;
+  const { children, isLoading, head, body, __filename } = props;
   
   return !isLoading && (
     <Root head={head}>
       <NavBar __filename={__filename} />
       <Main>
         <Heading title={head.heading || head.title} subtitle={head.subtitle} />
-        <BodyContainer>{ body }</BodyContainer>
+        { children || <BodyContainer>{body}</BodyContainer> }
       </Main>
       <Footer />
     </Root>
