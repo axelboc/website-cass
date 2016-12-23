@@ -45,7 +45,12 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
     "history": "^2.0.0",
+    "html-loader": "^0.4.4",
     "json-loader": "^0.5.2",
+    "markdown-it": "^8.2.2",
+    "markdown-it-front-matter": "^0.1.2",
+    "markdown-it-front-matter-loader": "0.0.7",
+    "markdown-it-loader": "^0.5.0",
     "npm-run-all": "^1.7.0",
     "phenomic": "^0.19.5",
     "postcss-browser-reporter": "^0.4.0",
@@ -68,7 +73,8 @@
     "stylelint-config-css-modules": "^0.1.0",
     "warning": "^3.0.0",
     "webpack": "^1.11.0",
-    "whatwg-fetch": "^0.11.0"
+    "whatwg-fetch": "^0.11.0",
+    "yaml-front-matter": "^3.4.0"
   },
   "phenomic": {
     "nojekyll": false
@@ -143,7 +149,8 @@
     "root": true,
     "extends": "./node_modules/phenomic/lib/eslint-config-recommended/index.js",
     "rules": {
-      "semi": 2
+      "semi": 2,
+      "no-console": 0
     }
   },
   "stylelint": {

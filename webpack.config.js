@@ -36,34 +36,43 @@ export default (config = {}) => {
         {
           // phenomic requirement
           test: /\.(md|markdown)$/,
+          include: path.resolve(__dirname, config.source),
           loader: phenomicLoader,
           query: {
-            context: path.join(__dirname, config.source),
-            // plugins: [
-            //   ...require("phenomic/lib/loader-preset-markdown").default
-            // ]
-            // see https://phenomic.io/docs/usage/plugins/
-          },
+            context: path.join(__dirname, config.source)
+          }
+        },
+
+        // *.md inside `content/collections` folder
+        // allow retrieving and parsing collections of markdown files on the client-side.
+        {
+          test: /\.(md|markdown)$/,
+          include: path.resolve(__dirname, "collections"),
+          loaders: [
+            "json",
+            "markdown-it-front-matter"
+          ]
         },
 
         // *.json => like in node, return json
         // (not handled by webpack by default)
         {
           test: /\.json$/,
-          loader: "json-loader",
+          loader: "json-loader"
         },
 
         // *.js => babel + eslint
         {
           test: /\.js$/,
           include: [
+            path.resolve(__dirname, "collections"),
             path.resolve(__dirname, "scripts"),
-            path.resolve(__dirname, "src"),
+            path.resolve(__dirname, "src")
           ],
           loaders: [
             "babel-loader?cacheDirectory",
-            "eslint-loader" + (config.dev ? "?emitWarning" : ""),
-          ],
+            "eslint-loader" + (config.dev ? "?emitWarning" : "")
+          ]
         },
 
         // ! \\
@@ -198,6 +207,11 @@ export default (config = {}) => {
           loader: "raw-loader",
         },
       ],
+    },
+
+    "markdown-it": {
+      html: true,
+      typographer: true
     },
 
     // webpack 1
