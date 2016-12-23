@@ -1,0 +1,29 @@
+.cover {
+  position: relative;
+  display: inline-block;
+  border-radius: 4px 2px 2px 4px;
+  overflow: hidden;
+}
+
+.cover::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 10%;
+  z-index: 1;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 20%,
+    rgba(0, 0, 0, .5) 30%,
+    rgba(0, 0, 0, .5) 40%,
+    rgba(0, 0, 0, .2) 50%,
+    rgba(0, 0, 0, 0) 80%
+  );
+}
+
+.img {
+  display: block;
+}

@@ -7,18 +7,18 @@ import Main from "../../components/Main";
 import Heading from "../../components/Heading";
 import Footer from "../../components/Footer";
 
-import Work from "../../containers/Work";
+import Timeline from "../../containers/Timeline";
 import Nyctophilia from "../../containers/Nyctophilia";
 
 const containers = {
-  Work,
+  Timeline,
   Nyctophilia
 };
 
 const Page = (props) => {
   const { isLoading, head, body, __filename } = props;
   const Container = head.container && containers[head.container];
-  const bodyContainer = <BodyContainer>{body}</BodyContainer>;
+  const bodyContainer = body && <BodyContainer>{body}</BodyContainer>;
   
   return !isLoading && (
     <Root head={head}>

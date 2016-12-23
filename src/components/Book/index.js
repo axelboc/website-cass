@@ -4,7 +4,7 @@ import renderHTML from "react-render-html";
 import styles from "./index.css";
 
 const Book = (props) => (
-  <div className={styles.book} key={props.title}>
+  <div className={styles.book}>
     <a className={styles.cover} href={props.url}>
       <img className={styles.img} src={props.coverSrc} alt={`Check out ${props.title} on Goodreads`} />
     </a>
