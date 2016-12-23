@@ -1,5 +1,5 @@
-.books {
-  composes: max from "../shared.css";
+.nyctophilia {
+  composes: max from "../../components/shared.css";
   display: flex;
   flex-wrap: wrap;
 }

@@ -28,14 +28,11 @@ const Homepage = (props) => {
 };
 
 Homepage.propTypes = {
-  children: PropTypes.node,
   isLoading: PropTypes.bool,
-  __filename: PropTypes.string,
-  __url: PropTypes.string,
   head: PropTypes.object.isRequired,
   body: PropTypes.string,
-  header: PropTypes.element,
-  footer: PropTypes.element,
+  __filename: PropTypes.string,
+  __url: PropTypes.string
 };
 
 Homepage.contextTypes = {

@@ -7,15 +7,27 @@ import Main from "../../components/Main";
 import Heading from "../../components/Heading";
 import Footer from "../../components/Footer";
 
+import Work from "../../containers/Work";
+import Nyctophilia from "../../containers/Nyctophilia";
+
+const containers = {
+  Work,
+  Nyctophilia
+};
+
 const Page = (props) => {
-  const { children, isLoading, head, body, __filename } = props;
+  const { isLoading, head, body, __filename } = props;
+  const Container = head.container && containers[head.container];
+  const bodyContainer = <BodyContainer>{body}</BodyContainer>;
   
   return !isLoading && (
     <Root head={head}>
       <NavBar __filename={__filename} />
       <Main>
         <Heading title={head.heading || head.title} subtitle={head.subtitle} />
-        { children || <BodyContainer>{body}</BodyContainer> }
+        { Container
+          ? <Container>{bodyContainer}</Container>
+          : bodyContainer }
       </Main>
       <Footer />
     </Root>
@@ -23,14 +35,11 @@ const Page = (props) => {
 };
 
 Page.propTypes = {
-  children: PropTypes.node,
   isLoading: PropTypes.bool,
-  __filename: PropTypes.string,
-  __url: PropTypes.string,
   head: PropTypes.object.isRequired,
   body: PropTypes.string,
-  header: PropTypes.element,
-  footer: PropTypes.element,
+  __filename: PropTypes.string,
+  __url: PropTypes.string
 };
 
 Page.contextTypes = {

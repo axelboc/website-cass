@@ -5,15 +5,13 @@ import { PageContainer as PhenomicPageContainer } from "phenomic";
 import AppContainer from "./AppContainer";
 import Page from "./layouts/Page";
 import Homepage from "./layouts/Homepage";
-import Nyctophilia from "./layouts/Nyctophilia";
 
 const PageContainer = (props) => (
   <PhenomicPageContainer
     { ...props }
     layouts={{
       Page,
-      Homepage,
-      Nyctophilia
+      Homepage
     }}
   />
 );
