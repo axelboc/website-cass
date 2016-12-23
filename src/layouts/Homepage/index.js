@@ -32,11 +32,6 @@ Homepage.propTypes = {
   head: PropTypes.object.isRequired,
   body: PropTypes.string,
   __filename: PropTypes.string,
-  __url: PropTypes.string
-};
-
-Homepage.contextTypes = {
-  metadata: PropTypes.object.isRequired,
 };
 
 export default Homepage;

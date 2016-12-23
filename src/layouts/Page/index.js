@@ -39,11 +39,6 @@ Page.propTypes = {
   head: PropTypes.object.isRequired,
   body: PropTypes.string,
   __filename: PropTypes.string,
-  __url: PropTypes.string
-};
-
-Page.contextTypes = {
-  metadata: PropTypes.object.isRequired,
 };
 
 export default Page;

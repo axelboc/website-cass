@@ -1,6 +1,8 @@
 ---
 title: How Cold the Northern Lights
-read: /read/northern-lights
+read:
+  url: /read/northern-lights
+  label: Read the full story
 ---
 
 Runner up: Grace Marion Wilson Award for emerging writers 2011.

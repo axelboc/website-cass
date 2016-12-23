@@ -5,13 +5,15 @@ import { PageContainer as PhenomicPageContainer } from "phenomic";
 import AppContainer from "./AppContainer";
 import Page from "./layouts/Page";
 import Homepage from "./layouts/Homepage";
+import Immersive from "./layouts/Immersive";
 
 const PageContainer = (props) => (
   <PhenomicPageContainer
     { ...props }
     layouts={{
       Page,
-      Homepage
+      Homepage,
+      Immersive
     }}
   />
 );
