@@ -1,5 +1,5 @@
 ---
-title: Cassandra Frances - Y.A. fiction writer
+title: Cassandra Frances - Young Adult Fiction Writer
 description: Website of Cassandra Frances, Young Adult fiction writer.
 layout: Homepage
 intro: >
