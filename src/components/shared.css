@@ -1,7 +1,7 @@
 .max {
   max-width: 60rem;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .card {
@@ -22,8 +22,16 @@
   font-size: 90%;
 }
 
-@media (max-width: 34.99em) {
+.cardText {
+  font-size: 90%;
+}
+
+@media (min-width: 35em) {
+  .max {
+    padding: 0 2rem;
+  }
+
   .cardText {
-    font-size: 90%;
+    font-size: 100%;
   }
 }

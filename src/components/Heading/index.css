@@ -1,5 +1,5 @@
 .heading {
-  margin: 0 0 2.5rem;
+  margin: 0 0 2rem;
   padding: 2rem;
   background-color: var(--colSecondary);
   color: #fff;
@@ -18,6 +18,12 @@
   display: block;
   margin-bottom: .4em;
   font-size: 50%;
+}
+
+@media (min-width: 35em) {
+  .heading {
+    margin-bottom: 3rem;
+  }
 }
 
 @media (min-width: 45em) {

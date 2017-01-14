@@ -2,8 +2,6 @@
   composes: max from "../shared.css";
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
-  padding-top: 1.5rem;
 }
 
 .body {
