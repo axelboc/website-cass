@@ -10,7 +10,7 @@ const Book = (props) => (
     </a>
     <div className={styles.content}>
       <h2 className={styles.heading}>{props.title}</h2>
-      <p className={styles.author}>by {renderAuthorLink(props.author, props.authorURL)}</p>
+      <p className={styles.author}>{renderAuthorLink(props.author, props.authorURL)}</p>
       {renderReview(props.review)}
     </div>
   </div>
@@ -18,7 +18,7 @@ const Book = (props) => (
 
 function renderAuthorLink(author, authorURL) {
   return authorURL 
-    ? <a href={authorURL}>{author}</a>
+    ? <a className={styles.authorLink} href={authorURL}>{author}</a>
     : author;
 }
 
