@@ -17,6 +17,7 @@ const Nyctophilia = ({ children }) => (
           <Book {...book}></Book>
         </div>
       ))}
+      {books.length % 3 === 0 && <div className={styles.empty} />}
     </div>
   </div>
 );
