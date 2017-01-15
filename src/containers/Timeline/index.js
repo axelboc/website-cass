@@ -7,11 +7,11 @@ import styles from "./index.css";
 const Timeline = () => {
   return (
     <div className={styles.timeline}>
-      {works.map((work, i) => (
-        <div className={styles.event} key={i}>
-          <Work {...work} />
-        </div>
-      ))}
+      <div className={styles.inner}>
+        {works.map((work, i) => (
+          <Work key={i} {...work} />
+        ))}
+      </div>
     </div>
   );
 };

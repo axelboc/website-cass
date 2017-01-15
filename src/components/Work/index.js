@@ -6,9 +6,11 @@ import styles from "./index.css";
 
 const Work = ({ title, read, body }) => (
   <section className={styles.work}>
-    <h2>{title}</h2>
-    {body && renderHTML(body)}
-    {read && <Link to={read.url}>{read.label}</Link>}
+    <h2 className={styles.title}>{title}</h2>
+    <div className={styles.content}>
+      {body && renderHTML(body)}
+      {read && <Link to={read.url}>{read.label}</Link>}
+    </div>
   </section>
 );
 

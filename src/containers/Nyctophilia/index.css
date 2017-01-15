@@ -6,13 +6,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 -1rem;
+  margin: 0 -.5rem;
 }
 
 .book {
   flex: 1 0 100%;
   margin-bottom: 1.5rem;
-  padding: 0 1rem;
+  padding: 0 .5rem;
 }
 
 .intro {

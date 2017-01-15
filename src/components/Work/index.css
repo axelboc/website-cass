@@ -1,0 +1,21 @@
+.work {
+  margin-bottom: 3rem;
+}
+
+.title {
+  display: inline-block;
+  margin: 0 0 0 -1rem;
+  padding: .5rem 1rem .5rem 2rem;
+  background-color: rgba(255, 255, 255, .5);
+  font-family: var(--fontHeading);
+  font-size: 125%;
+  font-weight: bold;
+}
+
+.content {
+  padding-left: 1rem;
+}
+
+.content img {
+  max-width: 100%;
+}
