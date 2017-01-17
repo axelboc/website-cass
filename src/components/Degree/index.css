@@ -1,0 +1,29 @@
+.degree {
+  composes: card from "../shared.css";
+  margin: 0 0 1.5rem;
+}
+
+.title {
+  composes: cardHeading from "../shared.css";
+  margin-top: .5rem;
+  font-family: var(--fontHeading);
+}
+
+.uni,
+.text {
+  margin-top: 0;
+}
+
+.uni {
+  composes: cardSub from "../shared.css";
+}
+
+.text {
+  composes: cardText from "../shared.css";
+}
+
+@media (min-width: 55em) {
+  .degree {
+    margin: 1rem 0 1.75rem;
+  }
+}

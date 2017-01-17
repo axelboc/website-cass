@@ -1,0 +1,41 @@
+
+/* === HELPERS === */
+.btn {
+  padding: .5rem 2rem;
+  background: var(--col-primary-80);
+  border: none;
+  border-radius: .5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn:hover {
+  text-decoration: underline;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* === MAIN === */
+.Section {
+  &_heading {
+    margin: 0 0 2rem;
+    font-size: 130%;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  
+  &_intro {
+    margin: 0 0 2rem;
+    font-size: 130%;
+  }
+}
+

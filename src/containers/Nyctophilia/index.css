@@ -1,0 +1,120 @@
+.nyctophilia {
+  composes: max from "../../components/shared.css";
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -.5rem;
+}
+
+.book {
+  flex: 1 0 100%;
+  margin-bottom: 1.5rem;
+  padding: 0 .5rem;
+}
+
+.intro {
+  composes: book;
+  max-width: none;
+}
+
+.introInner {
+  padding: 1rem; /* same as books' inner containers */
+}
+
+.intro p {
+  margin: 0;
+}
+
+.intro blockquote {
+  position: relative;
+  margin: calc(-1em * (1.4 - 1) / 2) 0; /* compensate for line-height for vertical rythm */
+  color: var(--colSecondary80);
+  font-family: var(--fontHeading);
+  font-size: 180%;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.intro blockquote p {
+  margin-bottom: 2rem;
+}
+
+.intro blockquote p::before {
+  content: open-quote;
+  position: absolute;
+  transform: translateX(-100%);
+}
+
+.intro blockquote p::after {
+  content: close-quote;
+}
+
+.intro blockquote + p {
+  font-size: 130%;
+  margin-bottom: 1rem;
+}
+
+.empty {
+  composes: book;
+  display: none;
+}
+
+@media (min-width: 30em) {
+  .book {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .intro {
+    flex-basis: 100%;
+    max-width: none;
+  }
+}
+
+@media (min-width: 30em) and (max-width: 39.99em), (min-width: 50em) and (max-width: 54.99em) {
+  .inner {
+    margin: 0 -.5rem;
+  }
+
+  .book {
+    padding: 0 .5rem;
+  }
+}
+
+@media (min-width: 50em) {
+  .book {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 3rem;
+  }
+
+  .intro {
+    flex-basis: 66.66%;
+    display: flex;
+    align-items: center;
+    max-width: none;
+  }
+
+  .introInner {
+    background-color: rgba(255, 255, 255, .5);
+    padding: 1.5rem 2rem;
+  }
+
+  .empty {
+    display: block;
+  }
+}
+
+@media (min-width: 65em) {
+  .inner {
+    margin: -.5rem -2.5rem 0;
+  }
+
+  .introInner {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}

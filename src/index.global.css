@@ -1,0 +1,46 @@
+@import "~normalize.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: var(--colBg);
+  color: var(--colSecondary);
+  font-family: var(--fontText);
+  font-size: 85%;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--colPrimary);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus,
+button:focus {
+  outline: 1px dashed currentColor;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+@media (min-width: 35em) {
+  body {
+    font-size: 100%;
+  }
+}

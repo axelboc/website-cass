@@ -1,0 +1,10 @@
+{
+  "title": "Cassandra Frances",
+  "initials": "CF",
+  "nav": [
+    { "filename": "index.md", "path": "/", "label": "About" },
+    { "filename": "work.md", "path": "/work", "label": "Work" },
+    { "filename": "nyctophilia.md", "path": "/nyctophilia", "label": "Nyctophilia" }
+  ],
+  "contactFormURL": "https://cassandrafrances.typeform.com/to/lBY1UF"
+}
