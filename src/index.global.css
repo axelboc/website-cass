@@ -31,7 +31,7 @@ a:hover {
 
 a:focus,
 button:focus {
-  outline: 1px dashed currentColor;
+  outline-color: currentColor;
 }
 
 ::selection {

@@ -1,6 +1,38 @@
 .book {
+  position: relative;
+  z-index: 0;
+  display: block;
+  width: 100%;
   padding: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
   text-align: center;
+}
+
+.book::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, .5);
+  transition: opacity .3s;
+}
+
+.book:hover {
+
+}
+
+.selectedBook {
+  composes: book;
+}
+
+.selectedBook::before {
+  opacity: 1;
 }
 
 .cover {

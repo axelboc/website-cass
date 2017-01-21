@@ -4,16 +4,20 @@ import renderHTML from "react-render-html";
 import styles from "./index.css";
 
 const Book = (props) => (
-  <div className={styles.book}>
-    <a className={styles.cover} href={props.url}>
+  <button 
+    className={props.isSelected ? styles.selectedBook : styles.book}
+    onClick={props.toggleBook}
+    type="button"
+  >
+    <div className={styles.cover}>
       <img className={styles.img} src={props.coverSrc} alt={`Check out ${props.title} on Goodreads`} />
-    </a>
+    </div>
     <div className={styles.content}>
       <h2 className={styles.heading}>{props.title}</h2>
       <p className={styles.author}>{renderAuthorLink(props.author, props.authorURL)}</p>
       {renderReview(props.review)}
     </div>
-  </div>
+  </button>
 );
 
 function renderAuthorLink(author, authorURL) {
@@ -40,7 +44,9 @@ Book.propTypes = {
   authorURL: PropTypes.string,
   review: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
-  coverSrc: PropTypes.string.isRequired
+  coverSrc: PropTypes.string.isRequired,
+  isSelected: PropTypes.bool.isRequired,
+  toggleBook: PropTypes.func.isRequired
 };
 
 export default Book;
