@@ -1,0 +1,68 @@
+.rowOne {
+  margin-top: 1rem;
+}
+
+.mainImage {
+  margin-bottom: .5rem;
+}
+
+.sideImages {
+  display: flex;
+  margin: 0 -.25rem;
+}
+
+.sideImages > div {
+  flex: 1;
+  margin: 0 .25rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.sideImages > div::before {
+  content: '';
+  display: block;
+  padding-top: 56.25%;
+}
+
+@media (min-width: 35em) {
+  .rowOne {
+    display: flex;
+    margin: 1rem 0;
+  }
+
+  .mainImage {
+    flex: 8;
+    margin-right: .5rem;
+    margin-bottom: 0;
+  }
+
+  .sideImages {
+    flex: 5;
+    flex-direction: column;
+    margin: -.5rem 0 -.5rem .5rem;
+  }
+
+  .sideImages > div {
+    margin: .5rem 0;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 45em) {
+  .rowTwo {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 -.5rem;
+  }
+
+  .body,
+  .lastImage {
+    flex: 1;
+    margin: 0 .5rem;
+  }
+
+  .body {
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+  }
+}

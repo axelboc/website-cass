@@ -34,6 +34,12 @@ button:focus {
   outline-color: currentColor;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
