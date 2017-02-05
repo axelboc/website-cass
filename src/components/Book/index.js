@@ -10,7 +10,10 @@ const Book = (props) => (
     type="button"
   >
     <div className={styles.cover}>
-      <img className={styles.img} src={props.coverSrc} alt={`Check out ${props.title} on Goodreads`} />
+      <div className={styles.spine} />
+      <div className={styles.coverImg}>
+        <img className={styles.img} src={props.coverSrc} alt={`Check out ${props.title} on Goodreads`} />
+      </div>
     </div>
     <div className={styles.content}>
       <h2 className={styles.heading}>{props.title}</h2>
