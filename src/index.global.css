@@ -17,7 +17,7 @@ body {
   background-color: var(--colBg);
   color: var(--colSecondary);
   font-family: var(--fontText);
-  font-size: 85%;
+  font-size: 95%;
   line-height: 1.6;
 }
 

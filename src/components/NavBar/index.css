@@ -4,12 +4,12 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
 }
 
 .title {
-  margin: .5em 0;
+  margin: .5em 0 .25em;
   color: var(--colPrimary);
   font-family: var(--fontLogo);
   font-size: 250%;
@@ -36,18 +36,18 @@
   right: 0;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  font-size: 95%;
   color: #fff;
 }
 
 .navBarIndex .title {
-  margin-bottom: .25em;
   text-shadow: 0 0 3px var(--colSecondary);
 }
 
 .nav {
   display: flex;
   align-items: center;
-  margin: .5em -.25em;
+  margin: 0 0 .75em;
   padding: 0;
   list-style: none;
   color: var(--colSecondary80);
@@ -61,6 +61,7 @@
 }
 
 .navLink {
+  display: block;
   padding: .25em;
   color: inherit;
   text-decoration: none;
@@ -79,23 +80,44 @@
   color: white;
 }
 
-@media (min-width: 25em) {
+@media (min-width: 20em) {
   .nav {
-    margin: .5em -.5em;
+    margin-left: -.5em;
+    margin-right: -.5em;
   }
 
   .navLink {
-    padding: .5em;
+    padding-left: .5em;
+    padding-right: .5em;
   }
 }
   
-@media (min-width: 50em) {
+@media (min-width: 45em) {
   .navBar {
     flex-direction: row;
     justify-content: space-between;
   }
 
+  .navBar:not(.navBarIndex) {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
   .title {
+    margin-bottom: .5em;
     text-align: left;
+  }
+
+  .navBarIndex {
+    font-size: 100%;
+  }
+
+  .nav {
+    margin-bottom: 0;
+  }
+
+  .navLink {
+    padding-top: .25em;
+    padding-bottom: .25em;
   }
 }

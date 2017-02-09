@@ -45,7 +45,7 @@
 
 .intro {
   composes: max from "../shared.css";
-  max-width: 25rem;
+  max-width: 23em;
   margin-bottom: 3rem;
   color: rgba(255, 255, 255, .8);
   font-size: 120%;
@@ -53,14 +53,24 @@
   text-align: center;
   animation: slideIn .8s .3s backwards;
 }
-  
+
+.intro br {
+  display: none;
+}
+
+@media (min-width: 25em) {
+  .intro br {
+    display: initial;
+  }
+}
+
 @media (min-width: 35em) {
   .title {
     font-size: 400%;
   }
 
   .intro {
-    max-width: 29rem;
+    max-width: 24em;
   }
 }
 
@@ -76,7 +86,6 @@
   }
 
   .intro {
-    max-width: 34rem;
     font-size: 150%;
   }
 }
