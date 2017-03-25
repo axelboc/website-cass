@@ -10,7 +10,7 @@ const Book = (props) => (
     type="button"
   >
     <div className={styles.cover}>
-      <div className={styles.spine} />
+      <div className={styles.spine} style={{ backgroundColor: props.spineColour }} />
       <div className={styles.coverImg}>
         <img className={styles.img} src={props.coverSrc} alt={`Check out ${props.title} on Goodreads`} />
       </div>
@@ -48,6 +48,7 @@ Book.propTypes = {
   review: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   coverSrc: PropTypes.string.isRequired,
+  spineColour: PropTypes.string.isRequired,
   isSelected: PropTypes.bool.isRequired,
   toggleBook: PropTypes.func.isRequired
 };
