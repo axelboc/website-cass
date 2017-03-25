@@ -2,13 +2,16 @@
   position: relative;
   z-index: 0;
   display: block;
-  width: 100%;
+  width: 19rem;
+  margin: 0 auto;
   padding: 1rem;
   background: none;
   border: none;
+  color: inherit;
   cursor: pointer;
   text-align: center;
   perspective: 1800px;
+  overflow: hidden;
 }
 
 /* background overlay when hovered or selected */
@@ -31,11 +34,11 @@
 
 /* show overlay slightly on hover */
 .book:hover::before {
-  opacity: .5;
+  opacity: .4;
 }
 
 /* show overlay completely when selected (override hover style) */
-.selectedBook::before
+.selectedBook::before,
 .selectedBook:hover::before {
   opacity: 1;
 }
@@ -50,13 +53,12 @@
 }
 
 /* transform slightly on hover */
-.book:hover .cover {
+.book:not(.selectedBook):hover .cover {
   transform: translateX(-.25rem) rotateY(15deg);
 }
 
-/* transform completely when selected (override hover style) */
-.selectedBook .cover, 
-.selectedBook:hover .cover {
+/* transform completely when selected */
+.selectedBook .cover {
   transform: translateX(-7rem) translateX(50%) rotateY(85deg);
 }
 
@@ -153,7 +155,7 @@
   display: block;
   width: 3.5rem;
   margin: .5rem auto .5rem;
-  border-bottom: 1px solid var(--colSecondary50);
+  border-bottom: 1px solid var(--colSecondary20);
 }
 
 .author {
@@ -170,16 +172,44 @@
 
 .review {
   display: none;
+  position: absolute;
+  top: 1.5rem;
+  left: 5.25rem;
+  right: 2rem;
+  margin: 0;
+  font-size: 95%;
+  text-align: left;
+  animation: slideIn .3s .15s backwards;
 }
 
-@media (min-width: 30em) and (max-width: 39.99em), (min-width: 50em) and (max-width: 54.99em) {
-  .img {
-    height: 14rem;
-  }
+.review::after {
+  content: '';
+  display: block;
+  width: 3.5rem;
+  margin-top: calc(1em + (1.6 - 1) / 2);
+  border-bottom: 1px solid var(--colSecondary20);
+}
+
+.review > p:first-child { margin-top: 0; }
+.review > p:last-child { margin-bottom: 0; }
+
+.selectedBook .review {
+  display: block;
 }
 
 @media (min-width: 65em) {
   .book {
     padding: 1.5rem 2rem;
+  }
+
+  .review {
+    top: 2rem;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translate3d(-20%, 0, 0);
   }
 }

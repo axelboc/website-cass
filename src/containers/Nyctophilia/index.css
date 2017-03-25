@@ -5,19 +5,20 @@
 .inner {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
   margin: 0 -.5rem;
 }
 
 .book {
-  flex: 1 0 100%;
+  flex: 1;
   margin-bottom: 1.5rem;
   padding: 0 .5rem;
 }
 
 .intro {
   composes: book;
-  max-width: none;
+  flex: 1 0 auto;
 }
 
 .introInner {
@@ -62,18 +63,6 @@
   display: none;
 }
 
-@media (min-width: 30em) {
-  .book {
-    flex-basis: 50%;
-    max-width: 50%;
-  }
-
-  .intro {
-    flex-basis: 100%;
-    max-width: none;
-  }
-}
-
 @media (min-width: 30em) and (max-width: 39.99em), (min-width: 50em) and (max-width: 54.99em) {
   .inner {
     margin: 0 -.5rem;
@@ -86,16 +75,13 @@
 
 @media (min-width: 50em) {
   .book {
-    flex-basis: 33.33%;
-    max-width: 33.33%;
     margin-bottom: 3rem;
   }
 
   .intro {
-    flex-basis: 66.66%;
+    max-width: 50%;
     display: flex;
     align-items: center;
-    max-width: none;
   }
 
   .introInner {
@@ -111,6 +97,10 @@
 @media (min-width: 65em) {
   .inner {
     margin: -.5rem -2.5rem 0;
+  }
+  
+  .intro {
+    max-width: 66.66%;
   }
 
   .introInner {
