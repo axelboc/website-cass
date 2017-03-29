@@ -17,13 +17,6 @@
   height: 7.5rem;
 }
 
-@keyframes :global(updown) {
-  to {
-    transform: translateY(7.5rem) scale(0.5);
-    background-color: #202030;
-  }
-}
-
 .dot::after :global {
   content: "";
   position: absolute;
@@ -35,7 +28,7 @@
   background-color: #af3636;
   border-radius: 50%;
   transform: translateY(0) scale(1);
-  animation: 1s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite alternate updown;
+  animation: 1s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite alternate spin-cell;
 }
 
 .dot:nth-child(1) { transform: rotate(0deg); }
@@ -78,3 +71,10 @@
 .dot:nth-child(19)::after { animation-delay: 0.9s; }
 .dot:nth-child(20) { transform: rotate(342deg); }
 .dot:nth-child(20)::after { animation-delay: 0.95s; }
+
+@keyframes :global(spin-cell) {
+  to {
+    transform: translateY(7.5rem) scale(0.5);
+    background-color: #202030;
+  }
+}
