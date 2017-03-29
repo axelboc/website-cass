@@ -8,19 +8,24 @@ import Main from "../../components/Main";
 import Heading from "../../components/Heading";
 import About from "../../components/About";
 import Footer from "../../components/Footer";
+import Loading from "../../components/Loading";
 
 const Homepage = (props) => {
   const { isLoading, head, body, __filename } = props;
   
-  return !isLoading && (
+  const about = (
+    <About {...head.about}>
+      { body && <BodyContainer>{body}</BodyContainer> }
+    </About>
+  );
+
+  return (
     <Root head={head}>
       <Helmet titleTemplate="%s" />
       <Banner __filename={__filename} intro={head.intro} />
       <Main>
         <Heading title={head.heading} />
-        <About {...head.about}>
-          <BodyContainer>{body}</BodyContainer>
-        </About>
+        { isLoading ? <Loading /> : about }
       </Main>
       <Footer />
     </Root>

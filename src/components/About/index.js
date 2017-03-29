@@ -15,7 +15,7 @@ const About = ({ portrait, degrees, children }) => (
         width={portrait.width}
         height={portrait.height} />
       <div className={styles.academia}>
-        {degrees.map(degree => <Degree {...degree} />)}
+        {degrees.map((degree, i) => <Degree key={i} {...degree} />)}
       </div>
     </div>
   </div>
@@ -29,7 +29,7 @@ About.propTypes = {
     height: PropTypes.number.isRequired
   }).isRequired,
   degrees: PropTypes.arrayOf(PropTypes.object).isRequired,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node
 };
 
 export default About;
