@@ -25,22 +25,19 @@
   padding: 1rem; /* same as books' inner containers */
 }
 
-.intro p {
+.intro p:last-child {
   margin: 0;
 }
 
 .intro blockquote {
   position: relative;
   margin: calc(-1em * (1.4 - 1) / 2) 0; /* compensate for line-height for vertical rythm */
+  padding-bottom: .5rem;
   color: var(--colSecondary80);
   font-family: var(--fontHeading);
   font-size: 180%;
   font-style: italic;
   line-height: 1.4;
-}
-
-.intro blockquote p {
-  margin-bottom: 2rem;
 }
 
 .intro blockquote p::before {
@@ -51,11 +48,6 @@
 
 .intro blockquote p::after {
   content: close-quote;
-}
-
-.intro blockquote + p {
-  font-size: 130%;
-  margin-bottom: 1rem;
 }
 
 .empty {

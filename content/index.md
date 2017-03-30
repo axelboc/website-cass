@@ -21,13 +21,12 @@ about:
       text: I went on exchange to Aalborg University in Denmark, where I studied Metafiction and Twentieth-Century Literature.
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam consequatur nesciunt voluptatibus possimus, doloribus, quia illum harum esse, voluptatem ad omnis perspiciatis. Quam consequatur nesciunt voluptatibus possimus, doloribus, quia illum harum esse.
+I write about ghosts, creepy sisters and friends, what happens ‘out there,’ what we won’t talk about, and bad love with some good kissing.
 
-I am an emerging writer based in Melbourne, Australia. I’ve always been a storyteller of some sort; I started out in theatre as a kid (my greatest role was a weasel in Wind in the Willows), studied Film and Television at RMIT University and worked for a small animation company making some weird tle movies.
+I am an emerging writer based in Melbourne, Australia. I take a lot of inspiration from this city as well as country Victoria where I grew up.
 
-Now I’m a graduate of the Master of Creative Writing, Publishing and Editing program at the University of Melbourne. I like to tell stories about the darker side of life that exists on the edge of reality, and sometimes outside of it.
+I’ve always been a storyteller of some sort, I started out in theatre as a kid, (my greatest role was a weasel in _Wind in the Willows_), and I’ve studied Film and Television at RMIT University and worked for a small animation company making some weird little movies.
 
-Melbourne is a UNESCO City of Literature. I take a lot of inspiration from this city, and from country Victoria where I grew up.
+Now I’m a graduate of the Master of Creative Writing, Publishing and Editing program at the University of Melbourne. I like to tell stories about the darker side of life that exists on the edge of reality, and sometimes outside of it. I have collected the books like these that I love on [Nyctophilia](/nyctophilia), my little night garden of dark and creepy books.
 
 I’m also an Aurealis magazine slush pile reader and a judge for the 2016 Aurealis Awards Graphic narratives.
-

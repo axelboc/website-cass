@@ -155,7 +155,7 @@
   display: block;
   width: 3.5rem;
   margin: .5rem auto .5rem;
-  border-bottom: 1px solid var(--colSecondary20);
+  border-bottom: 1px solid rgba(32, 32, 48, 0.3);
 }
 
 .author {
@@ -187,7 +187,7 @@
   display: block;
   width: 3.5rem;
   margin-top: calc(1em + (1.6 - 1) / 2);
-  border-bottom: 1px solid var(--colSecondary20);
+  border-bottom: 1px solid rgba(32, 32, 48, 0.3);
 }
 
 .review > p:first-child { margin-top: 0; }

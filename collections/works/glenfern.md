@@ -4,6 +4,6 @@ title: Glenfern fellowship
 
 ![Photo of Glenfern](https://placehold.it/500x300)
 
-Fuga illo pariatur nemo impedit quidem mollitia quos repudiandae aut, in, exercitationem ab eos! Ipsa, architecto accusamus ullam quos incidunt, necessitatibus eos sit, eveniet numquam excepturi reprehenderit quo animi dolorum.
+In 2016, I was awarded the Grace Marion Wilson Glenfern Fellowship for emerging writers through Writers Victoria.
 
-Quidem dolor repudiandae et, doloribus id quisquam dolores corrupti itaque sit repellat omnis debitis quis odio accusantium tenetur, nemo incidunt neque voluptate. Distinctio eligendi quo magnam soluta odio sapiente molestias. [Link to wrap-up article](#)
+The fellowship offered three months of unfettered writing time in the historic and beautiful Glenfern House. During the fellowship I worked on my YA manuscript and got to be part of an exciting community of other writers.
