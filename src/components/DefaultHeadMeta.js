@@ -17,7 +17,7 @@ const DefaultHeadMeta = () => (
         { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Princess+Sofia|Roboto:300,400" }
       ]}
       script={[
-        { src: "https://cdn.polyfill.io/v2/polyfill.min.js" },
+        { src: "https://cdn.polyfill.io/v2/polyfill.min.js?features=es6&flags=gated" },
       ]}
     />
   </div>
