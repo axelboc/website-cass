@@ -14,7 +14,7 @@ const DefaultHeadMeta = () => (
         { rel: "icon", type: "image/png", href: "/assets/favicon-32x32.png", sizes: "32x32" },
         { rel: "icon", type: "image/png", href: "/assets/favicon-16x16.png", sizes: "16x16" },
         { rel: "shortcut icon", href: "/assets/favicon.ico" },
-        { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Princess+Sofia|Roboto:300,400" }
+        { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Princess+Sofia|Roboto:300,400,700" }
       ]}
       script={[
         { src: "https://cdn.polyfill.io/v2/polyfill.min.js?features=es6&flags=gated" },

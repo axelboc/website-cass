@@ -10,15 +10,15 @@ html {
   box-sizing: border-box;
   overflow-y: scroll;
   height: 100%;
+  color: var(--colSecondary);
+  font-family: var(--fontText);
+  font-size: 100%;
+  line-height: 1.6;
 }
 
 body {
   min-height: 100%;
   background-color: var(--colBg);
-  color: var(--colSecondary);
-  font-family: var(--fontText);
-  font-size: 95%;
-  line-height: 1.6;
 }
 
 a {
@@ -46,7 +46,7 @@ img {
 }
 
 @media (min-width: 35em) {
-  body {
-    font-size: 100%;
+  html {
+    font-size: 105%;
   }
 }
