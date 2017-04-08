@@ -1,9 +1,13 @@
-import { TOGGLE_BOOK } from "./actions";
+import { TOGGLE_BOOK, RESET_SELECTED_BOOK } from "./actions";
 
 function selectedBookReducer(state = null, action) {
-  if (action.type === TOGGLE_BOOK) {
-    const book = action.payload;
-    return book === state ? null : book;
+  const { type, payload: index } = action;
+
+  switch (type) {
+    case TOGGLE_BOOK:
+      return index === state ? null : index;
+    case RESET_SELECTED_BOOK:
+      return null;
   }
 
   return state;
