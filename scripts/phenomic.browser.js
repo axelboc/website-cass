@@ -14,7 +14,6 @@ mdContext.keys().forEach(mdContext);
 
 // hot loading
 if (module.hot) {
-
   // hot load md
   module.hot.accept(mdContext.id, () => {
     mdContext = require.context("../content", true, /\.(md|markdown)$/);

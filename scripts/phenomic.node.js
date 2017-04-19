@@ -5,5 +5,5 @@ import routes from "../src/routes.js";
 import store from "../src/store.js";
 
 export default (options) => {
-  phenomicStatic({ ...options, metadata, routes, store });
+  return phenomicStatic({ ...options, metadata, routes, store });
 };
