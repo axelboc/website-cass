@@ -1,10 +1,5 @@
-.rowOne {
+.root {
   margin: 1rem 0;
-}
-
-.body {
-  background-color: rgba(255, 255, 255, .5);
-  padding: .5rem 1.5rem;
 }
 
 .mainImage {
@@ -30,38 +25,27 @@
 }
 
 @media (min-width: 35em) {
-  .rowTwo {
+  .root {
     display: flex;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
   }
 
   .mainImage {
-    flex: 8;
-    margin-right: .5rem;
+    flex: 1 1 61.5%;
+    padding: 0 .5rem;
     margin-bottom: 0;
   }
 
   .sideImages {
-    flex: 5;
+    flex: 1 0 38.5%;
     flex-direction: column;
-    margin: -.5rem 0 -.5rem .5rem;
+    padding: 0 .5rem;
+    margin: -.5rem 0;
   }
 
   .sideImages > div {
     margin: .5rem 0;
     padding-top: 0;
-  }
-}
-
-@media (min-width: 45em) {
-  .rowOne {
-    display: flex;
-    align-items: flex-start;
-    margin: 1rem -.5rem;
-  }
-
-  .body,
-  .bodyImage {
-    flex: 1 1 50%;
-    margin: 0 .5rem;
   }
 }

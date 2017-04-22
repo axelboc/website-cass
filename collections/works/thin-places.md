@@ -1,12 +1,16 @@
 ---
 title: Listening in Thin Places
-component: FourImages
-assets:
-  images:
-    - thin-places-1.jpg
-    - thin-places-2.jpg
-    - thin-places-3.jpg
-    - thin-places-4.jpg
+blocks:
+  - layout: Body
+    isImageRight: true
+    isHalfHalf: true
+    assets:
+      - thin-places-4.jpg
+  - layout: ThreeImages
+    assets:
+      - thin-places-1.jpg
+      - thin-places-2.jpg
+      - thin-places-3.jpg
 ---
 
 A collection of short graphic narratives about traveling to Thin Places in the world and the strange things that happen there.

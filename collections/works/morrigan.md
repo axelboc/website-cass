@@ -1,5 +1,7 @@
 ---
 title: The Final Flight of the Morrigan
+blocks:
+  - layout: Body
 ---
 
 ![Illustration 1](https://placehold.it/500x300)

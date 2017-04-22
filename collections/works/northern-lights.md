@@ -1,5 +1,7 @@
 ---
 title: How Cold the Northern Lights
+blocks:
+  - layout: Body
 read:
   url: /read/northern-lights
   label: Read the full story
