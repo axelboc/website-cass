@@ -7,6 +7,10 @@
   padding: .5rem 1.5rem;
 }
 
+.image > img {
+  background-color: var(--colSecondary20);
+}
+
 @media (min-width: 45em) {
   .root {
     display: flex;
@@ -26,6 +30,7 @@
   }
 
   .image {
+    flex: 1;
     padding: 0 .5rem;
   }
 
