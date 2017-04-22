@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 import createStore from "phenomic/lib/redux/createStore";
 import * as phenomicReducers from "phenomic/lib/redux/modules";
-import reducers from "./state/reducers";
+import * as reducers from "./state/reducers";
 
 const store = createStore(
   combineReducers({

@@ -40,7 +40,6 @@
   font-weight: normal;
   line-height: 1.2;
   text-align: center;
-  animation: slideIn .8s .2s backwards;
 }
 
 .intro {
@@ -51,12 +50,15 @@
   font-size: 120%;
   font-weight: 300;
   text-align: center;
-  animation: slideIn .8s .3s backwards;
 }
 
 .intro br {
   display: none;
 }
+
+.animatedBanner { composes: banner; }
+.animatedBanner .title { animation: slideIn .8s .2s backwards; }
+.animatedBanner .intro { animation: slideIn .8s .3s backwards; }
 
 @media (min-width: 25em) {
   .intro br {

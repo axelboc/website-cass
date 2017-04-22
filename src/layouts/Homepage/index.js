@@ -10,7 +10,7 @@ import About from "../../components/About";
 import Footer from "../../components/Footer";
 import Loading from "../../components/Loading";
 
-const Homepage = (props) => {
+function Homepage(props) {
   const { isLoading, head, body, __filename } = props;
   
   const about = (
@@ -30,7 +30,7 @@ const Homepage = (props) => {
       <Footer />
     </Root>
   );
-};
+}
 
 Homepage.propTypes = {
   isLoading: PropTypes.bool,

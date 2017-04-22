@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { toggleBook, resetSelectedBook } from "../../state/actions";
 import books from "../../../collections/books.json";
 import Book from "../../components/Book";
+
 import styles from "./index.css";
 
 class Nyctophilia extends Component {

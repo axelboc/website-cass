@@ -1,6 +1,7 @@
 import { TOGGLE_BOOK, RESET_SELECTED_BOOK } from "./actions";
+import { SET_BANNER_ANIMATED } from "./actions";
 
-function selectedBookReducer(state = null, action) {
+export function selectedBook(state = null, action) {
   const { type, payload: index } = action;
 
   switch (type) {
@@ -13,6 +14,6 @@ function selectedBookReducer(state = null, action) {
   return state;
 }
 
-export default {
-  selectedBook: selectedBookReducer
-};
+export function bannerAnimated(state = false, action) {
+  return action.type === SET_BANNER_ANIMATED ? true : state;
+}
