@@ -1,5 +1,6 @@
-import React, { PropTypes } from 'react';
-import styles from './index.css';
+import React from "react";
+import PropTypes from "prop-types";
+import styles from "./index.css";
 
 const Degree = ({ title, uni, text }) => (
   <div className={styles.degree}>

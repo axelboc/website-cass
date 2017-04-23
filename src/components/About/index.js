@@ -1,6 +1,7 @@
-import React, { PropTypes } from 'react';
-import Degree from '../Degree';
-import styles from './index.css';
+import React from "react";
+import PropTypes from "prop-types";
+import Degree from "../Degree";
+import styles from "./index.css";
 
 const About = ({ portrait, degrees, children }) => (
   <div className={styles.about}>

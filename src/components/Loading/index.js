@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import Helmet from "react-helmet";
 import ProgressIndicator from "react-topbar-progress-indicator";
-import Spinner from '../Spinner';
-import styles from './index.css';
+import Spinner from "../Spinner";
+import styles from "./index.css";
 
 ProgressIndicator.config({
   barThickness: 2,
