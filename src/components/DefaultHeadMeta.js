@@ -24,7 +24,7 @@ const DefaultHeadMeta = () => (
 );
 
 DefaultHeadMeta.contextTypes = {
-  metadata: PropTypes.object.isRequired,
+  metadata: PropTypes.object.isRequired
 };
 
 export default DefaultHeadMeta;

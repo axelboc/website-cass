@@ -17,13 +17,13 @@ class Banner extends Component {
   
   render() {
     const { __filename, intro, bannerAnimated } = this.props;
-    const { metadata: { site } } = this.context;
+    const { metadata } = this.context;
 
     return (
       <header className={bannerAnimated ? styles.banner : styles.animatedBanner}>
         <NavBar __filename={__filename} isIndex />
         <div className={styles.inner}>
-          <h1 className={styles.title}>{site.title}</h1>
+          <h1 className={styles.title}>{metadata.title}</h1>
           <p className={styles.intro}>{renderHTML(intro)}</p>
         </div>
       </header>
@@ -40,7 +40,9 @@ Banner.propTypes = {
 };
 
 Banner.contextTypes = {
-  metadata: PropTypes.object.isRequired,
+  metadata: PropTypes.shape({
+    title: PropTypes.string.isRequired
+  }).isRequired
 };
 
 const mapStateToProps = ({ bannerAnimated }) => ({ bannerAnimated });

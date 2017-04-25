@@ -20,13 +20,13 @@
   margin: 0 .25rem;
   background-size: cover;
   background-position: center;
+  background-color: var(--colSecondary20);
 }
 
 .sideImages > div::before {
   content: '';
   display: block;
   padding-top: 56.25%;
-  background-color: var(--colSecondary20);
 }
 
 @media (min-width: 35em) {

@@ -9,20 +9,21 @@ import styles from "./index.css";
  * By default, the image appears to the left of the body and the body takes up 
  * 61.5% of the available width on desktop (golden ratio).
  */
-function Body(props) {
+function Body(props, { metadata }) {
   const { assets, isImageRight, isHalfHalf, body } = props;
+  const { imgUrl } = metadata;
 
+  const rootClassName = isHalfHalf ? styles.rootHalfHalf : styles.root;
   const imgClassName = isImageRight ? styles.imageRight : styles.image;
-  const bodyClassName = isHalfHalf ? styles.bodyHalf : styles.body;
 
   return (
-    <div className={styles.root}>
+    <div className={rootClassName}>
       {assets && (
         <div className={imgClassName}>
-          <img src={`/assets/work/${assets[0]}`} />
+          <img src={`${imgUrl}/w_605,q_90/${assets[0]}`} />
         </div>
       )}
-      <div className={bodyClassName}>
+      <div className={styles.body}>
         <div>{body && renderHTML(body)}</div>
       </div>
     </div>
@@ -39,6 +40,12 @@ Body.propTypes = {
 Body.defaultProps = {
   isImageRight: false,
   isHalfHalf: false
+};
+
+Body.contextTypes = {
+  metadata: PropTypes.shape({
+    imgUrl: PropTypes.string.isRequired
+  }).isRequired
 };
 
 export default Body;

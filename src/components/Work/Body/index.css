@@ -2,6 +2,10 @@
   margin: 1rem 0;
 }
 
+.rootHalfHalf {
+  composes: root;
+}
+
 .body > div {
   background-color: rgba(255, 255, 255, .5);
   padding: .5rem 1.5rem;
@@ -24,13 +28,8 @@
     padding: 0 .5rem;
   }
 
-  .bodyHalf {
-    composes: body;
-    flex-basis: 50%;
-  }
-
   .image {
-    flex: 1;
+    flex: 1 0 38.5%;
     padding: 0 .5rem;
   }
 
@@ -38,10 +37,19 @@
     composes: image;
     order: 1;
   }
+
+  .rootHalfHalf > .body,
+  .rootHalfHalf > .image {
+    flex-basis: 50%;
+  }
 }
 
 @media (min-width: 55em) {
   .body {
     max-width: 61.5%; /* limit width when block has no image */
+  }
+
+  .rootHalfHalf > .body {
+    max-width: 50%;
   }
 }

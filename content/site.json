@@ -6,6 +6,6 @@
     { "filename": "work.md", "path": "/work", "label": "Work" },
     { "filename": "nyctophilia.md", "path": "/nyctophilia", "label": "Nyctophilia" }
   ],
-  "contactFormURL": "https://cassandrafrances.typeform.com/to/lBY1UF",
-  "cloudinaryURL": "http://res.cloudinary.com/uufvoxxc/image/upload/"
+  "contactFormUrl": "https://cassandrafrances.typeform.com/to/lBY1UF",
+  "imgUrl": "https://res.cloudinary.com/uufvoxxc/image/upload"
 }
