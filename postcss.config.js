@@ -16,7 +16,8 @@ module.exports = (config) => [
           colSecondary80: "rgba(32, 32, 48, 0.8)",
           colSecondary50: "rgba(32, 32, 48, 0.5)",
           colSecondary20: "rgba(32, 32, 48, 0.2)",
-          colTernary: "#e2c5bc"
+          colTernary: "#e2c5bc",
+          imgUrl: "https://res.cloudinary.com/uufvoxxc/image/upload"
         }
       }
     }
