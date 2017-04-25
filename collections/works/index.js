@@ -1,3 +1,4 @@
+import antiThesis from "./anti-thesis.md";
 import blog from "./blog.md";
 import glenfern from "./glenfern.md";
 import morrigan from "./morrigan.md";
@@ -9,6 +10,7 @@ const works = [
   glenfern,
   blog,
   northernLights,
+  antiThesis,
   thinPlaces,
   morrigan
 ];
