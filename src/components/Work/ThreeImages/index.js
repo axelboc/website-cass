@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import styles from "./index.css";
 
 /**
- * Building block used to render three images inside a Work entry.
+ * Three images inside a Work entry.
  */
 function ThreeImages(props, { metadata }) {
   const { assets } = props;

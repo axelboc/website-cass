@@ -1,0 +1,27 @@
+.root {
+  margin: 1rem 0;
+}
+
+.leftImage {
+  margin-bottom: .5rem;
+}
+
+.leftImage > img,
+.rightImage > img {
+  background-color: var(--colSecondary20);
+}
+
+@media (min-width: 35em) {
+  .root {
+    display: flex;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+  }
+
+  .leftImage,
+  .rightImage {
+    flex: 1 1 50%;
+    padding: 0 .5rem;
+    margin-bottom: 0;
+  }
+}

@@ -3,7 +3,8 @@
 }
 
 .inner {
-  padding-top: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: .75rem;
   border-left: 1rem solid var(--colSecondary20);
 }
 

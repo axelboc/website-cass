@@ -3,12 +3,14 @@ import PropTypes from "prop-types";
 import renderHTML from "react-render-html";
 
 import Body from "./Body";
+import TwoImages from "./TwoImages";
 import ThreeImages from "./ThreeImages";
 
 import styles from "./index.css";
 
 const BLOCKS = {
   Body,
+  TwoImages,
   ThreeImages
 };
 

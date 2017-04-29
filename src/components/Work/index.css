@@ -1,5 +1,5 @@
-.work {
-  margin-bottom: 3rem;
+.work:not(:last-child) {
+  margin-bottom: 4.5rem;
 }
 
 .title {

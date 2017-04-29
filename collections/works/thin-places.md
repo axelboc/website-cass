@@ -9,8 +9,8 @@ blocks:
   - layout: ThreeImages
     assets:
       - thin-places-1.jpg
-      - thin-places-2.jpg
       - thin-places-3.jpg
+      - thin-places-2.jpg
 ---
 
 A collection of short graphic narratives about traveling to Thin Places in the world and the strange things that happen there.
