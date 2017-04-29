@@ -3,7 +3,7 @@
 }
 
 .leftImage {
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
 }
 
 .leftImage > img,
@@ -11,7 +11,7 @@
   background-color: var(--colSecondary20);
 }
 
-@media (min-width: 35em) {
+@media (min-width: 45em) {
   .root {
     display: flex;
     margin-left: -.5rem;

@@ -16,4 +16,4 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam deleniti hic ob
 
 Aliquid natus, consectetur aut id possimus quaerat, ut vitae itaque cupiditate ad repellat est. Delectus harum iste, tempora, quis necessitatibus ea, quidem dolores, at nobis nemo vitae! Voluptates, veniam, voluptatibus.
 
-Rem maxime ad consectetur magnam quas maiores molestias, temporibus id numquam alias earum veniam reprehenderit, repudiandae, aperiam, totam culpa enim qui. Inventore, ab mollitia saepe cum corporis neque. Pariatur, mollitia.
+Rem maxime ad consectetur magnam quas maiores molestias, temporibus id numquam alias earum veniam reprehenderit, repudiandae, aperiam, totam culpa enim qui.

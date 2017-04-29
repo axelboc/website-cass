@@ -29,7 +29,7 @@
   padding-top: 56.25%;
 }
 
-@media (min-width: 35em) {
+@media (min-width: 45em) {
   .root {
     display: flex;
     margin-left: -.5rem;
