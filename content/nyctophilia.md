@@ -1,7 +1,7 @@
 ---
 title: Nyctophilia
 subtitle: nyc•to•phil•i•a (nĭk′tə-fĭl′ē-ə)
-container: Nyctophilia
+layout: Nyctophilia
 ---
 
 > A preference for the night or darkness.

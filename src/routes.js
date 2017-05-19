@@ -5,18 +5,24 @@ import { PageContainer as PhenomicPageContainer } from "phenomic";
 import AppContainer from "./AppContainer";
 import Page from "./layouts/Page";
 import Homepage from "./layouts/Homepage";
+import Timeline from "./layouts/Timeline";
+import Nyctophilia from "./layouts/Nyctophilia";
 import Immersive from "./layouts/Immersive";
 
-const PageContainer = (props) => (
-  <PhenomicPageContainer
-    { ...props }
-    layouts={{
-      Page,
-      Homepage,
-      Immersive
-    }}
-  />
-);
+function PageContainer(props) {
+  return (
+    <PhenomicPageContainer
+      { ...props }
+      layouts={{
+        Page,
+        Homepage,
+        Timeline,
+        Nyctophilia,
+        Immersive
+      }}
+    />
+  );
+}
 
 export default (
   <Route component={ AppContainer }>

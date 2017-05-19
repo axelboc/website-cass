@@ -1,46 +1,44 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { BodyContainer } from "phenomic";
 
-import Root from "../../components/Root";
+import HeadMeta from "../HeadMeta";
+import Banner from "../../components/Banner";
 import NavBar from "../../components/NavBar";
-import Main from "../../components/Main";
 import Heading from "../../components/Heading";
 import Footer from "../../components/Footer";
 import Loading from "../../components/Loading";
 
-import Timeline from "../../containers/Timeline";
-import Nyctophilia from "../../containers/Nyctophilia";
+import styles from "./index.css";
 
-const containers = {
-  Timeline,
-  Nyctophilia
-};
-
-const Page = (props) => {
-  const { isLoading, head, body, __filename } = props;
-  const Container = head.container && containers[head.container];
-  const bodyContainer = body && <BodyContainer>{body}</BodyContainer>;
+function Page(props) {
+  const { __url, __filename, isLoading, head, children } = props;
+  
+  // While loading, `__url` is nested inside the `head` object for some reason...
+  const isHome = (head && head.__url || __url) === '/';
   
   return (
-    <Root head={head}>
-      <NavBar __filename={__filename} />
-      <Main>
+    <div className={styles.root}>
+      <HeadMeta {...props} />
+      { isHome
+        ? <Banner __filename={__filename} isLoading={isLoading} intro={head.intro} />
+        : <NavBar __filename={__filename} />
+      }
+      <main className={styles.main}>
         <Heading title={head.heading || head.title} subtitle={head.subtitle} />
-        { isLoading
-          ? <Loading />
-          : <Container>{bodyContainer}</Container> }
-      </Main>
+        {isLoading ? <Loading /> : children}
+      </main>
       <Footer />
-    </Root>
+    </div>
   );
-};
+}
 
 Page.propTypes = {
+  __url: PropTypes.string,
+  __filename: PropTypes.string,
   isLoading: PropTypes.bool,
   head: PropTypes.object.isRequired,
   body: PropTypes.string,
-  __filename: PropTypes.string,
+  children: PropTypes.node,
 };
 
 export default Page;

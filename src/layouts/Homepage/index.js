@@ -1,43 +1,50 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { BodyContainer } from "phenomic";
-import Helmet from "react-helmet";
 
-import Root from "../../components/Root";
-import Banner from "../../components/Banner";
-import Main from "../../components/Main";
-import Heading from "../../components/Heading";
-import About from "../../components/About";
-import Footer from "../../components/Footer";
-import Loading from "../../components/Loading";
+import Page from "../Page";
+import Degree from "../../components/Degree";
+
+import styles from "./index.css";
 
 function Homepage(props) {
-  const { isLoading, head, body, __filename } = props;
-  
-  const about = (
-    <About {...head.about}>
-      { body && <BodyContainer>{body}</BodyContainer> }
-    </About>
-  );
+  const { head: { about: { portrait, degrees } }, body } = props;
 
   return (
-    <Root head={head}>
-      <Helmet titleTemplate="%s" />
-      <Banner __filename={__filename} intro={head.intro} />
-      <Main>
-        <Heading title={head.heading} />
-        { isLoading ? <Loading /> : about }
-      </Main>
-      <Footer />
-    </Root>
+    <Page {...props}>
+      <div className={styles.about}>
+        <div className={styles.body}>
+          {body && <BodyContainer>{body}</BodyContainer>}
+        </div>
+        <div className={styles.resume}>
+          <img 
+            className={styles.portrait}
+            src={portrait.src}
+            alt={portrait.alt}
+            width={portrait.width}
+            height={portrait.height} />
+          <div className={styles.academia}>
+            {degrees.map((degree, i) => <Degree key={i} {...degree} />)}
+          </div>
+        </div>
+      </div>
+    </Page>
   );
 }
 
 Homepage.propTypes = {
-  isLoading: PropTypes.bool,
-  head: PropTypes.object.isRequired,
+  head: PropTypes.shape({
+    about: PropTypes.shape({
+      portrait: PropTypes.shape({
+        src: PropTypes.string.isRequired,
+        alt: PropTypes.string.isRequired,
+        width: PropTypes.number.isRequired,
+        height: PropTypes.number.isRequired,
+      }).isRequired,
+      degrees: PropTypes.arrayOf(PropTypes.object).isRequired,
+    }).isRequired,
+  }).isRequired,
   body: PropTypes.string,
-  __filename: PropTypes.string,
 };
 
 export default Homepage;

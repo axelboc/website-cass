@@ -1,5 +1,8 @@
 {
-  "title": "Cassandra Frances",
+  "siteTitle": "Cassandra Frances",
+  "siteUrl": "https://www.cassfrances.com",
+  "socialImage": "",
+  "publisher": "",
   "initials": "CF",
   "nav": [
     { "filename": "index.md", "path": "/", "label": "About" },

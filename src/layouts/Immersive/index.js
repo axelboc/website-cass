@@ -2,29 +2,28 @@ import React from "react";
 import PropTypes from "prop-types";
 import { BodyContainer } from "phenomic";
 
-import Root from "../../components/Root";
-import Main from "../../components/Main";
 import Footer from "../../components/Footer";
+
 import styles from "./index.css";
 
-const Immersive = (props) => {
+function Immersive(props) {
   const { isLoading, head, body } = props;
   
   return !isLoading && (
-    <Root head={head}>
-      <Main>
+    <div>
+      <main>
         <div className={styles.immersive}>
           <header className={styles.header}>
             <h1 className={styles.heading}>{head.title}</h1>
             <p className={styles.byline}>{head.byline}</p>
           </header>
-          <BodyContainer>{body}</BodyContainer>
+          {body && <BodyContainer>{body}</BodyContainer>}
         </div>
-      </Main>
+      </main>
       <Footer />
-    </Root>
+    </div>
   );
-};
+}
 
 Immersive.propTypes = {
   isLoading: PropTypes.bool,

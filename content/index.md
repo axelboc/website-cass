@@ -1,6 +1,6 @@
 ---
 title: Cassandra Frances - Young Adult Fiction Writer
-description: Website of Cassandra Frances, Young Adult fiction writer.
+description: Official website of Cassandra Frances, Young Adult fiction writer.
 layout: Homepage
 intro: >
   Writer and professional pyjamas wearer.<br>

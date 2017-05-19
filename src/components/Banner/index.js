@@ -16,16 +16,18 @@ class Banner extends Component {
   }
   
   render() {
-    const { __filename, intro, bannerAnimated } = this.props;
-    const { metadata } = this.context;
+    const { __filename, isLoading, intro, bannerAnimated } = this.props;
+    const { metadata: { siteTitle } } = this.context;
 
     return (
       <header className={bannerAnimated ? styles.banner : styles.animatedBanner}>
         <NavBar __filename={__filename} isIndex />
-        <div className={styles.inner}>
-          <h1 className={styles.title}>{metadata.title}</h1>
-          <p className={styles.intro}>{renderHTML(intro)}</p>
-        </div>
+        { !isLoading &&
+          <div className={styles.inner}>
+            <h1 className={styles.title}>{siteTitle}</h1>
+            <p className={styles.intro}>{renderHTML(intro)}</p>
+          </div>
+        }
       </header>
     );
   }
@@ -34,6 +36,7 @@ class Banner extends Component {
 
 Banner.propTypes = {
   __filename: PropTypes.string,
+  isLoading: PropTypes.bool,
   intro: PropTypes.string.isRequired,
   bannerAnimated: PropTypes.bool.isRequired,
   setBannerAnimated: PropTypes.func.isRequired
@@ -41,7 +44,7 @@ Banner.propTypes = {
 
 Banner.contextTypes = {
   metadata: PropTypes.shape({
-    title: PropTypes.string.isRequired
+    siteTitle: PropTypes.string.isRequired
   }).isRequired
 };
 

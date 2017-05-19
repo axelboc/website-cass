@@ -1,4 +1,4 @@
 ---
 title: Work
-container: Timeline
+layout: Timeline
 ---
