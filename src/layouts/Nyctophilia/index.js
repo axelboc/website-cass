@@ -7,7 +7,7 @@ import Page from "../Page";
 import Book from "../../components/Book";
 
 import { toggleBook, resetSelectedBook } from "../../state/actions";
-import books from "../../../collections/books.json";
+import books from "../../../collections/books";
 import styles from "./index.css";
 
 class Nyctophilia extends Component {
