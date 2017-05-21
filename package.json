@@ -9,7 +9,7 @@
     "type": "git",
     "url": "https://github.com/axelboc/website-cass"
   },
-  "homepage": "https://cassfrances.com",
+  "homepage": "https://www.cassfrances.com",
   "engines": {
     "node": "^6.5.0",
     "npm": "^3.10.3"
@@ -45,9 +45,6 @@
     "file-loader": "^0.11.0",
     "highlight.js": "^9.10.0",
     "history": "^2.0.0",
-    "json-loader": "^0.5.4",
-    "markdown-it": "^8.3.1",
-    "markdown-it-front-matter-loader": "0.0.7",
     "npm-run-all": "^4.0.2",
     "phenomic": "^0.21.1",
     "postcss-browser-reporter": "^0.5.0",
@@ -71,7 +68,7 @@
     "stylelint-config-css-modules": "^0.1.0",
     "webpack": "^2.3.2",
     "whatwg-fetch": "^2.0.3",
-    "yaml-front-matter": "^3.4.0"
+    "yaml-markdown-loader": "^3.2.2"
   },
   "phenomic": {
     "nojekyll": false

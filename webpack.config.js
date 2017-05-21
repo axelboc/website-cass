@@ -39,22 +39,13 @@ export default (config = {}) => {
           ]
         },
 
-        // *.md inside `content/collections` folder
-        // allow retrieving and parsing collections of markdown files on the client-side.
+        // parse markdown collection files as JSON
         {
           test: /\.(md|markdown)$/,
           include: path.resolve(__dirname, "collections"),
           use: [
             "json-loader",
-            {
-              loader: "markdown-it-front-matter-loader",
-              options: {
-                "markdown-it": {
-                  html: true,
-                  typographer: true
-                }
-              }
-            }
+            "yaml-markdown-loader"
           ]
         },
 

@@ -15,7 +15,7 @@ const BLOCKS = {
 };
 
 function Work(props) {
-  const { title, blocks, body } = props;
+  const { meta: { title, blocks }, html } = props;
 
   return (
     <section className={styles.work}>
@@ -24,8 +24,8 @@ function Work(props) {
         {blocks.map((b, i) => {
           const Block = BLOCKS[b.layout];
           return Block
-            ? <Block key={i} {...b} body={body} />
-            : body && renderHTML(body);
+            ? <Block key={i} {...b} body={html} />
+            : html && renderHTML(html);
         })}
       </div>
     </section>
@@ -33,18 +33,20 @@ function Work(props) {
 }
 
 Work.propTypes = {
-  title: PropTypes.string.isRequired,
-  blocks: PropTypes.arrayOf(
-    PropTypes.shape({
-      layout: PropTypes.string.isRequired,
-      assets: PropTypes.arrayOf(PropTypes.string)
-    })
-  ).isRequired,
-  read: PropTypes.shape({
-    url: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired
-  }),
-  body: PropTypes.string
+  meta: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    blocks: PropTypes.arrayOf(
+      PropTypes.shape({
+        layout: PropTypes.string.isRequired,
+        assets: PropTypes.arrayOf(PropTypes.string)
+      })
+    ).isRequired,
+    read: PropTypes.shape({
+      url: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired
+    }),
+  }).isRequired,
+  html: PropTypes.string.isRequired
 };
 
 export default Work;
