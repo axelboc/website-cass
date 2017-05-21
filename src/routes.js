@@ -4,6 +4,7 @@ import { PageContainer as PhenomicPageContainer } from "phenomic";
 
 import AppContainer from "./AppContainer";
 import Page from "./layouts/Page";
+import PageError from "./layouts/PageError";
 import Homepage from "./layouts/Homepage";
 import Timeline from "./layouts/Timeline";
 import Nyctophilia from "./layouts/Nyctophilia";
@@ -15,6 +16,7 @@ function PageContainer(props) {
       { ...props }
       layouts={{
         Page,
+        PageError,
         Homepage,
         Timeline,
         Nyctophilia,
