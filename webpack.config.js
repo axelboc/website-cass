@@ -2,9 +2,11 @@ import path from "path";
 import webpack from "webpack";
 import ExtractTextPlugin from "extract-text-webpack-plugin";
 import { phenomicLoader } from "phenomic";
+import PhenomicLoaderSitemapWebpackPlugin from "phenomic/lib/loader-sitemap-webpack-plugin";
+
+import pkg from "./package.json";
 
 export default (config = {}) => {
-
   // hot loading for postcss config
   const postcssPluginFile = require.resolve("./postcss.config.js");
   const postcssPlugins = (webpackInstance) => {
@@ -136,7 +138,7 @@ export default (config = {}) => {
         // svg as raw string to be inlined
         {
           test: /\.svg$/,
-          use: "raw-loader"
+          loader: "raw-loader"
         }
       ],
     },
@@ -156,6 +158,10 @@ export default (config = {}) => {
           // context is missing (and css modules names can be broken)!
           context: __dirname
         }
+      }),
+
+      new PhenomicLoaderSitemapWebpackPlugin({
+        site_url: pkg.homepage,
       }),
 
       new ExtractTextPlugin({
