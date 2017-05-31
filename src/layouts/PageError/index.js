@@ -1,30 +1,30 @@
 import React from "react";
-import PropTypes from "prop-types";
-
 import Page from "../Page";
 
-// import styles from "./index.css"
+import metadata from "../../metadata";
+import styles from "./index.css";
 
-function PageError(props) {
-  const { error, errorText } = props;
+const IMAGE_NAME = "404.jpg";
 
+function PageError() {
   return (
     <Page head={{
-      title: "404"
+      title: "Are you lost?"
     }}>
-      <p>{error}: {errorText}</p>
+      <img 
+        className={styles.image}
+        sizes="100w"
+        src={getImgSrc([1500, 700], false)}
+        srcSet={[[500, 300], [1000, 500], [1500, 700]].map(getImgSrc).join(',')}
+        alt="Woman sitting in the middle of a path in a misty forest, her arms wrapped around her legs and her face obscured by her hair."
+      />
     </Page>
   );
 }
 
-PageError.propTypes = {
-  error: PropTypes.oneOfType([ PropTypes.number, PropTypes.string ]),
-  errorText: PropTypes.string,
-};
-
-PageError.defaultProps = {
-  error: 404,
-  errorText: "Page Not Found",
-};
+function getImgSrc([w, h], index, withDescriptor = true) {
+  const descriptor = withDescriptor ? ` ${w}w` : '';
+  return `${metadata.imgUrl}/w_${w},h_${h},c_fill,g_south,q_90/${IMAGE_NAME}${descriptor}`;
+}
 
 export default PageError;

@@ -1,0 +1,7 @@
+.image {
+  display: block;
+  object-fit: cover;
+  flex: 1;
+  margin-top: -3rem;
+  margin-bottom: -2rem;
+}
