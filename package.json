@@ -9,7 +9,7 @@
     "type": "git",
     "url": "https://github.com/axelboc/website-cass"
   },
-  "homepage": "https://www.cassfrances.com",
+  "homepage": "http://cassfrances.com",
   "engines": {
     "node": "^6.5.0",
     "npm": "^3.10.3"
