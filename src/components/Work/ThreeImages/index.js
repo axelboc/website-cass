@@ -13,7 +13,7 @@ function ThreeImages(props, { metadata }) {
   return (
     <div className={styles.root}>
       <div className={styles.mainImage}>
-        <img src={`${imgUrl}/w_605,q_90/${assets[0]}`} />
+        <img src={`${imgUrl}/w_605,q_90/${assets[0]}`} width="605" />
       </div>
       <div className={styles.sideImages}>
         <div style={{backgroundImage: `url(${imgUrl}/w_355,q_90/${assets[1]})`}} />

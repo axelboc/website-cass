@@ -13,10 +13,10 @@ function TwoImages(props, { metadata }) {
   return (
     <div className={styles.root}>
       <div className={styles.leftImage}>
-        <img src={`${imgUrl}/w_605,q_90/${assets[0]}`} />
+        <img src={`${imgUrl}/w_605,q_90/${assets[0]}`} width="605" />
       </div>
       <div className={styles.rightImage}>
-        <img src={`${imgUrl}/w_605,q_90/${assets[1]}`} />
+        <img src={`${imgUrl}/w_605,q_90/${assets[1]}`} width="605" />
       </div>
     </div>
   );

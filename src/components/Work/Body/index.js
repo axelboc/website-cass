@@ -20,7 +20,7 @@ function Body(props, { metadata }) {
     <div className={rootClassName}>
       {assets && (
         <div className={imgClassName}>
-          <img src={`${imgUrl}/w_605,q_90/${assets[0]}`} />
+          <img src={`${imgUrl}/w_605,q_90/${assets[0]}`} width="605" />
         </div>
       )}
       <div className={styles.body}>

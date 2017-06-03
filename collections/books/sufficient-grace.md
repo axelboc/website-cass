@@ -7,4 +7,4 @@ coverSrc: /assets/covers/277/sufficient-grace.jpg
 spineColour: "#332A26"
 ---
 
-Deceptively simple tale that sucks you in.
+Deceptively simple tale that sucks you in. Told in the first person by a young girl living in a strict christian community, from the very first page you know you are in  a totally different world.

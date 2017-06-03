@@ -7,4 +7,4 @@ coverSrc: /assets/covers/277/this-is-shyness.jpg
 spineColour: "#1D1814"
 ---
 
-Such a crazy new world that feels so familiar.
+Such a crazy new world that feels so familiar. There's a reason it won The Text Prize!

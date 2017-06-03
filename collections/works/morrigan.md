@@ -10,10 +10,8 @@ blocks:
       - morrigan-1.jpg
 ---
 
-My self-published graphic narrative about the last act of an aging Goddess of War.
+My self-published **graphic narrative** about the **last act of an aging Goddess of War**. The image opposite is one of the completed pages and below are some roughs from individual panels. I worked with a combination of watercolour and ink, and I also used human models.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam deleniti hic obcaecati nesciunt impedit corporis soluta non laudantium provident dolor quidem illo, quae asperiores reprehenderit perferendis doloribus officia suscipit tenetur!
+I produced this comic for my Graphic Narratives class at The University of Melbourne. The Morrigan has aged and is living in one of the rougher towns of Ireland, missing her glory days when people went to war under her banner. When a man is killed in a violent fight in her neighbourhood, he asks her to **perform her duty one last time** by taking him to heaven, as was her purpose when she was a young goddess.
 
-Aliquid natus, consectetur aut id possimus quaerat, ut vitae itaque cupiditate ad repellat est. Delectus harum iste, tempora, quis necessitatibus ea, quidem dolores, at nobis nemo vitae! Voluptates, veniam, voluptatibus.
-
-Rem maxime ad consectetur magnam quas maiores molestias, temporibus id numquam alias earum veniam reprehenderit, repudiandae, aperiam, totam culpa enim qui.
+I've long been fascinated by the idea of what happens to gods when we not longer believe in them. How do our relationships with myths and their characters change with time?

@@ -7,4 +7,4 @@ coverSrc: /assets/covers/271/daughter-of-smoke-and-bone.jpg
 spineColour: "#010101"
 ---
 
-Funny, dark, self-aware. Epic world building.
+Funny, dark, self-aware. Epic world building. If this book was a meal it would be a rich medieval feast!

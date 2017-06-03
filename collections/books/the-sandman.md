@@ -7,4 +7,4 @@ coverSrc: /assets/covers/277/the-sandman.jpg
 spineColour: "#020202"
 ---
 
-Neil Gaiman, do I really need to say why?
+The Sandman comics are famous, so perhaps I don't need to say too much about them. But every time I read them, I find something new to amaze me.

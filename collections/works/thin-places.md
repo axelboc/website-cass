@@ -13,6 +13,6 @@ blocks:
       - thin-places-2.jpg
 ---
 
-A collection of short graphic narratives about traveling to Thin Places in the world and the strange things that happen there.
+This self-published comic featured **interconnected stories** about _Thin Places_, and about my time in Iceland and Greenland looking for something but never finding it. Like liminal spaces, thin places don’t always feel quite real and are qualitatively different from ordinary, everyday places. They are places we travel to, to feel outside of ourselves, and that inspire awe.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam deleniti hic obcaecati nesciunt impedit corporis soluta non laudantium provident dolor quidem illo, quae asperiores reprehenderit perferendis doloribus officia suscipit tenetur!
+Each story features a **story within a story**: _The mermaids of Myrvatn lake_, for instance, is about the disappearance of the rare moss balls that are only found there, but also of myths&mdash;in this case, the selkie.

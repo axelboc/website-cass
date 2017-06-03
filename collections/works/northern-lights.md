@@ -7,8 +7,6 @@ read:
   label: Read the full story
 ---
 
-![Scan of published story](https://placehold.it/500x300)
+Short fiction, **runner-up** in the **Grace Marion Wilson award** for Emerging Writers.
 
-Short fiction. Runner-up in the Grace Marion Wilson award for Emerging Writers.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore perferendis provident repellat, neque mollitia enim quos dolor sapiente voluptates iure nesciunt doloribus rerum quidem. Optio distinctio aliquam reiciendis nam harum.
+_How Cold the Northern Lights_ was inspired by the time I spent in Greenland and backpacking through Europe, and how it can be a surprisingly **isolating experience** trying to connect with others. It was published in the October 2011 edition of [The Victorian Writer](https://writersvictoria.org.au/resources/the-victorian-writer).
