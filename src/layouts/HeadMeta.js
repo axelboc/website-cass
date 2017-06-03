@@ -26,8 +26,7 @@ function HeadMeta(props, { metadata }) {
           { property: "og:url", content: joinUri(siteUrl, __url) },
           { property: "og:image", content: head.socialImage || socialImage },
           { property: "og:locale", content: "en_GB" },
-          { property: "og:site_name", content: siteTitle },
-          ...(!isHome && [{ property: "og:site_name", content: siteUrl }]),
+          ...(!isHome && [{ property: "og:site_name", content: siteTitle }]),
         ]}
         link={[
           { rel: "icon", type: "image/png", href: "/assets/favicon-32x32.png", sizes: "32x32" },
