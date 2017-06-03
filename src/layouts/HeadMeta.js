@@ -5,7 +5,7 @@ import { joinUri } from "phenomic";
 
 function HeadMeta(props, { metadata }) {
   const { isHome, __url, head } = props;
-  const { siteTitle, siteUrl, socialImage, publisher } = metadata;
+  const { siteTitle, siteUrl, socialImage } = metadata;
   
   const title = head.title + (isHome ? "" : ` - ${siteTitle}`);
 
@@ -32,7 +32,6 @@ function HeadMeta(props, { metadata }) {
           { rel: "icon", type: "image/png", href: "/assets/favicon-32x32.png", sizes: "32x32" },
           { rel: "icon", type: "image/png", href: "/assets/favicon-16x16.png", sizes: "16x16" },
           { rel: "shortcut icon", href: "/assets/favicon.ico" },
-          { rel: "publisher", href: publisher },
           { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Princess+Sofia|Roboto:300,400,400i,700" }
         ]}
         script={[
@@ -57,7 +56,6 @@ HeadMeta.contextTypes = {
     siteTitle: PropTypes.string.isRequired,
     siteUrl: PropTypes.string.isRequired,
     socialImage: PropTypes.string.isRequired,
-    publisher: PropTypes.string.isRequired,
   }).isRequired,
 };
 
