@@ -75,6 +75,7 @@ export default (config = {}) => {
                 loader: "css-loader",
                 options: {
                   modules: true,
+                  minimize: config.production && { autoprefixer: false },
                   localIdentName: (
                     config.production
                     ? "[hash:base64:5]"
@@ -100,7 +101,12 @@ export default (config = {}) => {
           use: ExtractTextPlugin.extract({
             fallback: "style-loader",
             use: [
-              "css-loader",
+              {
+                loader: "css-loader",
+                options: {
+                  minimize: config.production && { autoprefixer: false }
+                }
+              },
               {
                 loader: "postcss-loader"
                 // options for postcss can't be used right now

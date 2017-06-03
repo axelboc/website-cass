@@ -54,9 +54,7 @@
   font-size: 120%;
 }
 
-.navItem {}
 .navItemCurrent {
-  composes: navItem;
   color: var(--colSecondary);
 }
 

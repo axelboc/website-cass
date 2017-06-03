@@ -22,8 +22,6 @@ module.exports = (config) => [
       }
     }
   }),
-  require("postcss-reporter")(),
-  ...(!config.production ? [
-    require("postcss-browser-reporter")()
-  ] : [])
+  ...(!config.production ? [require("postcss-browser-reporter")()] : []),
+  require("postcss-reporter")()
 ];
