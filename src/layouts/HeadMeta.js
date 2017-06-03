@@ -26,6 +26,7 @@ function HeadMeta(props, { metadata }) {
           { property: "og:url", content: joinUri(siteUrl, __url) },
           { property: "og:image", content: head.socialImage || socialImage },
           { property: "og:locale", content: "en_GB" },
+          { property: "og:site_name", content: siteTitle },
           ...(!isHome && [{ property: "og:site_name", content: siteUrl }]),
         ]}
         link={[
