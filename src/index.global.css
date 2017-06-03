@@ -34,6 +34,12 @@ button:focus {
   outline-color: currentColor;
 }
 
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
 img {
   display: block;
   max-width: 100%;

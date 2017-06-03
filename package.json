@@ -23,8 +23,14 @@
     "pretest": "npm run lint",
     "test": "npm run build"
   },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not ie <= 10"
+  ],
   "dependencies": {
-    "normalize.css": "~4.2.0"
+    "normalize.css": "^7.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.0",
