@@ -4,11 +4,10 @@ import Helmet from "react-helmet";
 import { joinUri } from "phenomic";
 
 function HeadMeta(props, { metadata }) {
-  const { __url, head, isLoading } = props;
+  const { isHome, __url, head } = props;
   const { siteTitle, siteUrl, socialImage, publisher } = metadata;
-
-  const isHome = __url === '/';
-  const title = `${isLoading || isHome ? '' : `${head.title} | `}${siteTitle}`;
+  
+  const title = head.title + (isHome ? "" : ` - ${siteTitle}`);
 
   return (
     <div hidden>
@@ -45,12 +44,12 @@ function HeadMeta(props, { metadata }) {
 }
 
 HeadMeta.propTypes = {
+  isHome: PropTypes.bool.isRequired,
   __url: PropTypes.string,
   head: PropTypes.shape({
     title: PropTypes.string,
     description: PropTypes.string,
   }).isRequired,
-  isLoading: PropTypes.bool,
 };
 
 HeadMeta.contextTypes = {

@@ -14,11 +14,11 @@ function Page(props) {
   const { __url, __filename, isLoading, head, children } = props;
   
   // While loading, `__url` is nested inside the `head` object for some reason...
-  const isHome = (head && head.__url || __url) === '/';
+  const isHome = (head && head.__url || __url) === "/";
   
   return (
     <div className={styles.root}>
-      <HeadMeta {...props} />
+      <HeadMeta isHome={isHome} {...props} />
       { isHome
         ? <Banner __filename={__filename} isLoading={isLoading} intro={head.intro} />
         : <NavBar __filename={__filename} />
