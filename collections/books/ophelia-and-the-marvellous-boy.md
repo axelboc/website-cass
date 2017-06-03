@@ -7,4 +7,4 @@ coverSrc: /assets/covers/284/ophelia-and-the-marvellous-boy.jpg
 spineColour: "#212c3f"
 ---
 
-An unusual retelling of the _Snow Queen_. A children's book that is readable at any age.
+An unusual retelling of the _Snow Queen_. A children’s book that is readable at any age.
