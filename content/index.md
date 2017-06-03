@@ -1,6 +1,6 @@
 ---
 title: Cassandra Frances - Young Adult Fiction Writer
-description: Official website of Cassandra Frances, Young Adult fiction writer from Melbourne, Australia.
+description: Official website of Cassandra Frances, Young Adult fiction writer. I write about ghosts, creepy sisters, and bad love with some good kissing.
 layout: Homepage
 intro: >
   Writer and professional pyjamas wearer.<br>

@@ -1,6 +1,7 @@
 ---
 title: Nyctophilia
 subtitle: nyc•to•phil•i•a (nĭk′tə-fĭl′ē-ə)
+description: My little night garden of dark and creepy books. The bloody fairy tales, the vengeful fairies and the abject dark magic is what gets my blood pumping.
 layout: Nyctophilia
 ---
 
