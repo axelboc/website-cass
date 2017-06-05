@@ -7,8 +7,9 @@ import Degree from "../../components/Degree";
 
 import styles from "./index.css";
 
-function Homepage(props) {
+function Homepage(props, { metadata }) {
   const { head: { about: { portrait, degrees } }, body } = props;
+  const { imgUrl } = metadata;
 
   return (
     <Page {...props}>
@@ -19,7 +20,7 @@ function Homepage(props) {
         <div className={styles.resume}>
           <img 
             className={styles.portrait}
-            src={portrait.src}
+            src={`${imgUrl}/w_${portrait.width},q_90/${portrait.src}`}
             alt={portrait.alt}
             width={portrait.width}
             height={portrait.height} />
@@ -45,6 +46,12 @@ Homepage.propTypes = {
     }).isRequired,
   }).isRequired,
   body: PropTypes.string,
+};
+
+Homepage.contextTypes = {
+  metadata: PropTypes.shape({
+    imgUrl: PropTypes.string.isRequired
+  }).isRequired
 };
 
 export default Homepage;

@@ -8,10 +8,10 @@ intro: >
 heading: About me
 about:
   portrait:
-    src: /assets/cassandra-frances-portrait.jpg
-    alt: Portrait of writer Cassandra Frances
-    width: 200
-    height: 200
+    src: cassandra-frances-portrait.jpg
+    alt: Photo portrait of writer Cassandra Frances
+    width: 300
+    height: 300
   degrees:
     - title: Master of Creative Writing, Publishing and Editing
       uni: The University of Melbourne, 2014–2015
