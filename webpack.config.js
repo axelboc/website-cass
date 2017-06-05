@@ -69,13 +69,19 @@ export default (config = {}) => {
           exclude: /\.global\.css$/,
           include: path.resolve(__dirname, "src"),
           use: ExtractTextPlugin.extract({
-            fallback: "style-loader",
+            fallback: {
+              loader: "style-loader",
+              options: {
+                sourceMap: !config.production
+              }
+            },
             use: [
               {
                 loader: "css-loader",
                 options: {
                   modules: true,
                   minimize: config.production && { autoprefixer: false },
+                  sourceMap: !config.production,
                   localIdentName: (
                     config.production
                     ? "[hash:base64:5]"
@@ -99,12 +105,18 @@ export default (config = {}) => {
           test: /\.global\.css$/,
           include: path.resolve(__dirname, "src"),
           use: ExtractTextPlugin.extract({
-            fallback: "style-loader",
+            fallback: {
+              loader: "style-loader",
+              options: {
+                sourceMap: !config.production
+              }
+            },
             use: [
               {
                 loader: "css-loader",
                 options: {
-                  minimize: config.production && { autoprefixer: false }
+                  minimize: config.production && { autoprefixer: false },
+                  sourceMap: !config.production,
                 }
               },
               {
@@ -149,6 +161,7 @@ export default (config = {}) => {
         test: /\.css$/,
         options: {
           postcss: postcssPlugins,
+          sourceMap: !config.production,
           // required to avoid issue css-loader?modules
           // this is normally the default value, but when we use
           // LoaderOptionsPlugin, we must specify it again, otherwise,
