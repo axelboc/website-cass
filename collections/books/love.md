@@ -1,7 +1,7 @@
 ---
 title: Love
-author: Angla Carter
-authorURL: https://enwikipedia.org/wiki/Angela_Carter
+author: Angela Carter
+authorURL: https://en.wikipedia.org/wiki/Angela_Carter
 url: https://www.goodreads.com/book/show/81022.Love
 coverSrc: /assets/covers/277/love.jpg
 spineColour: "#AD0172"

@@ -1,8 +1,8 @@
 ---
 title: Black Spring
 author: Alison Crogon
-authorURL: http://www.lisoncroggon.com/
-url: https://www.goodreads.com/book/show12161371-black-spring
+authorURL: http://www.alisoncroggon.com/
+url: https://www.goodreads.com/book/show/12161371-black-spring
 coverSrc: /assets/covers/284/black-spring.jpg
 spineColour: "#22120D"
 ---

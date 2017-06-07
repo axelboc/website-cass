@@ -1,8 +1,8 @@
 ---
 title: The Night Circus
-author: Erin Morgenster
-authorURL: https://erinmrgenstern.com/
-url: https://www.goodreads.com/book/sho/10860047-the-night-circus
+author: Erin Morgenstern
+authorURL: https://erinmorgenstern.com/
+url: https://www.goodreads.com/book/show/10860047-the-night-circus
 coverSrc: /assets/covers/284/the-night-circus.jpg
 spineColour: "#070707"
 ---

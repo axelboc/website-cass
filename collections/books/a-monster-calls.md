@@ -1,8 +1,8 @@
 ---
 title: A Monster Calls
 author: Patrick Ness
-authorURL: http://parickness.com/
-url: https://www.goodreads.com/boo/show/8621462-a-monster-calls
+authorURL: http://patrickness.com/
+url: https://www.goodreads.com/book/show/8621462-a-monster-calls
 coverSrc: /assets/covers/233/a-monster-calls.jpg
 spineColour: "#081621"
 ---

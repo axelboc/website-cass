@@ -1,7 +1,7 @@
 ---
 title: We have always lived in the Castle
 author: Shirley Jackson
-authorURL: https://en.wkipedia.org/wiki/Shirley_Jackson
+authorURL: https://en.wikipedia.org/wiki/Shirley_Jackson
 url: https://www.goodreads.com/book/show/6708624-we-havealways-lived-in-the-castle
 coverSrc: /assets/covers/257/we-have-always-lived-in-the-castle.jpg
 spineColour: "#010101"
