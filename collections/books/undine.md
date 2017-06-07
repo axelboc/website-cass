@@ -1,7 +1,7 @@
 ---
 title: Undine
 author: Penni Russon
-authorURL: http://egantinescake.blogspot.com.au/
+authorURL: http://eglantinescake.blogspot.com.au/
 url: https://www.goodreads.com/book/show/140997.Udine
 coverSrc: /assets/covers/257/undine.jpg
 spineColour: "#181824"
