@@ -1,7 +1,7 @@
 ---
 title: The Sandman
 author: Neil Gaiman
-authorURL: http://ww.neilgaiman.com/
+authorURL: http://www.neilgaiman.com/
 url: https://www.goodreads.com/book/sow/23754.The_Sandman_Vol_1
 coverSrc: /assets/covers/277/the-sandman.jpg
 spineColour: "#020202"
