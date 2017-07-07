@@ -1,6 +1,6 @@
 # Cassandra Frances
 
-**Portfolio website** of [Cassandra Frances](https://twitter.com/CassandraFrance) - https://cassfrances.com/
+**Portfolio website** of [Cassandra Frances](https://twitter.com/Cass_Frances_) - https://cassfrances.com/
 
 - Built with [Phenomic](https://phenomic.io/) :zap:, a "modern static site generator based on [React](https://facebook.github.io/react/) and the [Webpack](https://webpack.js.org/) ecosystem." The pages are served as static HTML, but React takes over and provides enhanced navigation when JavaScript is available.
 - Hosted on [Netlify](https://www.netlify.com/) and set up for continuous deployment.
