@@ -47,8 +47,8 @@ img {
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 @media (min-width: 35em) {
