@@ -21,12 +21,15 @@ about:
       text: I went on exchange to Aalborg University in Denmark, where I studied Metafiction and Twentieth-Century Literature.
 ---
 
-I write about ghosts, creepy sisters and friends, what happens ‘out there,’ what we won’t talk about, and bad love with some good kissing.
+I am an Australian writer living in France. I take a lot of inspiration from Melbourne, where I spent 12 years, as well as from country Victoria where I grew up.
 
-I am an emerging writer based in Melbourne, Australia. I take a lot of inspiration from this city as well as country Victoria where I grew up.
+I’ve always been a **storyteller of some sort**. I started out in theatre as a kid, (my greatest role was a weasel in _Wind in the Willows_). Now I write about ghosts, creepy sisters, what happens ‘out there,’ what we won’t talk about, and bad love with some good kissing.
 
-I’ve always been a **storyteller of some sort**. I started out in theatre as a kid, (my greatest role was a weasel in _Wind in the Willows_), studied Film and Television at RMIT University, and worked for a small animation company making some weird little movies.
+My stories are about the darker side of life that exists on the edge of reality and sometimes outside of it. I have collected books like these that I love on [Nyctophilia](/nyctophilia), my little **night garden of dark and creepy books**. Maybe you’ll find something you’ll like too.
 
-Now I’m a graduate of the The University of Melbourne’s Master of Creative Writing, Publishing and Editing. I like to tell stories about the darker side of life that exists on the edge of reality... and sometimes outside of it. I have collected books like these that I love on [Nyctophilia](/nyctophilia), my little **night garden of dark and creepy books**.
+In 2017, I was a **PitchWars** ‘mentee’ and participated in their online mentoring program. I found my agent, Hillary Jacobson at ICM Partners, through this program.
 
-I’m also an [Aurealis magazine](https://aurealis.com.au/) slush pile reader, and was a judge for the 2016 Aurealis Award for best illustrated book or graphic novel.
+I am currently a mentor for [Author Mentor Match](https://www.authormentormatch.com), another online program that pairs writers with writing mentors to assist them in revising drafts of their middle grade or young adult manuscript and preparing to approach agents and publishers. It’s incredibly rewarding and I get to read so much new and challenging work! I hope to continue doing this for a long time.
+
+I’m also an [Aurealis magazine](https://aurealis.com.au/) slush pile reader, and was a judge for the 2016 ad 2017 Aurealis Award for best illustrated book or graphic novel.
+
