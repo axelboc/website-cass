@@ -31,5 +31,5 @@ In 2017, I was a **PitchWars** ‘mentee’ and participated in their online men
 
 I am currently a mentor for [Author Mentor Match](https://www.authormentormatch.com), another online program that pairs writers with writing mentors to assist them in revising drafts of their middle grade or young adult manuscript and preparing to approach agents and publishers. It’s incredibly rewarding and I get to read so much new and challenging work! I hope to continue doing this for a long time.
 
-I’m also an [Aurealis magazine](https://aurealis.com.au/) slush pile reader, and was a judge for the 2016 ad 2017 Aurealis Award for best illustrated book or graphic novel.
+I’m also an [Aurealis magazine](https://aurealis.com.au/) slush pile reader, and was a judge for the 2016 and 2017 Aurealis Award for best illustrated book or graphic novel.
 
