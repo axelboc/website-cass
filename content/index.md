@@ -1,15 +1,15 @@
 ---
-title: Cassandra Frances - Young Adult Fiction Writer
-description: Official website of Cassandra Frances, Young Adult fiction writer. I write about ghosts, creepy sisters, and bad love with some good kissing.
+title: Cass Frances - Young Adult Fiction Writer
+description: Official website of Cass Frances, young adult fiction writer. I write about ghosts, creepy sisters, and bad love with some good kissing.
 layout: Homepage
 intro: >
   Writer and professional pyjamas wearer.<br>
-  Weaving the gothic into fantasy in Young&nbsp;Adult and Children’s stories.
+  Weaving the gothic into fantasy in young&nbsp;adult and children’s stories.
 heading: About me
 about:
   portrait:
     src: cassandra-frances-portrait.jpg
-    alt: Photo portrait of writer Cassandra Frances
+    alt: Photo portrait of writer Cass Frances
     width: 300
     height: 300
   degrees:
