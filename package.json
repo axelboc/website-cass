@@ -11,8 +11,7 @@
   },
   "homepage": "https://cassfrances.com",
   "engines": {
-    "node": "^6.5.0",
-    "npm": "^3.10.3"
+    "node": "8.x"
   },
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --fix .",
