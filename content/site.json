@@ -5,6 +5,7 @@
   "initials": "CF",
   "nav": [
     { "filename": "index.md", "path": "/", "label": "About" },
+    { "filename": "services.md", "path": "/services", "label": "Services" },
     { "filename": "work.md", "path": "/work", "label": "Work" },
     { "filename": "nyctophilia.md", "path": "/nyctophilia", "label": "Nyctophilia" }
   ],

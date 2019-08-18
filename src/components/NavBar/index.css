@@ -14,6 +14,8 @@
   font-family: var(--fontLogo);
   font-size: 250%;
   line-height: 1.2;
+  letter-spacing: 0.05em;
+  word-spacing: 0.15em;
   text-align: center;
 }
 

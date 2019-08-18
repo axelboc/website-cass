@@ -6,6 +6,7 @@ import AppContainer from "./AppContainer";
 import Page from "./layouts/Page";
 import PageError from "./layouts/PageError";
 import Homepage from "./layouts/Homepage";
+import Services from "./layouts/Services";
 import Timeline from "./layouts/Timeline";
 import Nyctophilia from "./layouts/Nyctophilia";
 import Immersive from "./layouts/Immersive";
@@ -18,6 +19,7 @@ function PageContainer(props) {
         Page,
         PageError,
         Homepage,
+        Services,
         Timeline,
         Nyctophilia,
         Immersive
