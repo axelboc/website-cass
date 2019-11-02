@@ -50,6 +50,7 @@
     "file-loader": "^0.11.0",
     "highlight.js": "^9.10.0",
     "history": "^2.0.0",
+    "node-gyp": "^6.0.1",
     "npm-run-all": "^4.0.2",
     "phenomic": "^0.21.1",
     "postcss-browser-reporter": "^0.5.0",
