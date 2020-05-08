@@ -1,0 +1,23 @@
+{
+  // Disable built-in validators and formatters (use extensions instead)
+  "css.validate": false,
+  "javascript.format.enable": false,
+  "javascript.validate.enable": false,
+
+  // Format files with Prettier
+  "editor.formatOnSave": true,
+
+  // Fix files with ESLint and stylelint
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+    // "source.fixAll": true
+  },
+
+  // Workaround for slow stylelint fixer
+  // https://github.com/stylelint/vscode-stylelint/issues/45
+  "[css]": {
+    "editor.codeActionsOnSave": {
+      // "source.fixAll.stylelint": true
+    }
+  }
+}

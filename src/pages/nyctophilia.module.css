@@ -1,0 +1,112 @@
+.nyctophilia {
+  composes: max from global;
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -0.5rem;
+}
+
+.book {
+  flex: 1;
+  margin-bottom: 1.5rem;
+  padding: 0 0.5rem;
+}
+
+.intro {
+  composes: book;
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+}
+
+.introInner {
+  flex: 1;
+  padding: 1rem; /* same as books' inner containers */
+}
+
+.intro p:last-child {
+  margin: 0;
+}
+
+.intro blockquote {
+  position: relative;
+  margin: calc(-1em * (1.4 - 1) / 2) 0; /* compensate for line-height for vertical rythm */
+  padding-bottom: 0.5rem;
+  color: var(--colSecondary80);
+  font-size: 180%;
+  font-family: var(--fontHeading);
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.intro blockquote p::before {
+  position: absolute;
+  transform: translateX(-100%);
+  content: open-quote;
+}
+
+.intro blockquote p::after {
+  content: close-quote;
+}
+
+.empty1,
+.empty2 {
+  composes: book;
+  display: none;
+}
+
+@media (min-width: 30em) and (max-width: 39.99em),
+  (min-width: 50em) and (max-width: 54.99em) {
+  .inner {
+    margin: 0 -0.5rem;
+  }
+
+  .book {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (min-width: 50em) {
+  .inner {
+    padding-top: 0.75rem;
+  }
+
+  .book {
+    margin-bottom: 3rem;
+  }
+
+  .intro {
+    display: flex;
+    align-items: center;
+    max-width: 50%;
+  }
+
+  .introInner {
+    padding: 1.5rem 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .empty1:nth-child(3n + 1),
+  .empty1:nth-child(3n + 2),
+  .empty2:nth-child(3n + 2) {
+    display: block;
+  }
+}
+
+@media (min-width: 65em) {
+  .inner {
+    margin: -0.5rem -2.5rem 0;
+  }
+
+  .intro {
+    max-width: 66.66%;
+  }
+
+  .introInner {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}

@@ -1,0 +1,27 @@
+.footer {
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  background-color: var(--colSecondary);
+}
+
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.socialSite {
+  display: inline-block;
+  width: 5rem;
+  margin: 0 1rem;
+}
+
+.socialLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.socialLink:hover {
+  text-decoration: underline;
+}

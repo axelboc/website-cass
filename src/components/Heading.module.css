@@ -1,0 +1,33 @@
+.heading {
+  margin: 0 0 2rem;
+  padding: 2rem;
+  color: white;
+  font-weight: 100;
+  font-size: 200%;
+  font-family: var(--fontHeading);
+  text-align: center;
+  background-color: var(--colSecondary);
+}
+
+.withSubtitle {
+  composes: heading;
+  padding: 1.31rem 2rem;
+}
+
+.subtitle {
+  display: block;
+  margin-bottom: 0.4em;
+  font-size: 50%;
+}
+
+@media (min-width: 35em) {
+  .heading {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 45em) {
+  .heading {
+    font-size: 275%;
+  }
+}

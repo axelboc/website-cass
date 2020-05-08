@@ -1,0 +1,74 @@
+@import '~normalize.css';
+
+:root {
+  --fontText: 'Roboto', 'Segoe UI', 'Optima', 'Arial', sans-serif;
+  --fontHeading: 'Georgia', 'Times', 'Times New Roman', serif;
+  --fontLogo: 'Princess Sofia', 'Garamond', serif;
+  --colBg: #f1f1f1;
+  --colShadow: #929297;
+  --colPrimary: rgb(175, 54, 54);
+  --colPrimary80: rgba(175, 54, 54, 0.8);
+  --colPrimary20: rgba(175, 54, 54, 0.2);
+  --colSecondary: rgb(32, 32, 48);
+  --colSecondary80: rgba(32, 32, 48, 0.8);
+  --colSecondary50: rgba(32, 32, 48, 0.5);
+  --colSecondary20: rgba(32, 32, 48, 0.2);
+  --colTernary: #e2c5bc;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-y: scroll;
+  color: var(--colSecondary);
+  font-size: 100%;
+  font-family: var(--fontText);
+  line-height: 1.6;
+}
+
+body {
+  min-height: 100%;
+  background-color: var(--colBg);
+}
+
+a {
+  color: var(--colPrimary);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+a:focus,
+button:focus {
+  outline-color: currentColor;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+::selection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+
+@media (min-width: 35em) {
+  html {
+    font-size: 105%;
+  }
+}

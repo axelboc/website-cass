@@ -1,6 +1,6 @@
 # License &amp; Copyright
 
-**Copyright (c) 2017 Cass Frances**
+**Copyright (c) 2020 Cass Frances**
 
 The content of this repository is provided under the MIT license (see below), with the exception of the book covers, which come from Goodreads, and of the remaining graphics, photos, documents and other assets, which remain the sole property of Cass Frances and cannot be reproduced, distributed or modified.
 

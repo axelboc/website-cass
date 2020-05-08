@@ -1,0 +1,56 @@
+.root {
+  margin: 1rem 0;
+}
+
+.mainImage {
+  margin-bottom: 0.5rem;
+}
+
+.mainImage > img {
+  background-color: var(--colSecondary20);
+}
+
+.sideImages {
+  display: flex;
+  margin: 0 -0.25rem;
+}
+
+.sideImages > div {
+  flex: 1;
+  margin: 0 0.25rem;
+  background-color: var(--colSecondary20);
+  background-position: center;
+  background-size: cover;
+}
+
+.sideImages > div::before {
+  display: block;
+  padding-top: 56.25%;
+  content: '';
+}
+
+@media (min-width: 45em) {
+  .root {
+    display: flex;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+  }
+
+  .mainImage {
+    flex: 1 1 61.5%;
+    margin-bottom: 0;
+    padding: 0 0.5rem;
+  }
+
+  .sideImages {
+    flex: 1 0 38.5%;
+    flex-direction: column;
+    margin: -0.5rem 0;
+    padding: 0 0.5rem;
+  }
+
+  .sideImages > div {
+    margin: 0.5rem 0;
+    padding-top: 0;
+  }
+}

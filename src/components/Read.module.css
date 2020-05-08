@@ -1,0 +1,25 @@
+.read {
+  composes: max from global;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: var(--colBg);
+}
+
+.header {
+  margin: 3rem 0;
+}
+
+.heading {
+  margin: 0;
+  font-weight: normal;
+  font-size: 250%;
+  font-family: var(--fontHeading);
+  font-style: italic;
+  text-align: center;
+}
+
+.byline {
+  font-size: 110%;
+  text-align: center;
+}

@@ -1,0 +1,14 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-bottom: 2rem;
+  background-color: var(--colSecondary20);
+}

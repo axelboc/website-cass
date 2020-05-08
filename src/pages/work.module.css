@@ -1,0 +1,15 @@
+.timeline {
+  composes: max from global;
+}
+
+.inner {
+  padding-top: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-left: 1rem solid var(--colSecondary20);
+}
+
+@media (min-width: 65em) {
+  .inner {
+    margin-left: -2rem;
+  }
+}

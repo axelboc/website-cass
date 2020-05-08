@@ -1,0 +1,57 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "globals": {
+    "process": "readonly"
+  },
+  "plugins": ["simple-import-sort", "import", "react", "react-hooks"],
+  "settings": {
+    "import/cache": {
+      "lifetime": 0
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"]
+      }
+    },
+    "react": {
+      "version": "detect",
+      "linkComponents": [
+        "Hyperlink",
+        { "name": "Link", "linkAttribute": "href" }
+      ]
+    }
+  },
+  "extends": [
+    "problems",
+    "plugin:import/errors",
+    "plugin:react/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "simple-import-sort/sort": "error",
+    "sort-imports": "off"
+  },
+  "overrides": [
+    {
+      "files": ["next.config.js"],
+      "env": {
+        "browser": false,
+        "node": true
+      }
+    }
+  ]
+}

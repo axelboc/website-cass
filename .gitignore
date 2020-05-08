@@ -1,12 +1,7 @@
-# Windows
-Thumbs.db
+/node_modules/
+/.next
+/out
 
-# npm
-node_modules
 *.log
-
-# Phenomic
-dist
-
-# VS Code
-.vscode
+.DS_Store
+Thumbs.db

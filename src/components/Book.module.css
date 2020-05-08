@@ -1,0 +1,239 @@
+.root {
+  flex: 1;
+  margin-bottom: 1.5rem;
+  padding: 0 0.5rem;
+}
+
+.book {
+  position: relative;
+  z-index: 0;
+  display: block;
+  width: 19rem;
+  margin: 0 auto;
+  padding: 1rem;
+  overflow: hidden;
+  color: inherit;
+  text-align: center;
+  background: none;
+  border: none;
+  perspective: 1800px;
+  cursor: pointer;
+}
+
+/* background overlay when hovered or selected */
+.book::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s;
+  content: '';
+}
+
+/* show overlay slightly on hover */
+.book:hover::before {
+  opacity: 0.4;
+}
+
+/* show overlay completely when selected (override hover style) */
+.book[data-selected]::before,
+.book[data-selected]:hover::before {
+  opacity: 1;
+}
+
+/* cover container for main transform */
+.cover {
+  position: relative;
+  display: inline-block;
+  transform-origin: 0 50%;
+  transform-style: preserve-3d;
+  transition: transform 0.3s;
+}
+
+/* transform completely when selected */
+.book[data-selected] .cover {
+  transform: translateX(-7rem) translateX(50%) rotateY(85deg);
+}
+
+/* transform slightly on hover */
+.book:not([data-selected]):hover .cover {
+  transform: translateX(-0.25rem) rotateY(15deg);
+}
+
+/* cover image wrapper for hardcover book effect */
+.coverImg {
+  overflow: hidden;
+  border-radius: 1px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  transition: box-shadow 0.3s;
+}
+
+.book[data-selected] .coverImg {
+  box-shadow: 1px 0 1px rgba(0, 0, 0, 0.7);
+}
+
+/* shadows for hardcover book effect */
+.coverImg::before,
+.coverImg::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: block;
+  content: '';
+}
+
+/* inner light shadow */
+.coverImg::before {
+  right: 0;
+  left: 0;
+  box-shadow: inset 3px 1px 4px rgba(255, 255, 255, 0.4);
+}
+
+/* left side groove */
+.coverImg::after {
+  left: 8px;
+  width: 3px;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 0 4px rgba(255, 255, 255, 0.2);
+}
+
+/* book spine visible when transformed */
+.spine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1.25rem;
+  background-color: #111;
+  border-radius: 2px 0 0 2px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  transform: translateX(-100%) rotateY(-90deg);
+  transform-origin: 100% 50%;
+  transform-style: preserve-3d;
+}
+
+/* spine shadow */
+.spine::before,
+.spine::after {
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: block;
+  height: 0.5rem;
+  content: '';
+}
+
+/* inner light shadow */
+.spine::before {
+  top: 0;
+  box-shadow: inset 0 2px 1px rgba(255, 255, 255, 0.4);
+}
+
+/* left side groove */
+.spine::after {
+  bottom: 0;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.4);
+}
+
+.img {
+  display: block;
+  height: 17rem;
+}
+
+.heading {
+  margin-bottom: 0;
+  font-size: 125%;
+  font-family: var(--fontHeading);
+  line-height: 1.3;
+}
+
+.heading::after {
+  display: block;
+  width: 3.5rem;
+  margin: 0.5rem auto;
+  border-bottom: 1px solid rgba(32, 32, 48, 0.3);
+  content: '';
+}
+
+.author {
+  margin: 0;
+  font-size: 80%;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.authorLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.authorLink:hover {
+  text-decoration: underline;
+}
+
+.review {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  left: 5.25rem;
+  display: none;
+  margin: 0;
+  font-size: 95%;
+  text-align: left;
+  animation: slideIn 0.3s 0.15s backwards;
+}
+
+.review::after {
+  display: block;
+  width: 3.5rem;
+  margin-top: calc(1em + (1.6em - 1em) / 2);
+  border-bottom: 1px solid rgba(32, 32, 48, 0.3);
+  content: '';
+}
+
+.review > p:first-child {
+  margin-top: 0;
+}
+
+.review > p:last-child {
+  margin-bottom: 0;
+}
+
+.book[data-selected] .review {
+  display: block;
+}
+
+@media (min-width: 30em) and (max-width: 39.99em),
+  (min-width: 50em) and (max-width: 54.99em) {
+  .root {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (min-width: 50em) {
+  .root {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 65em) {
+  .book {
+    padding: 1.5rem 2rem;
+  }
+
+  .review {
+    top: 2rem;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translate3d(-20%, 0, 0);
+    opacity: 0;
+  }
+}
