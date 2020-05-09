@@ -1,8 +1,10 @@
+import { MDXProvider } from '@mdx-js/react';
 import React from 'react';
 
 import Heading from '../components/Heading';
 import HeadMeta from '../components/HeadMeta';
 import WorkList from '../content/WorkList.mdx';
+import { NewTabLink } from '../utils';
 import styles from './work.module.css';
 
 function Work() {
@@ -15,7 +17,9 @@ function Work() {
       />
       <div className={styles.timeline}>
         <div className={styles.inner}>
-          <WorkList />
+          <MDXProvider components={{ a: NewTabLink }}>
+            <WorkList />
+          </MDXProvider>
         </div>
       </div>
     </>

@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import React from 'react';
 
 import { imgUrl } from './site.json';
 import { useRouterStore } from './stores/router-store';
@@ -18,3 +19,7 @@ export function getImgSrc(name, w, h, withDescriptor = false) {
   const descriptor = withDescriptor ? ` ${w}w` : '';
   return `${imgUrl}/w_${w},h_${h},c_fill,g_south,q_90/${name}${descriptor}`;
 }
+
+export const NewTabLink = props => (
+  <a {...props} target="_blank" rel="noopener noreferrer" />
+);
