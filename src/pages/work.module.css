@@ -1,11 +1,12 @@
 .timeline {
   composes: max from global;
+  padding-bottom: 6rem;
 }
 
 .inner {
   padding-top: 1.5rem;
-  padding-bottom: 0.75rem;
-  border-left: 1rem solid var(--colSecondary20);
+  padding-bottom: 4.5rem;
+  border-left: 1rem solid var(--colPrimaryLight);
 }
 
 @media (min-width: 65em) {

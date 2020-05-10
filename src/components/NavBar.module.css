@@ -27,7 +27,7 @@
 
 .titleLink:hover,
 .titleLink:focus {
-  color: var(--colSecondary);
+  color: var(--colText);
 }
 
 .navBarHome {
@@ -43,7 +43,7 @@
 }
 
 .navBarHome .title {
-  text-shadow: 0 0 3px var(--colSecondary);
+  text-shadow: 0 0 3px var(--colText);
 }
 
 .nav {
@@ -51,14 +51,14 @@
   align-items: center;
   margin: 0 0 0.75em;
   padding: 0;
-  color: var(--colSecondary80);
+  color: var(--colText);
   font-size: 120%;
   list-style: none;
 }
 
 .navItem[data-active] {
-  color: var(--colSecondary);
-  text-shadow: 0 0 3px var(--colSecondary20);
+  color: var(--colText);
+  font-weight: 600;
 }
 
 .navLink {
@@ -74,7 +74,7 @@
 
 .navInverted {
   composes: nav;
-  color: var(--colTernary);
+  color: var(--colPrimaryLighter);
 }
 
 .navInverted .navItem[data-active] {

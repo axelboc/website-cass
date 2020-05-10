@@ -6,7 +6,7 @@
   font-size: 200%;
   font-family: var(--fontHeading);
   text-align: center;
-  background-color: var(--colSecondary);
+  background-color: var(--colText);
 }
 
 .withSubtitle {

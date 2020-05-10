@@ -25,7 +25,7 @@ class HtmlDocument extends Document {
           <link rel="shortcut icon" href="/favicon.ico" />
           <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Princess+Sofia|Roboto:300,400,400i,700"
+            href="https://fonts.googleapis.com/css?family=Princess+Sofia&amp;text=Cass%20Frances"
           />
         </Head>
         <body>

@@ -35,7 +35,6 @@
   position: relative;
   margin: calc(-1em * (1.4 - 1) / 2) 0; /* compensate for line-height for vertical rythm */
   padding-bottom: 0.5rem;
-  color: var(--colSecondary80);
   font-size: 180%;
   font-family: var(--fontHeading);
   font-style: italic;

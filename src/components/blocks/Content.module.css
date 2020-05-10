@@ -12,7 +12,7 @@
 }
 
 .image > img {
-  background-color: var(--colSecondary20);
+  background-color: var(--colPrimaryLighter50);
 }
 
 @media (min-width: 45em) {

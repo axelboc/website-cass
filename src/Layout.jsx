@@ -16,7 +16,9 @@ function Layout(props) {
   return (
     <div className={styles.root}>
       {showHomeLayout ? <Banner /> : <NavBar />}
-      <main className={styles.main}>{isLoading ? <Loading /> : children}</main>
+      <main className={styles.main}>
+        <div className={styles.inner}>{isLoading ? <Loading /> : children}</div>
+      </main>
       <Footer />
     </div>
   );

@@ -4,7 +4,7 @@
   z-index: 0;
   height: 100vh;
   min-height: 35rem;
-  background-color: var(--colSecondary);
+  background-color: var(--colText);
   background-image: url('https://res.cloudinary.com/uufvoxxc/image/upload/c_fill,w_400,h_400,q_90/banner-lake.jpg');
   background-position: center 20%;
   background-size: cover;
