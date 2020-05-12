@@ -18,15 +18,13 @@ function NyctophiliaPage() {
         description="My little night garden of dark and creepy books. The bloody fairy tales, the vengeful fairies and the abject dark magic is what gets my blood pumping."
       />
       <div className={styles.nyctophilia}>
-        <div className={styles.inner}>
+        <div className={styles.grid}>
           <div className={styles.intro}>
             <div className={styles.introInner}>
               <Nyctophilia />
             </div>
           </div>
           <BookList />
-          <div className={styles.empty1} />
-          <div className={styles.empty2} />
         </div>
       </div>
     </>

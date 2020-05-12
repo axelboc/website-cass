@@ -1,16 +1,10 @@
-.root {
-  flex: 1;
-  margin-bottom: 1.5rem;
-  padding: 0 0.5rem;
-}
-
 .book {
   position: relative;
   z-index: 0;
   display: block;
   width: 19rem;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1.5rem 2rem;
   overflow: hidden;
   color: inherit;
   text-align: center;
@@ -167,18 +161,9 @@
   text-transform: uppercase;
 }
 
-.authorLink {
-  color: inherit;
-  text-decoration: none;
-}
-
-.authorLink:hover {
-  text-decoration: underline;
-}
-
 .review {
   position: absolute;
-  top: 1.5rem;
+  top: 2rem;
   right: 2rem;
   left: 5.25rem;
   display: none;
@@ -206,29 +191,6 @@
 
 .book[data-selected] .review {
   display: block;
-}
-
-@media (min-width: 30em) and (max-width: 39.99em),
-  (min-width: 50em) and (max-width: 54.99em) {
-  .root {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width: 50em) {
-  .root {
-    margin-bottom: 3rem;
-  }
-}
-
-@media (min-width: 65em) {
-  .book {
-    padding: 1.5rem 2rem;
-  }
-
-  .review {
-    top: 2rem;
-  }
 }
 
 @keyframes slideIn {

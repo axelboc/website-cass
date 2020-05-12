@@ -2,29 +2,16 @@
   composes: max from global;
 }
 
-.inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 -0.5rem;
-}
-
-.book {
-  flex: 1;
-  margin-bottom: 1.5rem;
-  padding: 0 0.5rem;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .intro {
-  composes: book;
-  display: flex;
-  flex: 1 0 auto;
-  flex-direction: column;
-}
-
-.introInner {
-  flex: 1;
-  padding: 1rem; /* same as books' inner containers */
+  margin-bottom: 1rem;
 }
 
 .intro p:last-child {
@@ -51,57 +38,32 @@
   content: close-quote;
 }
 
-.empty1,
-.empty2 {
-  composes: book;
-  display: none;
-}
-
-@media (min-width: 30em) and (max-width: 39.99em),
-  (min-width: 50em) and (max-width: 54.99em) {
-  .inner {
-    margin: 0 -0.5rem;
-  }
-
-  .book {
-    padding: 0 0.5rem;
+@media (min-width: 45em) {
+  .nyctophilia {
+    grid-gap: 1.5rem;
   }
 }
 
-@media (min-width: 50em) {
-  .inner {
-    padding-top: 0.75rem;
-  }
-
-  .book {
-    margin-bottom: 3rem;
-  }
-
+@media (min-width: 45em) and (max-width: 54.99em), (min-width: 68em) {
   .intro {
-    display: flex;
-    align-items: center;
-    max-width: 50%;
+    grid-column-end: span 2;
+  }
+}
+
+@media (min-width: 55em) {
+  .intro {
+    margin-bottom: 0;
   }
 
   .introInner {
     padding: 1.5rem 2rem;
     background-color: rgba(255, 255, 255, 0.5);
   }
-
-  .empty1:nth-child(3n + 1),
-  .empty1:nth-child(3n + 2),
-  .empty2:nth-child(3n + 2) {
-    display: block;
-  }
 }
 
-@media (min-width: 65em) {
-  .inner {
-    margin: -0.5rem -2.5rem 0;
-  }
-
-  .intro {
-    max-width: 66.66%;
+@media (min-width: 68em) {
+  .grid {
+    margin: 0 -2rem;
   }
 
   .introInner {

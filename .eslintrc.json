@@ -52,6 +52,12 @@
         "browser": false,
         "node": true
       }
+    },
+    {
+      "files": ["src/pages/_app.jsx"],
+      "rules": {
+        "react/prop-types": "off"
+      }
     }
   ]
 }
