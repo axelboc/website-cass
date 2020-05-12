@@ -1,10 +1,4 @@
 [[plugins]]
-package = "netlify-plugin-a11y"
-
-  [plugins.inputs]
-  resultMode = "warn" # is "error" by default
-
-[[plugins]]
 package = "@netlify/plugin-sitemap"
 
 [[plugins]]
