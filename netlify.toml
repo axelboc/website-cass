@@ -1,8 +1,8 @@
 [[plugins]]
 package = "@netlify/plugin-sitemap"
 
-[[plugins]]
-package = "netlify-plugin-cache-nextjs"
-
   [plugins.inputs]
   prettyURLs = true
+
+[[plugins]]
+package = "netlify-plugin-cache-nextjs"
