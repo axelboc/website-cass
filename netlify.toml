@@ -1,0 +1,17 @@
+[[plugins]]
+package = "netlify-plugin-a11y"
+
+  [plugins.inputs]
+  resultMode = "warn" # is "error" by default
+
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+
+[[plugins]]
+package = "netlify-plugin-subfont"
+
+[[plugins]]
+package = "netlify-plugin-checklinks"
+
+[[plugins]]
+package = "netlify-plugin-cache-nextjs"
