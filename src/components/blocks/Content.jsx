@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
-import React from 'react';
 
-import { imgUrl } from '../../site.json';
+import site from '../../site.json';
 import styles from './Content.module.css';
+
+const { imgUrl } = site;
 
 /**
  * Building block used to render the body of a Work entry along with an optional image.

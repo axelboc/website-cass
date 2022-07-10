@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Heading from '../components/Heading';
 import { getImgSrc } from '../utils';
 import styles from './404.module.css';
@@ -17,7 +15,7 @@ function NotFound() {
           [1000, 500],
           [1500, 700],
         ]
-          .map(dims => getImgSrc('404', ...dims, true))
+          .map((dims) => getImgSrc('404', ...dims, true))
           .join(',')}
         alt="Woman sitting in the middle of a path in a misty forest, her arms wrapped around her legs and her face obscured by her hair."
       />

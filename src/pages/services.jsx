@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Heading from '../components/Heading';
 import HeadMeta from '../components/HeadMeta';
 import Service from '../components/Service';
@@ -7,8 +5,10 @@ import Services from '../content/Services.mdx';
 import ManuscriptAssess, { ma } from '../content/services/ManuscriptAssess.mdx';
 import QueryCritique, { qc } from '../content/services/QueryCritique.mdx';
 import SubmissionPkg, { sp } from '../content/services/SubmissionPkg.mdx';
-import { contactFormUrl } from '../site.json';
+import site from '../site.json';
 import styles from './services.module.css';
+
+const { contactFormUrl } = site;
 
 function ServicesPage() {
   return (

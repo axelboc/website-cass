@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
-import React from 'react';
 
-import { imgUrl } from '../../site.json';
+import site from '../../site.json';
 import styles from './TwoImages.module.css';
+
+const { imgUrl } = site;
 
 /**
  * Two images inside a Work entry.

@@ -1,8 +1,9 @@
 import { useRouter } from 'next/router';
-import React from 'react';
 
-import { imgUrl } from './site.json';
+import site from './site.json';
 import { useRouterStore } from './stores/router-store';
+
+const { imgUrl } = site;
 
 export function useRouterState() {
   const { pathname } = useRouter();
@@ -20,6 +21,6 @@ export function getImgSrc(name, w, h, withDescriptor = false) {
   return `${imgUrl}/w_${w},h_${h},c_fill,g_south,q_90/${name}${descriptor}`;
 }
 
-export const NewTabLink = props => (
+export const NewTabLink = (props) => (
   <a {...props} target="_blank" rel="noopener noreferrer" />
 );

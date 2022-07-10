@@ -4,10 +4,10 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
   grid-gap: 1rem;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
   align-items: flex-start;
+  justify-content: center;
 }
 
 .intro {

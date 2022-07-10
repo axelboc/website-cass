@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
-import { siteTitle } from '../site.json';
+import site from '../site.json';
 import styles from './Banner.module.css';
 import NavBar from './NavBar';
 
+const { siteTitle } = site;
 let hasAnimated = false;
 
 function Banner() {

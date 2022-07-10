@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React from 'react';
 
-import { siteTitle } from '../site.json';
+import site from '../site.json';
 import { useRouterState } from '../utils';
 import styles from './NavBar.module.css';
 
+const { siteTitle } = site;
 const NAV_ITEMS = [
   { path: '/', label: 'About' },
   { path: '/services', label: 'Services' },

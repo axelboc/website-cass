@@ -1,4 +1,13 @@
 {
+  "plugins": ["simple-import-sort", "import", "react", "react-hooks"],
+  "extends": [
+    "problems",
+    "plugin:import/errors",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:react/jsx-runtime",
+    "prettier"
+  ],
   "parserOptions": {
     "ecmaVersion": 2020,
     "sourceType": "module",
@@ -7,13 +16,11 @@
     }
   },
   "env": {
-    "browser": true,
-    "es6": true
+    "browser": true
   },
   "globals": {
     "process": "readonly"
   },
-  "plugins": ["simple-import-sort", "import", "react", "react-hooks"],
   "settings": {
     "import/cache": {
       "lifetime": 0
@@ -31,18 +38,12 @@
       ]
     }
   },
-  "extends": [
-    "problems",
-    "plugin:import/errors",
-    "plugin:react/recommended",
-    "prettier"
-  ],
   "rules": {
     "import/first": "error",
     "import/newline-after-import": "error",
     "import/no-duplicates": "error",
-    "react-hooks/rules-of-hooks": "error",
-    "simple-import-sort/sort": "error",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
     "sort-imports": "off"
   },
   "overrides": [
@@ -51,12 +52,6 @@
       "env": {
         "browser": false,
         "node": true
-      }
-    },
-    {
-      "files": ["src/pages/_app.jsx"],
-      "rules": {
-        "react/prop-types": "off"
       }
     }
   ]

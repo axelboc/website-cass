@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Heading from '../components/Heading';
 import HeadMeta from '../components/HeadMeta';
 import BookList from '../content/BookList.mdx';

@@ -1,9 +1,10 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
-import React from 'react';
 
-import { imgUrl, siteTitle } from '../site.json';
+import site from '../site.json';
+
+const { imgUrl, siteTitle } = site;
 
 function HeadMeta(props) {
   const { title, description } = props;

@@ -1,5 +1,4 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
-import React from 'react';
 
 class HtmlDocument extends Document {
   render() {
@@ -9,7 +8,6 @@ class HtmlDocument extends Document {
         prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
       >
         <Head>
-          <meta name="viewport" content="width=device-width,initial-scale=1" />
           <link
             rel="icon"
             type="image/png"

@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import React from 'react';
 
 import styles from './Service.module.css';
 
@@ -16,7 +15,7 @@ function Service(props) {
           <div className={styles.itemValue}>
             {typeof fee === 'string'
               ? fee
-              : fee.map(f => <div key={f}>{f}</div>)}
+              : fee.map((f) => <div key={f}>{f}</div>)}
           </div>
         </li>
         <li className={styles.item}>

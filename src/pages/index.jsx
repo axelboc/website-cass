@@ -1,11 +1,11 @@
-import React from 'react';
-
 import Degree from '../components/Degree';
 import Heading from '../components/Heading';
 import HeadMeta from '../components/HeadMeta';
 import About from '../content/About.mdx';
-import { imgUrl } from '../site.json';
+import site from '../site.json';
 import styles from './index.module.css';
+
+const { imgUrl } = site;
 
 function HomePage() {
   return (

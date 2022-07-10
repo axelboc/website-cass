@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import React from 'react';
 
 import { useBookStore } from '../stores/book-store';
 import styles from './Book.module.css';

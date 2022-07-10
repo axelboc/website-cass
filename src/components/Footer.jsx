@@ -1,7 +1,7 @@
-import React from 'react';
-
-import { contactFormUrl } from '../site.json';
+import site from '../site.json';
 import styles from './Footer.module.css';
+
+const { contactFormUrl } = site;
 
 function Footer() {
   return (
