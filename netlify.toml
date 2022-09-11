@@ -1,5 +1,11 @@
 [[plugins]]
 package = "@netlify/plugin-sitemap"
 
+  [[plugins.inputs]]
+  buildDir = "out"
+  exclude = [
+    "**/404.html"
+  ]
+
 [[plugins]]
 package = "netlify-plugin-cache-nextjs"
