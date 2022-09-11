@@ -1,7 +1,7 @@
 [[plugins]]
 package = "@netlify/plugin-sitemap"
 
-  [[plugins.inputs]]
+  [plugins.inputs]
   buildDir = "out"
   exclude = [
     "**/404.html"
